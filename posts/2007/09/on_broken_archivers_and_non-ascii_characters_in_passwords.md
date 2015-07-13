@@ -1,0 +1,23 @@
+<html><body><p>About 2 years ago I set up a desktop for my girlfriend (at that time, but this does not matter) with Sarge, which was later upgraded to Etch (this was some time after the freeze but before the release). She is pretty happy with it, but time to time she asks me for a bit of help.<br>
+
+<br>
+
+Today she got a RAR-archive from a friend (Windows user). As it was too big for mailing, he protected it with a password and uploaded it to some public space. Nothing unusual, open file in file-roller, click extract, put password into the appropriate field, and you're done.<br>
+
+<br>
+
+Not with this file, 'file-roller filename.rar' opens a dialog box saying: <strong>"this file is password protected. please enter the password under 'edit-&gt;password'"</strong>. Well, this menu-item is <strong>grayed out</strong>, so file-roller does not help us.<br>
+
+As I'm some kilometers away, and have only SSH (well, I could go out for a walk, but not only for a damn archive-password...) to the box, let's try <strong>rar from non-free</strong>, this is "real" rar, it should support it. It does, as it correctly asks for a password, but fails because the password contains German umlauts. And yeah, I did set the right locales, everything UTF-8, both my side and the remote side. And yes I tried ISO-8859 too.<br>
+
+Next try is <strong>p7zip-full</strong>, as it supports RAR archives. But not this one? With UTF-8 it asks for a password, gets one, tells me which file it will extract and dies with <strong>"Unsupported Method"</strong>. With ISO-8859 it just says incorrect password...<br>
+
+WTF? But what's about fetching the file and extracting it locally on my Sid system? Got the file, and extracted it with rar (on UTF-8 locale) without problems... With the same version of rar as in Etch!? Holy crap, don't ask me how <strong>THIS</strong> works. And no, p7zip-full from Sid did not like it, same problem as with the Etch version.<br>
+
+<br>
+
+So what do we learn?<br>
+
+1. Fucking non-free proprietary archivers are fucking evil - don't use them!<br>
+
+2. Passwords should never contain non-ASCII characters! ("M,!z6-u_0" is a fine password, which you can type on every keyboard, "Hallö" isn't - try this on a keyboard in India, or maybe just France?)</p></body></html>

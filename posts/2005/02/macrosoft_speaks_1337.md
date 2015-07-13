@@ -1,0 +1,1 @@
+<html><body><p>Understand how your kids communicate online to help protect them: <a href="http://www.microsoft.com/athome/security/children/kidtalk.mspx">Klick!</a></p></body></html>

@@ -1,0 +1,9 @@
+<html><body><p>Gestern (bzw eher heute - was in incoming liegt zählt nicht) erreichte Xorg 7.1 endlich Debian Sid/unstable. Grud dafür ist u.a. die Absicht, 7.1 in Etch im Dezember auszuliefern.<br>
+
+<br>
+
+Wer sich an das 6.9 zu 7.0 Update erinnern kann, weiß dass sort vieles kaputt war, nach dem Update. Diesmal ist es nicht so. Ich hatte bereits seit paar Wochen die experimental Pakete von 7.1 laufen, und das einzige was mir aufgefallen ist, dass man nvidia-glx aus experimental braucht, da von 7.0 auf 7.1 in Xorg eine Veränderrung der ABI stattfand und man sich bei der XStrikeForce von Debian dazu entschieden hat, bei den Vide-Treibern nicht mehr xserver-xorg-video sondern xserver-xorg-video-1.0 haben zu wollen als MetaPaket. nvidia-glx aus unstable 'Provides: xserver-xorg-video' - und wird deswegen rausgeschmissen. Ein Paket das dieses Problem behebt ist in experimental und sollte hoffentlich bald auch in unstable landen.<br>
+
+<br>
+
+Wie das Update mit ATI veräuft weiß ich noch nicht, da ich heute mein ThinkPad noch nicht gebootet habe.</p></body></html>

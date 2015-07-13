@@ -1,0 +1,1 @@
+<html><body><p>[nggallery id=22]</p></body></html>

@@ -1,0 +1,7 @@
+<html><body><p>Für alle die, wie ich, per Zufall auf <a href="http://www.youtube.com/watch?v=Qk2jepguO_Y" target="_blank">France Gall - Der Computer Nr. 3</a> gestoßen sind, und sich dachten "Moment, da gibts doch ein geiles Electro Cover", es aber nicht gefunden haben:<br>
+
+Nein, es ist nicht <a href="http://www.youtube.com/watch?v=4b2iZgV_gB0" target="_blank">B.I.O.S - Der Computer Nr. 3</a>, es ist <a href="http://www.last.fm/music/Kontrast/_/Der+Komputer+Nr.+3" target="_blank">Kontrast - Der Komputer Nr. 3 (Industrie Romantik)</a>.<br>
+
+<br>
+
+Ahja, Google, "Don't be smart" - wo ist dieser Schalter? Wenn ich nach "Komputer Nr. 3" suche, bin ich kein Legastheniker und meinte "Computer Nr. 3", sondern ich will echt "Komputer Nr. 3" haben. Grrrr.</p></body></html>

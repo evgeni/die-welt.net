@@ -1,0 +1,5 @@
+<html><body><p>Some days ago, a <a href="http://blog.syscp.org/archives/44-Security-hole-discovered-in-SysCP-1.2.15.html" target="_blank">local-root hole was found in SysCP</a>. A patch was also released, so it's easy to fix your installation.<br>
+
+<br>
+
+However, maybe there are people, using my slightly changed Debian-packages, out there. So I  have rebuilt them with the patch, and you will find them at the usual place.</p></body></html>

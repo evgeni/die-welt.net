@@ -1,0 +1,1 @@
+<html><body><p>Da ich von Spiegel.de eine nette Mail bekommen habe, ist dieser Artikel bis auf weiteres offline.</p></body></html>

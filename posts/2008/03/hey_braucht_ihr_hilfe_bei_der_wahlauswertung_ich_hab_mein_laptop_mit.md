@@ -1,0 +1,19 @@
+<html><body><p>Nachdem andi für <a href="http://geekosphere.org" target="_blank">geekosphere.org</a> einen Artikel über seine <a href="http://geekosphere.org/643/beobachtungen-bei-der-kommunalwahl-2008-in-bayern/" target="_blank">Beobachtungen bei der Kommunalwahl 2008 in Bayern</a> geschrieben hat, kam in mir eine leichte Übelkeit hoch. Nicht dass andi Müll geschrieben hat, der Artikel ist wunderbar, aber der Inhalt doch irgendwie erschreckend.<br>
+
+Eben diesen Artikel zitiert nun netzpolitik.org (<a href="http://netzpolitik.org/2008/wahlbeobachtung-in-bayern-berichte">http://netzpolitik.org/2008/wahlbeobachtung-in-bayern-berichte</a>) und den Damen und Herren dort scheint es ähnlich wie mir zu gehen.<br>
+
+Ich glaube, die Wahl hätte man auch stattdessen mit Handzeichen bei der großen Volkszählung durchführen können, aber zurück zur Gegenwart:<br>
+
+<br>
+
+Es wurden zwei Computer (und später noch ein Laptop) benutzt, die Herkunft ist unbekannt und die Kisten sind voll mit Software - ob da auch Schadsoftware dabei ist weiss keiner, und hat wahrscheinlich auch keiner geprüft. Dabei sollte es nicht schwer sein, in ein Windows2000 irgendwas zu verstecken, oder gar die Wahl Software zu manipulieren (btw Wahl Software, gibts da evtl genauere Infos? evtl gar Möglichkeiten die Wahlergebnisse im Speicher zu manupulieren?). Wäre es nicht möglich immerhin das OS sauber zu halten, wenn man schon Fremdhardware hat? So eine LiveCD mit einer Applikation ist einfach erstellt, und inkl Prüfsummen per Kurier geliefert. Und dann speichert man auf Disketten?! Hardwaremanipulation und veraltete Technik ftw!<br>
+
+<br>
+
+Desweiteren haben die Computer wohl nichts gebracht (es sollte Zeit gespart werden). Wenn man die nicht gesparte Zeit mit dem Geld multipliziert die für Strom, Entwicklung und Tests (haha!) der Software sowie Training(haha²!) der Wahlhelfer investiert worden ist, kommt man mit Sicherheit auf mehr als nötig :(<br>
+
+<br>
+
+Naja, was soll ich sagen? Ich glaube, Handzählen ist immer noch das Mittel der Wahl. Computer erst, wenn alle wissen was das ist, wie das Funktioniert, und was man nicht machen darf (fremde Rechner nutzen zB...)<br>
+
+Dann passiert auch nicht sowas: <a href="http://www.mainpost.de/storage/med/kommunalwahl/wuerzburg-landoch/4660_LRW-Landkreis-Wuerzburg.pdf">http://www.mainpost.de/storage/med/kommunalwahl/wuerzburg-landoch/4660_LRW-Landkreis-Wuerzburg.pdf</a> - Gelchsheim hat eine Wahlbeteiligung von 101.9%!?</p></body></html>

@@ -1,0 +1,7 @@
+<html><body><p>Mjoa, es ist nun 2 Wochen her, dass ich bei ish das neue 2play+ ANgebot bestellt habe. Seit dem kein Briefchen, kein Paket (es muss so ein Telefonie-Adapter kommen), nix.<br>
+
+Jetzt hab ich grade die nette Hotline angerufen, und die Dame am anderen Ende sagte mir, es wäre wohl gestern bearbeitet worden und sollte zum 19.09. fertig sein (natürlich ohne Gewähr diese Aussage). Begründet wurde die Verzögerung durch ein "hohes Auftragsaufkommen".<br>
+
+<br>
+
+Da bin ich jetzt erstmal gespannt, wie das weitergeht. Gothseidank ist es ja nicht so, dass ich jetzt ohne Internet und Telefon zuhause sitze, deswegen kann ich ganz gechillt warten.</p></body></html>

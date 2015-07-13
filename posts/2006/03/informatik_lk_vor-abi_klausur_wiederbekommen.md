@@ -1,0 +1,3 @@
+<html><body><p>Und ich hab sie alle wegge'pwnd. Hab ne dicke 1.<br>
+
+Muss ehrlich zugeben, hab mich selbst gewundert, vorallem über die Tatsache, dass der Lehrer mir freiwillig was besseres als eine 3 gegeben hat.. Es gibt wohl doch noch einen Gott ;-)</p><p>Das war aber gestern. Heute gibts Mathe LK Vor-Abi wieder. Mal sehen wie das wird.</p><p>Und wenn ich gang viel Glück habe, gibts auch noch Deutsch GK wieder, da hab ich aber absolut keine Lust drauf.</p></body></html>
