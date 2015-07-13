@@ -208,10 +208,10 @@ POSTS = (
             ("posts/*.wp", "", "post.tmpl"),
         )
 PAGES = (
-            ("stories/*.rst", "stories", "story.tmpl"),
-            ("stories/*.txt", "stories", "story.tmpl"),
-            ("stories/*.md", "stories", "story.tmpl"),
-            ("stories/*.wp", "stories", "story.tmpl"),
+            ("stories/*.rst", "", "story.tmpl"),
+            ("stories/*.txt", "", "story.tmpl"),
+            ("stories/*.md", "", "story.tmpl"),
+            ("stories/*.wp", "", "story.tmpl"),
         )
 
 # One or more folders containing files to be copied as-is into the output.
