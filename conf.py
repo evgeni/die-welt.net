@@ -20,7 +20,7 @@ import time
 BLOG_AUTHOR = "evgeni"  # (translatable)
 BLOG_TITLE = "die-welt.net"  # (translatable)
 # This is the main URL for your site. It will be used
-# in a prominent link
+# in a prominent link. Don't forget the protocol (http/https)!
 SITE_URL = "http://www.die-welt.net/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
@@ -32,41 +32,45 @@ BLOG_DESCRIPTION = "a broken world by Evgeni Golov"  # (translatable)
 #
 # Currently supported languages are:
 #
-# en     English
-# ar     Arabic
-# az     Azerbaijani
-# bg     Bulgarian
-# ca     Catalan
-# cs     Czech [ALTERNATIVELY cz]
-# da     Danish
-# de     German
-# el     Greek [NOT gr]
-# eo     Esperanto
-# es     Spanish
-# et     Estonian
-# eu     Basque
-# fa     Persian
-# fi     Finnish
-# fr     French
-# hi     Hindi
-# hr     Croatian
-# id     Indonesian
-# it     Italian
-# ja     Japanese [NOT jp]
-# ko     Korean
-# nb     Norwegian Bokmål
-# nl     Dutch
-# pl     Polish
-# pt_br  Portuguese (Brasil)
-# ru     Russian
-# sk     Slovak
-# sl     Slovene
-# sr     Serbian (Cyrillic)
-# sv     Swedish
-# tr     Turkish [NOT tr_TR]
-# uk     Ukrainian
-# ur     Urdu
-# zh_cn  Chinese (Simplified)
+# en        English
+# ar        Arabic
+# az        Azerbaijani
+# bg        Bulgarian
+# bs        Bosnian
+# ca        Catalan
+# cs        Czech [ALTERNATIVELY cz]
+# da        Danish
+# de        German
+# el        Greek [NOT gr]
+# eo        Esperanto
+# es        Spanish
+# et        Estonian
+# eu        Basque
+# fa        Persian
+# fi        Finnish
+# fr        French
+# hi        Hindi
+# hr        Croatian
+# id        Indonesian
+# it        Italian
+# ja        Japanese [NOT jp]
+# ko        Korean
+# nb        Norwegian Bokmål
+# nl        Dutch
+# pa        Punjabi
+# pl        Polish
+# pt        Portuguese
+# pt_br     Portuguese (Brasil)
+# ru        Russian
+# sk        Slovak
+# sl        Slovene
+# sr        Serbian (Cyrillic)
+# sr_latin  Serbian (Latin)
+# sv        Swedish
+# tr        Turkish [NOT tr_TR]
+# uk        Ukrainian
+# ur        Urdu
+# zh_cn     Chinese (Simplified)
 #
 # If you want to use Nikola with a non-supported language you have to provide
 # a module containing the necessary translations
@@ -105,8 +109,8 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 # For submenus:
 #     (
 #         (
-#             ('http://apple.com/', 'Apple'),
-#             ('http://orange.com/', 'Orange'),
+#             ('https://apple.com/', 'Apple'),
+#             ('https://orange.com/', 'Orange'),
 #         ),
 #         'Fruits'
 #     )
@@ -130,14 +134,60 @@ NAVIGATION_LINKS = {
 }
 
 # Name of the theme to use.
+THEME = "bootstrap3"
 THEME = "weltstrap3"
+
+# Primary color of your theme. This will be used to customize your theme and
+# auto-generate related colors in POSTS_SECTION_COLORS. Must be a HEX value.
+THEME_COLOR = '#5670d4'
+
+# POSTS and PAGES contains (wildcard, destination, template) tuples.
+#
+# The wildcard is used to generate a list of reSt source files
+# (whatever/thing.txt).
+#
+# That fragment could have an associated metadata file (whatever/thing.meta),
+# and optionally translated files (example for Spanish, with code "es"):
+#     whatever/thing.es.txt and whatever/thing.es.meta
+#
+#     This assumes you use the default TRANSLATIONS_PATTERN.
+#
+# From those files, a set of HTML fragment files will be generated:
+# cache/whatever/thing.html (and maybe cache/whatever/thing.html.es)
+#
+# These files are combined with the template to produce rendered
+# pages, which will be placed at
+# output / TRANSLATIONS[lang] / destination / pagename.html
+#
+# where "pagename" is the "slug" specified in the metadata file.
+#
+# The difference between POSTS and PAGES is that POSTS are added
+# to feeds and are considered part of a blog, while PAGES are
+# just independent HTML pages.
+#
+
+POSTS = (
+    ("posts/*.rst", "posts", "post.tmpl"),
+    ("posts/*.txt", "posts", "post.tmpl"),
+    ("posts/*.md", "posts", "post.tmpl"),
+    ("posts/*.html", "posts", "post.tmpl"),
+)
+
+PAGES = (
+    ("stories/*.rst", "stories", "story.tmpl"),
+    ("stories/*.txt", "stories", "story.tmpl"),
+    ("stories/*.md", "stories", "story.tmpl"),
+    ("stories/*.html", "stories", "story.tmpl"),
+)
+
+
 
 # Below this point, everything is optional
 
 # Post's dates are considered in UTC by default, if you want to use
 # another time zone, please set TIMEZONE to match. Check the available
 # list from Wikipedia:
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+# https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 # (e.g. 'Europe/Zurich')
 # Also, if you want to use a different time zone in some of your posts,
 # you can use the ISO 8601/RFC 3339 format (ex. 2012-03-30T23:00:00+02:00)
@@ -176,44 +226,6 @@ TIMEZONE = "UTC"
 # LOCALE_DEFAULT = locale to use for languages not mentioned in LOCALES; if
 # not set the default Nikola mapping is used.
 
-# POSTS and PAGES contains (wildcard, destination, template) tuples.
-#
-# The wildcard is used to generate a list of reSt source files
-# (whatever/thing.txt).
-#
-# That fragment could have an associated metadata file (whatever/thing.meta),
-# and optionally translated files (example for Spanish, with code "es"):
-#     whatever/thing.es.txt and whatever/thing.es.meta
-#
-#     This assumes you use the default TRANSLATIONS_PATTERN.
-#
-# From those files, a set of HTML fragment files will be generated:
-# cache/whatever/thing.html (and maybe cache/whatever/thing.html.es)
-#
-# These files are combined with the template to produce rendered
-# pages, which will be placed at
-# output / TRANSLATIONS[lang] / destination / pagename.html
-#
-# where "pagename" is the "slug" specified in the metadata file.
-#
-# The difference between POSTS and PAGES is that POSTS are added
-# to feeds and are considered part of a blog, while PAGES are
-# just independent HTML pages.
-#
-
-POSTS = (
-            ("posts/*.rst", "", "post.tmpl"),
-            ("posts/*.txt", "", "post.tmpl"),
-            ("posts/*.md", "", "post.tmpl"),
-            ("posts/*.wp", "", "post.tmpl"),
-        )
-PAGES = (
-            ("stories/*.rst", "", "story.tmpl"),
-            ("stories/*.txt", "", "story.tmpl"),
-            ("stories/*.md", "", "story.tmpl"),
-            ("stories/*.wp", "", "story.tmpl"),
-        )
-
 # One or more folders containing files to be copied as-is into the output.
 # The format is a dictionary of {source: relative destination}.
 # Default is:
@@ -234,11 +246,10 @@ PAGES = (
 # 'markdown' is MarkDown
 # 'html' assumes the file is HTML and just copies it
 COMPILERS = {
-        "rest": ('.txt', '.rst'),
-        "markdown": ('.md', '.mdown', '.markdown', '.wp'),
-        "html": ('.html', '.htm')
-        }
-        
+    "rest": ('.txt', '.rst'),
+    "markdown": ('.md', '.mdown', '.markdown'),
+    "html": ('.html', '.htm'),
+}
 
 # Create by default posts in one file format?
 # Set to False for two-file posts, with separate metadata.
@@ -264,6 +275,57 @@ COMPILERS = {
 # Warning: this option will change its default value to False in v8!
 WRITE_TAG_CLOUD = True
 
+# Generate pages for each section. The site must have at least two sections
+# for this option to take effect. It wouldn't build for just one section.
+POSTS_SECTIONS = True
+
+# Setting this to False generates a list page instead of an index. Indexes
+# are the default and will apply GENERATE_ATOM if set.
+# POSTS_SECTIONS_ARE_INDEXES = True
+
+# Each post and section page will have an associated color that can be used
+# to style them with a recognizable color detail across your site. A color
+# is assigned to  each section based on shifting the hue of your THEME_COLOR
+# at least 7.5 % while leaving the lightness and saturation untouched in the
+# HUSL colorspace. You can overwrite colors by assigning them colors in HEX.
+# POSTS_SECTION_COLORS = {
+#     DEFAULT_LANG: {
+#         'posts':  '#49b11bf',
+#         'reviews':   '#ffe200',
+#     },
+# }
+
+# Associate a description with a section. For use in meta description on
+# section index pages or elsewhere in themes.
+# POSTS_SECTION_DESCRIPTIONS = {
+#     DEFAULT_LANG: {
+#         'how-to': 'Learn how-to things properly with these amazing tutorials.',
+#     },
+# }
+
+# Sections are determined by their output directory as set in POSTS by default,
+# but can alternatively be determined from file metadata instead.
+# POSTS_SECTION_FROM_META = False
+
+# Names are determined from the output directory name automatically or the
+# metadata label. Unless overwritten below, names will use title cased and
+# hyphens replaced by spaces.
+# POSTS_SECTION_NAME = {
+#    DEFAULT_LANG: {
+#        'posts': 'Blog Posts',
+#        'uncategorized': 'Odds and Ends',
+#    },
+# }
+
+# Titles for per-section index pages. Can be either one string where "{name}"
+# is substituted or the POSTS_SECTION_NAME, or a dict of sections. Note
+# that the INDEX_PAGES option is also applied to section page titles.
+# POSTS_SECTION_TITLE = {
+#     DEFAULT_LANG: {
+#         'how-to': 'How-to and Tutorials',
+#     },
+# }
+
 # Paths for different autogenerated bits. These are combined with the
 # translation paths.
 
@@ -285,8 +347,15 @@ WRITE_TAG_CLOUD = True
 #        "blogging": "Meta-blog posts about blogging about blogging.",
 #        "open source": "My contributions to my many, varied, ever-changing, and eternal libre software projects."
 #    },
-#}
+# }
 
+# Set special titles for tag pages. The default is "Posts about TAG".
+# TAG_PAGES_TITLES = {
+#    DEFAULT_LANG: {
+#        "blogging": "Meta-posts about blogging",
+#        "open source": "Posts about open source software"
+#    },
+# }
 
 # If you do not want to display a tag publicly, you can mark it as hidden.
 # The tag will not be displayed on the tag list page, the tag cloud and posts.
@@ -311,10 +380,10 @@ HIDDEN_TAGS = ['mathjax']
 # using a forward slash ('/') to separate paths. Use a backslash ('\') to escape
 # a forward slash or a backslash (i.e. '\//\\' is a path specifying the
 # subcategory called '\' of the top-level category called '/').
-# CATEGORY_ALLOW_HIERARCHIES = False
+CATEGORY_ALLOW_HIERARCHIES = False
 # If CATEGORY_OUTPUT_FLAT_HIERARCHY is set to True, the output written to output
 # contains only the name of the leaf category and not the whole path.
-# CATEGORY_OUTPUT_FLAT_HIERARCHY = False
+CATEGORY_OUTPUT_FLAT_HIERARCHY = False
 
 # If CATEGORY_PAGES_ARE_INDEXES is set to True, each category's page will contain
 # the posts themselves. If set to False, it will be just a list of links.
@@ -328,12 +397,50 @@ CATEGORY_PAGES_ARE_INDEXES = True
 #        "blogging": "Meta-blog posts about blogging about blogging.",
 #        "open source": "My contributions to my many, varied, ever-changing, and eternal libre software projects."
 #    },
-#}
+# }
+
+# Set special titles for category pages. The default is "Posts about CATEGORY".
+# CATEGORY_PAGES_TITLES = {
+#    DEFAULT_LANG: {
+#        "blogging": "Meta-posts about blogging",
+#        "open source": "Posts about open source software"
+#    },
+# }
 
 # If you do not want to display a category publicly, you can mark it as hidden.
 # The category will not be displayed on the category list page.
 # Category pages will still be generated.
 HIDDEN_CATEGORIES = []
+
+# If ENABLE_AUTHOR_PAGES is set to True and there is more than one
+# author, author pages are generated.
+# ENABLE_AUTHOR_PAGES = True
+
+# Final locations are:
+# output / TRANSLATION[lang] / AUTHOR_PATH / index.html (list of tags)
+# output / TRANSLATION[lang] / AUTHOR_PATH / author.html (list of posts for a tag)
+# output / TRANSLATION[lang] / AUTHOR_PATH / author.xml (RSS feed for a tag)
+# AUTHOR_PATH = "authors"
+
+# If AUTHOR_PAGES_ARE_INDEXES is set to True, each author's page will contain
+# the posts themselves. If set to False, it will be just a list of links.
+# AUTHOR_PAGES_ARE_INDEXES = False
+
+# Set descriptions for author pages to make them more interesting. The
+# default is no description. The value is used in the meta description
+# and displayed underneath the author list or index page’s title.
+# AUTHOR_PAGES_DESCRIPTIONS = {
+#    DEFAULT_LANG: {
+#        "Juanjo Conti": "Python coder and writer.",
+#        "Roberto Alsina": "Nikola father."
+#    },
+# }
+
+
+# If you do not want to display an author publicly, you can mark it as hidden.
+# The author will not be displayed on the author list page and posts.
+# Tag pages will still be generated.
+HIDDEN_AUTHORS = ['Guest']
 
 # Final location for the main blog page and sibling paginated pages is
 # output / TRANSLATION[lang] / INDEX_PATH / index-*.html
@@ -367,6 +474,13 @@ CREATE_MONTHLY_ARCHIVE = True
 # absolute: a complete URL (that includes the SITE_URL)
 # URL_TYPE = 'rel_path'
 
+# If USE_BASE_TAG is True, then all HTML files will include
+# something like <base href=http://foo.var.com/baz/bat> to help
+# the browser resolve relative links.
+# In some rare cases, this will be a problem, and you can
+# disable it by setting USE_BASE_TAG to False.
+# USE_BASE_TAG = True
+
 # Final location for the blog main RSS feed is:
 # output / TRANSLATION[lang] / RSS_PATH / rss.xml
 # RSS_PATH = ""
@@ -374,9 +488,13 @@ CREATE_MONTHLY_ARCHIVE = True
 # Number of posts in RSS feeds
 # FEED_LENGTH = 10
 
-# Slug the Tag URL easier for users to type, special characters are
+# Slug the Tag URL. Easier for users to type, special characters are
 # often removed or replaced as well.
 # SLUG_TAG_PATH = True
+
+# Slug the Author URL. Easier for users to type, special characters are
+# often removed or replaced as well.
+# SLUG_AUTHOR_PATH = True
 
 # A list of redirection tuples, [("foo/from.html", "/bar/to.html")].
 #
@@ -601,7 +719,7 @@ IMAGE_FOLDERS = {'images': 'images'}
 #     ("icon", "/icon_128x128.png", "128x128"),
 # )
 
-# Show only teasers in the index pages? Defaults to False.
+# Show teasers (instead of full posts) in indexes? Defaults to False.
 # INDEX_TEASERS = False
 
 # HTML fragments with the Read more... links.
@@ -635,12 +753,12 @@ RSS_LINKS_APPEND_QUERY = False
 # (translatable)
 LICENSE = ""
 # I recommend using the Creative Commons' wizard:
-# http://creativecommons.org/choose/
+# https://creativecommons.org/choose/
 # LICENSE = """
-# <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/ar/">
+# <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
 # <img alt="Creative Commons License BY-NC-SA"
 # style="border-width:0; margin-bottom:12px;"
-# src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a>"""
+# src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a>"""
 
 # A small copyright notice for the page footer (in HTML).
 # (translatable)
@@ -841,7 +959,7 @@ RSS_TEASERS = False
 # RSS_PLAIN = False
 
 # A search form to search this site, for the sidebar. You can use a Google
-# custom search (http://www.google.com/cse/)
+# custom search (https://www.google.com/cse/)
 # Or a DuckDuckGo search: https://duckduckgo.com/search_box.html
 # Default is no search form.
 # (translatable)
@@ -851,29 +969,34 @@ RSS_TEASERS = False
 # it appears on the navigation bar:
 #
 # SEARCH_FORM = """
-# <!-- Custom search -->
+# <!-- DuckDuckGo custom search -->
 # <form method="get" id="search" action="//duckduckgo.com/"
 #  class="navbar-form pull-left">
-# <input type="hidden" name="sites" value="%s"/>
-# <input type="hidden" name="k8" value="#444444"/>
-# <input type="hidden" name="k9" value="#D51920"/>
-# <input type="hidden" name="kt" value="h"/>
+# <input type="hidden" name="sites" value="%s">
+# <input type="hidden" name="k8" value="#444444">
+# <input type="hidden" name="k9" value="#D51920">
+# <input type="hidden" name="kt" value="h">
 # <input type="text" name="q" maxlength="255"
-#  placeholder="Search&hellip;" class="span2" style="margin-top: 4px;"/>
-# <input type="submit" value="DuckDuckGo Search" style="visibility: hidden;" />
+#  placeholder="Search&hellip;" class="span2" style="margin-top: 4px;">
+# <input type="submit" value="DuckDuckGo Search" style="visibility: hidden;">
 # </form>
 # <!-- End of custom search -->
 # """ % SITE_URL
 #
 # If you prefer a Google search form, here's an example that should just work:
 # SEARCH_FORM = """
-# <!-- Custom search with Google-->
-# <form id="search" action="//www.google.com/search" method="get" class="navbar-form pull-left">
-# <input type="hidden" name="q" value="site:%s" />
-# <input type="text" name="q" maxlength="255" results="0" placeholder="Search"/>
+# <!-- Google custom search -->
+# <form method="get" action="https://www.google.com/search" class="navbar-form navbar-right" role="search">
+# <div class="form-group">
+# <input type="text" name="q" class="form-control" placeholder="Search">
+# </div>
+# <button type="submit" class="btn btn-primary">
+# 	<span class="glyphicon glyphicon-search"></span>
+# </button>
+# <input type="hidden" name="sitesearch" value="%s">
 # </form>
 # <!-- End of custom search -->
-#""" % SITE_URL
+# """ % SITE_URL
 
 # Use content distribution networks for jQuery, twitter-bootstrap css and js,
 # and html5shiv (for older versions of Internet Explorer)
@@ -977,26 +1100,6 @@ USE_BUNDLES = False
 # USE WITH CARE!  This is also not guaranteed to be perfect, and may
 # sometimes crash Nikola, your web server, or eat your cat.
 # USE_SLUGIFY = True
-
-# You can configure the logging handlers installed as plugins or change the
-# log level of the default stderr handler.
-# WARNING: The stderr handler allows only the loglevels of 'INFO' and 'DEBUG'.
-#          This is done for safety reasons, as blocking out anything other
-#          than 'DEBUG' may hide important information and break the user
-#          experience!
-
-LOGGING_HANDLERS = {
-    'stderr': {'loglevel': 'INFO', 'bubble': True},
-    # 'smtp': {
-    #     'from_addr': 'test-errors@example.com',
-    #     'recipients': ('test@example.com'),
-    #     'credentials':('testusername', 'password'),
-    #     'server_addr': ('127.0.0.1', 25),
-    #     'secure': (),
-    #     'level': 'DEBUG',
-    #     'bubble': True
-    # }
-}
 
 # Templates will use those filters, along with the defaults.
 # Consult your engine's documentation on filters if you need help defining
