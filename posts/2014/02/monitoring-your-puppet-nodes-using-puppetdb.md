@@ -1,18 +1,10 @@
 <html><body><p>When you run Puppet, it is very important to monitor whether all nodes have an uptodate catalog and did not miss the last year of changes because of a typo in a manifest or a broken cron-script. The most common solution to this is <a href="http://tmz.fedorapeople.org/scripts/puppetstatus/check_puppet">a</a> <a href="https://github.com/rkhatibi/nagios_checks/blob/master/puppet/check_puppet">script</a> <a href="https://github.com/aswen/nagios-plugins/blob/master/check_puppet_agent">that</a> <a href="https://github.com/liquidat/nagios-icinga-checks/blob/master/check_puppetagent">checks</a> <code>/var/lib/puppet/state/last_run_summary.yaml</code> on each node. While this is nice and easy in a small setup, it can get a bit messy in a bigger environment as you have to do an NRPE call for every node (or integrate the check as a local check into <code>check_mk</code>).</p>
 
-
-
 <p>Given a slightly bigger Puppet environment, I guess you already have <a href="http://docs.puppetlabs.com/puppetdb/">PuppetDB</a> running. Bonuspoints if you already let it save the reports of the nodes via <code>reports = store,puppetdb</code>. Given a central knowledgebase about your Puppet environment one could ask PuppetDB about the last node runs, right? I did not find any such script on the web, so I wrote my own: <a href="https://github.com/evgeni/check_puppetdb_nodes">check_puppetdb_nodes</a>.</p>
-
-
 
 <p>The script requires a "recent" (1.5) PuppetDB and a couple of Perl modules (<code>JSON</code>, <code>LWP</code>, <code>Date::Parse</code>, <code>Nagios::Plugin</code>) installed. When run, the script will contact the PuppetDB via HTTP on <code>localhost:8080</code> (obviously configurable via <code>-H</code> and <code>-p</code>, HTTPS is available via <code>-s</code>) and ask for a list of nodes from the <a href="http://docs.puppetlabs.com/puppetdb/1.5/api/query/v3/nodes.html"><code>/nodes</code> endpoint of the API</a>. PuppetDB will answer with a list of all nodes, their catalog timestamps and whether the node is deactivated. Based on this result, <code>check_puppetdb_nodes</code> will check the last catalog run of all not deactivated nodes and issue a WARNING notification if there was none in the last 2 hours (<code>-w</code>) or a CRITICAL notification if there was none for 24 hours (<code>-c</code>).</p>
 
-
-
 <p>As a fresh catalog does not mean that the node was able to apply it, <code>check_puppetdb_nodes</code> will also query the <a href="http://docs.puppetlabs.com/puppetdb/1.5/api/query/v3/event-counts.html"><code>/event-counts</code> endpoint</a> for each node and verify that the node did not report any failures in the last run (for this feature to work, you need reports stored in PuppetDB). You can modify the thresholds for the number of failures that trigger a WARNING/CRITICAL with <code>-W</code> and <code>-C</code>, but I think 1 is quite a reasonable default for a CRITICAL in this case.</p>
-
-
 
 <p>Using <code>check_puppetdb_nodes</code> you can monitor the health of ALL your Puppet nodes with a singe NRPE call. Or even with zero, if your monitoring host can access PuppetDB directly.</p>
 

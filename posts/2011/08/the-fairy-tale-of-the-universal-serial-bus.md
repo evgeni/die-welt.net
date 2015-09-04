@@ -1,7 +1,5 @@
 <html><body><p>So I own some machines with that <a href="http://debian.org">Universal OS</a> on them and had to create a bunch (300) identical USB-keys (with the <a href="http://ubuntu.com">not so universal daughter OS</a>).
 
-
-
 Doesn't sound too complicated, huh? Buy 300 USB-keys, create one by hand, <code>dd</code> that over the 299 others. To make life easier, add some USB-hubs to the mix. Well, I will drop the part how to use dd to make identical copies of USB-keys and just list the lessons learned:
 
 </p><ol>

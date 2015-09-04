@@ -16,11 +16,7 @@
 
 The agenda is listed in the wiki and Kamping_Kaiser will try to stick to it (not as I did the last meeting).
 
-
-
 So see you <strong>tomorrow 11:00 UTC</strong> in <strong>#debian-games </strong>on<strong> irc.debian.org</strong>!
-
-
 
 </div>
 

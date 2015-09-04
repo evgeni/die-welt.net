@@ -1,7 +1,5 @@
 <html><body><p>Vodafone hat offensichtlich einen lustigen Webseiten-Assistenten, der bei der Navigation auf der Seite behilflich sein soll. Wenn sie meinen, dass ein solcher Assistent nötig ist, sollten sie vielleicht das Geld mal in einer bessere Webseite und nicht in so einen komischen Service stecken, aber meinen Spaß hatte ich dennoch:
 
-
-
 <strong>Alexander</strong>: Hallo! Ich helfe Ihnen gerne bei der Navigation auf der Vodafone-Website. Was kann ich für Sie tun?
 
 <strong>Sie</strong>: sind sie ein mensch? :)

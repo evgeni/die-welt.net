@@ -1,7 +1,5 @@
 <html><body><p>Continuing my series about my <a href="https://www.die-welt.net/2011/02/desktop-in-a-shell/">desktop in a shell</a>, in this chapter I will present you my irssi setup.
 
-
-
 Irssi is the most customized part of my setup, using many scripts from the irssi-scripts Debian package and some "from the internet", handling 6 irc networks with a total of 34 channels plus <del>Jabber</del>XMPP, ICQ, Twitter and identi.ca.﻿
 
 </p><h2>My "custom" irssi settings</h2>
@@ -10,37 +8,25 @@ I like my conversations to look like "Buddy, you rock" instead of "Buddy: you ro
 
 <code>/set completion_char ,</code>
 
-
-
 I also like <strong>*long highlighted text*</strong>, so:
 
 <code>/set emphasis_multiword on</code>
-
-
 
 Hide mIRC and ANSI colors when turned on. This can be used to eliminate angry fruit salad syndrome in some channels. (Quote from <a href="http://irssi.org/documentation/settings">irssi.org/documentation/settings</a>, do I have to say more?):
 
 <code>/set hide_colors on</code>
 
-
-
 When talking in more than one channel, it sometimes comes handy to repeat something from the past said in THAT channel, not searching though all:
 
 <code>/set window_history on</code>
-
-
 
 Tell irssi to shutup when away, noone will hear/see the beep anyways:
 
 <code>/set beep_when_away off</code>
 
-
-
 I want my screen to inform me about new messages, so I need this:
 
 <code>/set bell_beeps on</code>
-
-
 
 Beep for query text, notices, dcc, dcc text and hilight:
 
@@ -69,8 +55,6 @@ No further configuration needed.
 Automatically sort my channels alphabetically, grouped by network.
 
 Enable via <code>/set chansort_autosort on</code>
-
-
 
 <strong>&lt;Update&gt;</strong><a href="http://identi.ca/kaimi">kaimi</a> asked me yesterday, whether chansort could ignore the network and just sort <strong>ALL</strong> channels in alphabetical order. Well, it could not, until yesterday ;) Fetch either the <a href="http://files.die-welt.net/irssi/chansort-ignore.patch">patch against chansort.pl</a> or <a href="http://files.die-welt.net/irssi/chansort-ng.pl">"my" chansort-ng.pl</a> and set <code>chansort_ignore_network</code> to <code>ON</code>. You can also set <code>chansort_ignore_windowtype</code> to mix channels and queries if you like to.<strong>&lt;/Update&gt;</strong>
 
@@ -127,8 +111,6 @@ account add Jabber you@jabberserber.example.com jabberpassword
 account on 0</pre>
 
 and done, you@jabberserver.example.com is online :)
-
-
 
 The all awaited screenshot (from my last irssi-post):
 

@@ -2,18 +2,10 @@
 
 On the 13/14 November 2010 there is a nice event in the so called "Ruhrpott": OpenRheinRuhr. And I'd like to invite YOU :)
 
-
-
 What should you expect from heading to the RIM in Oberhausen and paying 5€ entry-fee? You get a nice <a href="http://programm.openrheinruhr.de/2010/">program</a> full of great talks (like <a href="http://programm.openrheinruhr.de/2010/events/28.de.html">mine about bley</a> ;), <a href="http://programm.openrheinruhr.de/2010/events/48.de.html">mikas about OpenSource management</a>, <a href="http://programm.openrheinruhr.de/2010/events/65.de.html">tokkees about Git</a> and <a href="http://programm.openrheinruhr.de/2010/events/55.de.html">XTarans about cli-helpers</a> and <a href="http://programm.openrheinruhr.de/2010/events/47.de.html">unknown tools</a>), a bunch of nice <a href="http://openrheinruhr.de/aussteller.html">people showing you their distro, software, etc</a> (<a href="http://wiki.debian.org/DebianEventsDe/2010/OpenRheinRuhr">Debian is there too</a>), a social event, <a href="http://ksp.openrheinruhr.de/">a keysigning party</a> and a lot of hacking and fun. So if you are somewhere nearby, join us and enjoy the event!
-
-
 
 <hr>German version (sorry planet debian readers ;)):
 
-
-
 Am 13/14 November findet im "Pott" die OpenRheinRuhr statt, zu der ich euch alle herzlichst einladen moechte.
-
-
 
 Was kann man erwarten, wenn man den Weg ins RIM in Oberhausen gefunden hat und die 5€ Eintritt bezahlt hat? Euch erwartet ein <a href="http://programm.openrheinruhr.de/2010/">Programm</a> voller Talks (zB <a href="http://programm.openrheinruhr.de/2010/events/28.de.html">meiner ueber bley</a> ;), <a href="http://programm.openrheinruhr.de/2010/events/48.de.html">mikas ueber OpenSource Management</a>, <a href="http://programm.openrheinruhr.de/2010/events/65.de.html">tokkees ueber Git</a> und <a href="http://programm.openrheinruhr.de/2010/events/55.de.html">XTarans ueber Helfer auf der Kommandozeile</a> and <a href="http://programm.openrheinruhr.de/2010/events/47.de.html">anderere unbekannte Tools</a>), viele <a href="http://openrheinruhr.de/aussteller.html">Aussteller, die die eigene Distro, Software oder was auch immer anpreisen</a> (<a href="http://wiki.debian.org/DebianEventsDe/2010/OpenRheinRuhr">Debian ist natuerlich auch da</a>), ein Social Event, <a href="http://ksp.openrheinruhr.de/">eine Keysigning Party</a> und natuerlich viel Rumgehacke und Spass. Also, jeder der grad irgendwie in der Naehe ist oder in die Naehe kommen kann: ab nach Oberhausen und geniesst ein "freies" Wochenende! :)</body></html>

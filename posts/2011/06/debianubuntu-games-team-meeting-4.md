@@ -16,6 +16,4 @@
 
 The agenda is (as usual) listed in the wiki. This meeting will be moderated by Arand Nash.
 
-
-
 As I won't make it this time, I wish everyone a nice meeting and good results!</div></body></html>

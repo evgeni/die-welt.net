@@ -1,14 +1,8 @@
 <html><body><p>Continuing my series about a <a href="http://www.die-welt.net/2011/02/desktop-in-a-shell/">desktop in a shell</a>, today I will present you my <code>mutt</code> setup. I use mutt because it has no bugs and is a really good MUA for people loving consoles ;)
 
-
-
 First of all you have to know, that all my mail is forwarded to my server and sorted into Maildirs via maildrop, so I do not care about sorting on my "desktop", which just fetches the mail via IMAP from the server ;)
 
-
-
 I'm running <code>mutt-patched</code> from Debian Squeeze, so not all options may be available for you if you do not have the same patchset as I do.
-
-
 
 First, tell mutt to fetch mail from <code>imap.die-welt.net</code> via IMAP:
 
@@ -168,8 +162,6 @@ macro index,pager a "&lt;pipe-message&gt;goobook add&lt;return&gt;" "add the sen
 
 That's all for mutt, but...
 
-
-
 We are running mutt in a screen, so let's add the following to <code>.screenrc</code> to fix transparency and cut&amp;paste (see <a href="http://wiki.mutt.org/?MuttFaq/Appearance">http://wiki.mutt.org/?MuttFaq/Appearance</a>):
 
 <pre> defbce on
@@ -183,8 +175,6 @@ And as mutt uses mstmp (yes, I know, mutt can handle SMTP itself...), this is my
 domain dorei.kerker.die-welt.net
 
 tls on
-
-
 
 account die-welt.net
 
@@ -202,18 +192,12 @@ tls_starttls on
 
 tls_certcheck off
 
-
-
 # Set a default account
 
 account default : die-welt.net</pre>
 
 C'est tout! That is my personal mutt configuration, you can download it as one file here: <a href="http://files.die-welt.net/muttrc.txt">my .muttrc</a>. And as everyone loves screenshots, here is one:
 
-
-
 <a href="/wp-content/uploads/2011/02/mutt.png"><img title="mutt" src="https://www.die-welt.net/wp-content/uploads/2011/02/mutt-300x171.png" alt="the default view of my mutt" width="300" height="171"></a>
-
-
 
 Oh, the next chapter will be about <code>irssi</code>, but not before next Sunday (March 6th) as I'll be offline for a week, skiing in Austria :)</body></html>

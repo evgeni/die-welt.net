@@ -1,7 +1,5 @@
 <html><body><p>yes, I do collect funny spam ;)
 
-
-
 Today I will present you some spammy funny comments I got on my (wordpress-powered) blog in the last months.
 
 </p><ol>
@@ -62,10 +60,6 @@ is it true that it is not possible to use that sky thing with verizon?</li>
 
 Sorry, some are in German ;)
 
-
-
 What's so funny about them you ask? Well, the do contain actual content (even if not always matching to the posts they were attached to), they look relevant to the time they were posted and still are spam: the links in the "homepage" field of the comment led to spamsites. Numbers 9 and 10 even funnier: they are exact copies of already present comments to the same post.
-
-
 
 And oh, I think WikiLeaks should leak a cable about downloading stuff from WikiLeaks ;)</body></html>

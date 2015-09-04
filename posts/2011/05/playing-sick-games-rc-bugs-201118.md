@@ -1,7 +1,5 @@
 <html><body><p>I've been a little sick the last days and decided to be productive instead of just drinking tea all the time.
 
-
-
 The result are some (10) squashed bugs from pkg-games, and one long standing nmu.
 
 </p><h2>adonthell</h2>

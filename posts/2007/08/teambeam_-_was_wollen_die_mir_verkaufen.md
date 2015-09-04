@@ -1,16 +1,10 @@
 <html><body><strong><em>Hinweis</em>: Dieser Artikel ist aus dem Jahr 2007 und spiegelt die Situation zum Zeitpunkt des Verfassens wieder. Meines Wissens nach (und wie <a href="http://www.die-welt.net/2007/08/teambeam_sicher_noch_nicht/#comment-95">Tom von TeamBeam auch kommentiert</a>) wurden alle hier beschriebenen Probleme kurz nach der Veröffentlichung behoben. Der Artikel spiegelt <em>nicht</em> die heutige Situation wieder!</strong>
 
-
-
 Während ich auf Wacken war (ein Bericht und Fotos folgen, irgendwann...), erreichte mich eine E-Mail von einem Tom Verbeek von der Skalio GmbH.
 
 Er schrieb, seine Firma habe ein neues Tool namens TeamBeam entwickelt und würde sich über meine Meinung darüber freuen, da sie mein Blog so toll fanden.
 
-
-
 Warum eigentlich nicht dachte ich mir, und so schreibe ich nun diese Zeilen (und ich bin mir sicher, es werden noch einige weitere folgen).
-
-
 
 <a href="http://www.teambeam.de" target="_blank">TeamBeam</a> ist eine Software, um Daten zu verteilen - insbesondere große Daten und evtl an mehrere Empfänger. Auf der Homepage wird mit dem Slogan <strong>"Große Dateien einfach verschicken"</strong> geworben. Dort findet man auch einen Link "Ihre Vorteile" und eine Präsentation als PDF (immerhin nicht PowerPoint ;)) - beides gucke ich mir gerne an, bevor ich irgendeine neue Software bei mir installiere.
 
@@ -30,11 +24,7 @@ Und deswegen soll ich viel Geld zahlen (nein, ich habe mir das Tarif-Modell noch
 
 Warum nicht einfach Daten per FTP hochjagen, aber in einen per HTTP erreichbaren Folder und dann die normalen HTTP Links per Mail schicken? Ich wette, TeamBeam macht da nicht viel mehr.
 
-
-
 Wie auch immer, mein erster Eindruck von der Software: braucht kein Mensch, aber ich habe es ja noch nicht ausprobiert. Deswegen jetzt erstmal Testzugang online angefordert und nun Däumchen drehen.
-
-
 
 Und was kommt als nächstes?
 

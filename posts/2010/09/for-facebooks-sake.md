@@ -1,17 +1,9 @@
 <html><body><p>I must admit, I do not really get the point of the ongoing discussion about having an "official" Facebook page. In my understanding it should be a source of information about Debian for Facebook users, technically a mirror of <a href="http://www.debian.org/News/">www.debian.org/News</a> and debian-devel-announce@lists.debian.org.
 
-
-
 Yes, Facebook is a piece of non-free, data-harvesting sh*t. But there are users, maintainers and developers who use that service (they also use Twitter, Xing, Linkedin, StudiVZ, MeinVZ and so on). Why should we prohibit them to have an official source of information on their platform? If there is someone who wants to run that kind of service: go for it! Or would we prohibit someone to run a mirror of ftp.debian.org on a Windows machine just because the surrounding environment is non-free¹? Most probably, that wouldn't be an official mirror listed on <a href="http://www.debian.org/distrib/ftplist">www.debian.org/distrib/ftplist</a>, but it would still contain the official set of packages, signed with the official key of the archive.
-
-
 
 Btw, is <a href="http://twitter.com/debian">@debian on Twitter </a>"official"?
 
-
-
 And please, do not compare this situation to SourceForge, GitHub, Google Code etc. It's just not the same! On SourceForge etc one relies on a non-free service as the primary way of distribution (that's not perfectly true for DVCS based services, as here one can push the tree to every service one has access to). On Facebook we'd just have a mirror of the already "freely" available information.
-
-
 
 ¹) do not forget: almost every machine used for hosting/developing/whatsoever Debian has non-free hardware, firmware etc!</p></body></html>

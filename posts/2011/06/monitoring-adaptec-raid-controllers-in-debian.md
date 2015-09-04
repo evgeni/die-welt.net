@@ -4,8 +4,6 @@
 
 Well, yes, mostly. There is (mainline) kernel support for the controller, Squeeze's kernel will boot up just fine and I just throw my junk into /dev/sda and it will handle the whole raidy thingy itself. But what is when I want to check the health of the disks, to add a spare or modify the caching? <a href="http://ask.adaptec.com/scripts/adaptec_tic.cfg/php.exe/enduser/std_adp.php?p_faqid=17008">Ask the mighty vendor and it will answer "Yes, you can!"</a>.
 
-
-
 So I downloaded that ﻿asm_debian_x86_x64_v6_50_18570.tgz, unpacked and faced two debs, one i368 and one amd64. Yes, you could have saved half of the bandwidth if someone would have asked for the arch before, but who cares for some additional 60MiB today? So let's see what it does. Oh no, wait, there is a <del>README﻿</del>ASM_IUG_for_Debian_and_Ubuntu.txt:
 
 <pre>1. Make sure to be in root level access.
@@ -26,8 +24,6 @@ For 3: hum, /usr/StorMan? Ever heard of FHS? Don't think so.
 
 For 4: WTF?! I prefer to get libstdc++5 from my local Debian mirror instead.
 
-
-
 But at least they provide a .deb, right? Uhm, no, it's an RPM converted via alien :( And don't dare to look at preinst, postinst and postrm (it extracts an own copy of Sun JRE 1.6u16, chmods around wildly on install and does rm -rf something on uninstall, <a href="https://github.com/MrMEEE/bumblebee/commit/a047be85247755cdbe0acce6f1dafc8beb84f2ac">did I see that some days ago on the webs</a>?). Let's get rid of that package as soon as possible, I decided, and just keep arcconf (which will be described later), esp because StorMan itself seems to include some call-home functionality which I'd like not to have:
 
 <pre>cp -a /usr/StorMan/arcconf /usr/local/sbin/
@@ -42,15 +38,9 @@ You can, by the way, get (better) packages at <a href="http://hwraid.le-vert.ne
 
 As this post is about monitoring, not ranting, let's continue. As mentioned before, I only have arcconf installed, which is just a cli to do stuff with the controller. If I understood the docs right, the actual StorMan is able to send notification mails when a disk dies or the controller gets eaten by aliens, but as I don't have StorMan, I have to do things myself.
 
-
-
 Adam has a aacraid-status package in his repository, which includes some minimalistic shell-daemon to monitor the output of arcconf. It didn't perfectly fit my needs (and had some hickups with my disks which refuse to report a vendor, whyever), so I decided to write something myself (slightly based on what Adam has done in aacraid-status, though).
 
-
-
 The result is on GitHub: <a href="https://github.com/evgeni/aacraid">https://github.com/evgeni/aacraid</a>
-
-
 
 As you can see the code contains (at the time of writing) exactly ZERO comments and there is no README either, but it's actually quite usable already.
 
@@ -70,8 +60,6 @@ I am now running aacraidd and get happy mails when something breaks :) [running 
 
 There is one little problem I have with arcconf: it's closed source and does magic to the controller.
 
-
-
 With the old 3ware controller I was able to monitor the disks with smartmontools/smartd using something like this:
 
 <pre>/dev/twa0 -d 3ware,0 -a -s L/../../2/01 -m root
@@ -85,8 +73,6 @@ This is possible with Adaptect controllers too (not through /dev/twaX obviously)
 /dev/sg2 -d sat -a -s L/../../7/02 -m root</pre>
 
 (<code>-d sat</code> is the important option here!)
-
-
 
 Thanks to <a href="http://www.thomas-krenn.com/de/wiki/Smartmontools_mit_Adaptec_RAID_Controller">Thomas Krenn Wiki: Smartmontools mit Adaptec RAID Controller</a> for the basic info and <a href="https://ostlogd.spenneberg.net/wordpress/?p=664">ostlogd.spenneberg.net: Adaptec-Raid-Controller S.M.A.R.T.-Healthstatus monitoren</a> for the pointer to the <code>sg</code> module!
 

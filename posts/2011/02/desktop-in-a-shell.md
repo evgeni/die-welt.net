@@ -2,25 +2,17 @@
 
 As you might guess correctly, so do I.
 
-
-
 Basically, I am using three computers: my laptop (ThinkPad X201s, awesome machine, but pabs told me not to post any more adverts for ThinkPads on <a href="http://planet.debian.org">Planet Debian</a> *g*), my smartphone (Motorola Milestone, yes, that counts as a computer) and "random_pc" (for random as in my girlfriends or some other trusted (!!!) friends computer).
 
 My laptop is running Debian GNU/Linux unstable with Xfce4.6, my smartphone is running Android 2.2.1 Froyo, my girlfriend has Ubuntu with GNOME, a friend runs Debian unstable with GNOME, another one Arch Linux with KDE4 and so on. And on all these machines I want be able to <strong>work</strong>, which means I have to read mail and rss, chat via IRC, <del>Jabber</del>XMPP and ICQ, have a look at my to-do list, ssh into different machines, write some code, tweet and dent etc.
 
-
-
 In the following series of posts I will describe how I can handle about 90% of my work on every (trusted) computer out there, using ssh, screen, mutt, irssi, BitlBee, newsbeuter etc.
-
-
 
 As I am describing the setup as a "Desktop in a shell", let's start with a login- and desktop/window-manager: ssh+screen.
 
 </p><h1>ssh</h1>
 
 Obviously, you need a machine to ssh into it, where the "Desktop" will live on. For me, that's my home router/fileserver/vm-server <code>dorei</code>, running Debian GNU/Linux <del datetime="2011-02-06T00:00:00+00:00">Lenny</del>Squeeze with OpenSSH as a kind of "login manager" ;)
-
-
 
 Yes, my user is allowed to login with a password instead of a public key. And well, that's all for the login-manager, no extra configuration needed.
 
@@ -34,8 +26,6 @@ hardstatus alwayslastline "%{= kb}[ %{B}%H:$USER %{b}][ %=%{w}%?%-Lw%?%{b}(%{W}%
 
 You get the current host- and username, the machine load and the date for free ;)
 
-
-
 Even if it is possible, I do not have any "autostart" like stuff in my <code>.screenrc</code> as the machine is running stable and I start the screen and the apps inside maybe once a year after a reboot.
 
 <h2>screenrc</h2>
@@ -46,31 +36,21 @@ My <code>.screenrc</code> looks like this:
 
   autodetach on
 
-
-
 # don't display the copyright page
 
   startup_message off
-
-
 
 # set scrollback to 2000 lines, default 100
 
   defscrollback 2000
 
-
-
 # set silencewait to 15 seconds, default 30
 
   silencewait 15
 
-
-
 # new shells should be started as login-shells
 
   shell -$SHELL
-
-
 
 # make a fancy statusline
 
@@ -78,13 +58,9 @@ My <code>.screenrc</code> looks like this:
 
   hardstatus alwayslastline "%{= kb}[ %{B}%H:$USER %{b}][ %=%{w}%?%-Lw%?%{b}(%{W}%n*%f %t%?(%u)%?%{b})%{w}%?%+Lw%?%?%= %{b}][%{B} %l %{B}%{W}%d.%0m %{b}]"
 
-
-
 # make higlighting bold, black on blue background
 
   sorendition +b bk
-
-
 
 # some fixes, no I do not know where they come from :)
 
@@ -124,8 +100,6 @@ My <code>.screenrc</code> looks like this:
 
   termcapinfo linux C8
 
-
-
 # some bindings
 
   bind k
@@ -142,8 +116,6 @@ My <code>.screenrc</code> looks like this:
 
   bind h
 
-
-
   bind 'w' windowlist -b
 
   bind 'W' windows
@@ -156,15 +128,11 @@ My <code>.screenrc</code> looks like this:
 
   bind '}' history
 
-
-
   bind = resize =
 
   bind + resize +3
 
   bind - resize -3
-
-
 
 # Mutt demands this
 
@@ -176,10 +144,6 @@ My <code>.screenrc</code> looks like this:
 
 That's all for my screen setup. The obvious, boring screenshot follows:
 
-
-
 <a href="/wp-content/uploads/2011/02/screen.png"><img class="alignnone size-medium wp-image-826" title="screen" src="https://www.die-welt.net/wp-content/uploads/2011/02/screen-300x171.png" alt="" width="300" height="171"></a>
-
-
 
 See you next time, when I will present my mutt setup here.</body></html>

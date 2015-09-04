@@ -1,14 +1,8 @@
 <html><body><p>First of all, allow me to say that I am a more or less passive Twitter user. Yeah, my <a href="https://twitter.com/zhenech">profile page</a> says I have almost 4 thousand tweets since I joined Twitter in June 2009, but most of them are either retweets or forwarded messages from <a href="http://identi.ca/evgeni">identi.ca</a> and <a href="https://plus.google.com/u/0/105271275393941803154">Google+</a>. Very few are actual Twitter-only conversations. You could say "drop that shit and use only free services" now, but Twitter has the same problem as ICQ: it was the first (widely adopted) service of that kind and still has the most users. For me this means I can reach more people and receive messages from more people (this is why I still have an ICQ account and did not switch to Jabber/XMPP-only). And this is also the only way Twitter can die: it has to lose users.
 
-
-
 But this is today, the status-quo. Twitter is about to change how messages can be distributed around the web. Radically. And I really hope they will choke and die. Preferably painfully but not necessarily slow.
 
-
-
 I do not want to repeat all those posts with rumors that Twitter wants to force the users to see their promoted tweets by forcing the clients to stricter display rules etc. That has been said. It is most probably true, but it has been said.
-
-
 
 I want to speak about two other usecases which will be killed in the future.
 
@@ -16,18 +10,12 @@ I want to speak about two other usecases which will be killed in the future.
 
 As far as I know I am not the only one who likes his tweets to be displayed somewhere on the personal website. As my site runs <a href="http://www.wordpress.org">WordPress</a> and writing plugins for WordPress is so dead simple, I wrote a plugin that fetches my timeline as RSS and displays it as a widget: <a href="http://github.com/evgeni/wp-statusnet-widget">wp-statusnet-widget</a>. I have chosen RSS over JSON back then for one simple reason: WordPress does the job for me. Using <a href="http://codex.wordpress.org/Function_Reference/fetch_feed">fetch_feed</a> I am able to fetch and parse a remote feed in a breeze, using WordPress' internal caching mechanism etc. For JSON I would have had to write all this by myself (parsing JSON in PHP is easy, though). I do not like to write code which may contain mistakes and errors when I can rely on a perfectly working codebase. But now <a href="https://dev.twitter.com/docs/api/1.1/overview#JSON_support_only">Twitter kills the RSS and Atom API because these "are infrequently used today"</a>. Okay.
 
-
-
 Switching to JSON would be a bit of pain, but doable. With one tiny exception: <a href="https://dev.twitter.com/docs/api/1.1/overview#Authentication_required_on_all_endpoints">Twitter has decided to hide all JSON endpoints behind OAuth</a>. They do this because it will "allow us to prevent abusive behavior" and help "further understand how categories of applications are using the API". Both are lies. Given wp-statusnet-widget is open-source, I would publish its OAuth key on the internet and every jackass could copy and abuse it. Or I would not ship a key and every user would have to go through the burden of acquiring their own key, destroying all the possible statistics Twitter wants to get. Oh and I would have to get OAuth working in the first place, which means more code that can contain bugs, even if there are many OAuth libraries for PHP that I could embed (and track their updates, yay).
-
-
 
 TL;DR: there won't be any Twitter support in wp-statusnet-widget when Twitter will switch to the new 1.1 API.
 
 <h2>2. Following people without having a Twitter account</h2>
 
 I know a bunch of people who do not want to have a Twitter account. Their reasons may vary but they have one in common: they use their regular feed reader to follow interesting accounts on Twitter. This won't be possible with the new API. And I am pretty sure this won't be a reason for them to get a Twitter account.
-
-
 
 Both killed usecases mean a smaller reach for a single tweet and the people still using Twitter. When there are fewer minds to reach, why not stop using Twitter and go somewhere else? Which means less content and even less reach. Vicious circle, huh? Please die inside it, Twitter.</body></html>

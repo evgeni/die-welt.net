@@ -1,7 +1,5 @@
 <html><body><p>I will be moving soon and would like to replace my current NAS with something smaller, quieter and less power-hungry. Currently my NAS is <a title="Hardware" href="http://www.die-welt.net/hardware/">dorei</a> with an AMD Athlon II X2 240e and two 3.5" SATA2 disks. It's a nice machine, but I do not use its whole power and it's too bulky for the new place.
 
-
-
 So, what do I really need?
 
 </p><ul>
