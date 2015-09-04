@@ -2,13 +2,13 @@
 
 </p><ul>
 
-	<li>What: Debian/Ubuntu Games Team Meeting #2</li>
+<li>What: Debian/Ubuntu Games Team Meeting #2</li>
 
-	<li>When: 30.04.2011, 12:00:00 UTC</li>
+<li>When: 30.04.2011, 12:00:00 UTC</li>
 
-	<li>Where: #debian-games on irc.debian.org</li>
+<li>Where: #debian-games on irc.debian.org</li>
 
-	<li>Who: YOU!</li>
+<li>Who: YOU!</li>
 
 </ul>
 
@@ -18,15 +18,15 @@ As most of us are lazy and wont klick the wiki link to read the agenda, it's ser
 
 <ol>
 
-	<li>games and cross-distro collaboration</li>
+<li>games and cross-distro collaboration</li>
 
-	<li>pending, removed, orphaned, wnpp &amp; suggested games</li>
+<li>pending, removed, orphaned, wnpp &amp; suggested games</li>
 
-	<li>freedesktop.org/games group</li>
+<li>freedesktop.org/games group</li>
 
-	<li>sponsoring policy</li>
+<li>sponsoring policy</li>
 
-	<li>cleaning old, adding new admins (and users)</li>
+<li>cleaning old, adding new admins (and users)</li>
 
 </ol>
 

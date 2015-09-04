@@ -6,15 +6,15 @@ Doesn't sound too complicated, huh? Buy 300 USB-keys, create one by hand, <code>
 
 </p><ol>
 
-	<li>The regular USB-key is some millimeters wider than a standardized USB-plug and almost all manufactors of USB-hubs place the ports in a way that there is exactly no space between the plugs. Yes, that means that you cannot plug two USB-keys in two neighboring ports of the hub then.</li>
+<li>The regular USB-key is some millimeters wider than a standardized USB-plug and almost all manufactors of USB-hubs place the ports in a way that there is exactly no space between the plugs. Yes, that means that you cannot plug two USB-keys in two neighboring ports of the hub then.</li>
 
-	<li>There is NO way to get a USB-hub for below 10€ here in Düsseldorf, and if you do...</li>
+<li>There is NO way to get a USB-hub for below 10€ here in Düsseldorf, and if you do...</li>
 
-	<li>HiSpeed USB 2.0 does NOT mean the hub will actually work as a USB 2.0 hub with 480Mbit/s, but as USB 1.1 with 12MBit/s</li>
+<li>HiSpeed USB 2.0 does NOT mean the hub will actually work as a USB 2.0 hub with 480Mbit/s, but as USB 1.1 with 12MBit/s</li>
 
-	<li>If you happen to own a Cherry keyboard with an integrated USB hub, it's most probably USB 1.1 too :/</li>
+<li>If you happen to own a Cherry keyboard with an integrated USB hub, it's most probably USB 1.1 too :/</li>
 
-	<li>When you buy 300 USB-keys, don't expect them to be identical, about 100 of them are 3MiB smaller than the other 200, and we created the initial image on one of the "big" ones of course.</li>
+<li>When you buy 300 USB-keys, don't expect them to be identical, about 100 of them are 3MiB smaller than the other 200, and we created the initial image on one of the "big" ones of course.</li>
 
 </ol>
 

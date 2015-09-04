@@ -56,11 +56,11 @@ As you can see the code contains (at the time of writing) exactly ZERO comments 
 
 <ul>
 
-	<li>aacraid.py is the main magic inspired by Adam's aacraid-status, basically just parsing arcconf output</li>
+<li>aacraid.py is the main magic inspired by Adam's aacraid-status, basically just parsing arcconf output</li>
 
-	<li>aacraid-status prints all useful info about all controllers, arrays and disks (the output is pretty much like Adam's)</li>
+<li>aacraid-status prints all useful info about all controllers, arrays and disks (the output is pretty much like Adam's)</li>
 
-	<li>aacraidd is a small daemon which will monitor all controllers every (per default) 5 minutes and mail you in case of status-change</li>
+<li>aacraidd is a small daemon which will monitor all controllers every (per default) 5 minutes and mail you in case of status-change</li>
 
 </ul>
 

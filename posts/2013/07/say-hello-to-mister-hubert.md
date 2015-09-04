@@ -18,13 +18,13 @@ Just call it with your GitHub username and you get a nice <code>mr</code> config
 
 </p><ul>
 
-	<li>Authentication for private repos? ✓ (-p)</li>
+<li>Authentication for private repos? ✓ (-p)</li>
 
-	<li>Other clone mechanisms? ✓ (-c)</li>
+<li>Other clone mechanisms? ✓ (-c)</li>
 
-	<li>A help function? ✓ (-h)</li>
+<li>A help function? ✓ (-h)</li>
 
-	<li>Other features? <a href="https://github.com/evgeni/MisterHubert/fork">✓</a></li>
+<li>Other features? <a href="https://github.com/evgeni/MisterHubert/fork">✓</a></li>
 
 </ul>
 

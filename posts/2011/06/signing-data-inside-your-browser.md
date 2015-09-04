@@ -10,11 +10,11 @@ So far I found a couple of GnuPG/PGP based solutions:
 
 </p><ul>
 
-	<li><a href="http://getfiregpg.org">FireGPG</a>, orphaned(not compatible with Firefox4+), <a href="https://github.com/firegpg/firegpg">there is fork on github</a></li>
+<li><a href="http://getfiregpg.org">FireGPG</a>, orphaned(not compatible with Firefox4+), <a href="https://github.com/firegpg/firegpg">there is fork on github</a></li>
 
-	<li><a href="http://gpgauth.org/">gpgAuth</a></li>
+<li><a href="http://gpgauth.org/">gpgAuth</a></li>
 
-	<li><a href="http://www.gpgtools.org/mobile/index.html">GPGTools Mobile</a></li>
+<li><a href="http://www.gpgtools.org/mobile/index.html">GPGTools Mobile</a></li>
 
 </ul>
 

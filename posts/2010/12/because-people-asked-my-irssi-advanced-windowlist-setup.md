@@ -10,17 +10,17 @@ Now let's customize awl a bit:
 
 </p><ul>
 
-	<li>Shorten window names to 10 chars, so we can get more windows in one row:﻿
+<li>Shorten window names to 10 chars, so we can get more windows in one row:﻿
 
 <code>/set awl_block = 10</code>
 
 <code>/set awl_sbar_maxlength = ON</code></li>
 
-	<li>Display a maximum of 5 rows of windows so irssi is still usable on my Milestone with the 122x30 char screen:
+<li>Display a maximum of 5 rows of windows so irssi is still usable on my Milestone with the 122x30 char screen:
 
 <code>/set awl_maxlines = 5</code></li>
 
-	<li>Shorten the windowname layout a bit, strip the shortcut display, remove the braces around the window number:
+<li>Shorten the windowname layout a bit, strip the shortcut display, remove the braces around the window number:
 
 <code>/set awl_display_key = $N$H$C$S</code>
 

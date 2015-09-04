@@ -31,7 +31,6 @@ If you expected further explanation what has to be done next: sorry, we're done.
 The machine at home has the following cron entry now:
 
 <pre><code>*/5 * * * * ssh -4 -T -i /home/evgeni/.ssh/powerdyn_rsa powerdyn@ssh.die-welt.net
-
 </code></pre>
 
 This connects to the machine with the database via v4 (my IPv6 address does not change) and that's all.
@@ -43,9 +42,7 @@ As an alternative, one can add the <code>ssh</code> call in <code>/etc/network/i
 The machine with the database has the following <code>authorized_keys</code> entry for the <code>powerdyn</code> user:
 
 <pre><code>no-agent-forwarding,no-port-forwarding,no-pty,no-X11-forwarding,no-user-rc,\ 
-
 command="/home/powerdyn/powerdyn/powerdyn dorei.kerker.die-welt.net" ssh-rsa AAAA... evgeni@dorei
-
 </code></pre>
 
 By forcing the <code>command</code>, the user has no way to get the database-credentials the script uses to write to the database and neither cannot update a different host. That seems secure enough for me. It won't scale for a setup as DynDNS.com and the user-management sucks (you even have to create the entries in the database first, the script can only update them), but it works fine for me and I bet it would for others too :)

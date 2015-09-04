@@ -4,13 +4,13 @@
 
 <ul>
 
-	<li>What: Debian/Ubuntu Games Team Meeting #4</li>
+<li>What: Debian/Ubuntu Games Team Meeting #4</li>
 
-	<li>When: 26.06.2011, 10:00:00 UTC</li>
+<li>When: 26.06.2011, 10:00:00 UTC</li>
 
-	<li>Where: #debian-games on irc.deb﻿ian.org</li>
+<li>Where: #debian-games on irc.deb﻿ian.org</li>
 
-	<li>Who: YOU!</li>
+<li>Who: YOU!</li>
 
 </ul>
 

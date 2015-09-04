@@ -36,14 +36,14 @@ Some words on these things:
 
 </p><ul>
 
-	<li>OpenRheinRuhr is a nice small FOSS event in my area</li>
+<li>OpenRheinRuhr is a nice small FOSS event in my area</li>
 
-	<li>I'm using BitlBee every day as my main jabber client</li>
+<li>I'm using BitlBee every day as my main jabber client</li>
 
-	<li>KiBi just rocks ;)</li>
+<li>KiBi just rocks ;)</li>
 
-	<li>phpMyAdmin is a tool I couldn't live/work without</li>
+<li>phpMyAdmin is a tool I couldn't live/work without</li>
 
-	<li>formi runs backports very good :) (yes, I know, he is not the only one)</li>
+<li>formi runs backports very good :) (yes, I know, he is not the only one)</li>
 
 </ul></body></html>
