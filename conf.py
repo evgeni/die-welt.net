@@ -167,17 +167,17 @@ THEME_COLOR = '#5670d4'
 #
 
 POSTS = (
-    ("posts/*.rst", "posts", "post.tmpl"),
-    ("posts/*.txt", "posts", "post.tmpl"),
-    ("posts/*.md", "posts", "post.tmpl"),
-    ("posts/*.html", "posts", "post.tmpl"),
+    ("posts/*.rst", "", "post.tmpl"),
+    ("posts/*.txt", "", "post.tmpl"),
+    ("posts/*.md", "", "post.tmpl"),
+    ("posts/*.html", "", "post.tmpl"),
 )
 
 PAGES = (
-    ("stories/*.rst", "stories", "story.tmpl"),
-    ("stories/*.txt", "stories", "story.tmpl"),
-    ("stories/*.md", "stories", "story.tmpl"),
-    ("stories/*.html", "stories", "story.tmpl"),
+    ("stories/*.rst", "", "story.tmpl"),
+    ("stories/*.txt", "", "story.tmpl"),
+    ("stories/*.md", "", "story.tmpl"),
+    ("stories/*.html", "", "story.tmpl"),
 )
 
 
@@ -277,7 +277,7 @@ WRITE_TAG_CLOUD = True
 
 # Generate pages for each section. The site must have at least two sections
 # for this option to take effect. It wouldn't build for just one section.
-POSTS_SECTIONS = True
+POSTS_SECTIONS = False
 
 # Setting this to False generates a list page instead of an index. Indexes
 # are the default and will apply GENERATE_ATOM if set.
