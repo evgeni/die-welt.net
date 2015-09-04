@@ -1,0 +1,15 @@
+.. id: 94
+.. status: approved
+.. approved: True
+.. author: Bernd Eckenfels
+.. author_email: bernd-07@eckenfels.net
+.. author_url: http://bernd.eckenfels.net
+.. date_utc: 2007-08-23 20:34:48
+
+Es ist ein Post eines XML Dokuments auf das dann eine ID Zurueckgegeben wird. Unter der ID werden dann alle Files per WebDAV hochgeladen und danach noch mal ein Post um die Transaktion freizugeben.<br />
+
+<br />
+
+Gruss<br />
+
+Bernd

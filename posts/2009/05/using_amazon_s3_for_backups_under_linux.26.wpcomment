@@ -1,0 +1,18 @@
+.. id: 26
+.. status: approved
+.. approved: True
+.. author: Evgeni
+.. author_email: sargentd@die-welt.net
+.. date_utc: 2009-05-31 13:30:08
+
+Hmm, what I don't like at duplicity, is that one needs duplicity to restore from the backup.<br />
+
+The nice with a mounted FS is, one can even share it on the network via NFS or Samba, so users can just open their filemanager and copy the file they need from the backup.<br />
+
+<br />
+
+I'll have a look at the discussion and test both solutions during next week.<br />
+
+<br />
+
+PS the data is about 150G of stuff, not changing too much (when a new customer comes, his information, documents etc is stored, making a new folder with maybe 20-30MB)

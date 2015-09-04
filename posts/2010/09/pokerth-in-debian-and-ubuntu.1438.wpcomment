@@ -1,0 +1,15 @@
+.. id: 1438
+.. status: approved
+.. approved: True
+.. author: evgeni
+.. author_email: evgeni@golov.de
+.. author_IP: 62.143.232.117
+.. date_utc: 2010-09-30 06:37:18
+.. parent_id: 1435
+.. wordpress_user_id: 1
+
+Have you considered I go to 4chan when I want to talk to Anonymous? ;)
+
+
+
+Back to topic: FE? Yes, but decided to match the Squeeze release, especially as that eases the push of a possible 0.8.x release in the future. And volatile? Why should I? Thats a perfect candidate for backports, I do not see why volatile should be used here.

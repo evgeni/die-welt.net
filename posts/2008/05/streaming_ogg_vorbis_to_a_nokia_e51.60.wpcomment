@@ -1,0 +1,7 @@
+.. id: 60
+.. status: approved
+.. approved: True
+.. author: LordGenome
+.. date_utc: 2008-08-06 23:03:42
+
+How about using ncmpc in a ssh session? You can use putty for symbian to control it. Works for me

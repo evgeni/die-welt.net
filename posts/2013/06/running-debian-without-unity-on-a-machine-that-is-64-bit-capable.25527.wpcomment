@@ -1,0 +1,26 @@
+.. id: 25527
+.. status: approved
+.. approved: True
+.. author: Bryan Quigley
+.. author_email: gQuigs@gMail.com
+.. author_url: http://Bryanquigley.com
+.. author_IP: 68.36.33.27
+.. date_utc: 2013-06-19 18:26:47
+
+Yes for the purposes of my little study 64 bit means AMD64/X86_64.
+
+
+
+I didn't even think about other archs for this study, because as you mentioned they aren't likely to run Ubuntu/Unity anyway.  (Aside from Arm64, but AFAIK there isn't any real hardware for that yet).
+
+
+
+The point of the survey was to get some data to see about Ubuntu changing the default image on the website from 32 bit (x86) to 64 bit (x86_64).  The main Ubuntu website does't easily offer anything except for those two. 
+
+
+
+Anyway.. I think you know what I was getting at.. but I totally understand your rant on it.  x86 isn't the only arch in existance.
+
+
+
+Other note: I tried posting here first, but comments are broken: http://ubunteroz.freeserver.me/

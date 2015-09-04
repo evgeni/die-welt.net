@@ -1,0 +1,15 @@
+.. id: 21580
+.. status: approved
+.. approved: True
+.. author: evgeni
+.. author_email: evgeni@golov.de
+.. author_IP: 88.152.86.172
+.. date_utc: 2013-03-21 06:32:24
+.. parent_id: 21574
+.. wordpress_user_id: 1
+
+1. Well, yes. view-source is for viewing the source I got from the server. If I want to debug/analyse an app like mine, I use the DOM inspector of my browser, that one can display the currently running code (markup, stylesheets, scripts) just fine. So yes, I can be sure. Plus you can use the network sniffer of your choice to verify no data-transfer whatsoever during generation.
+
+
+
+2. I do actually trust Google on this one. But if you deliver me a patch to include jQuery directly, without having a static jquery.js copy in my code (thats why I use git submodules for the other libraries), I will merge it ASAP.

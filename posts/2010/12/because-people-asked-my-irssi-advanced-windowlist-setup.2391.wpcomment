@@ -1,0 +1,21 @@
+.. id: 2391
+.. status: approved
+.. approved: True
+.. author: uschebit
+.. author_email: uschebit@geekfu.de
+.. author_IP: 81.163.94.170
+.. date_utc: 2010-12-29 17:07:52
+
+Hübsche Ergänzung: 
+
+
+
+ /set awl_display_key_active = %8$N$H$C$S%n
+
+ /set awl_display_nokey_active = %8$N$H$C$S%n
+
+
+
+stellen das aktive Fenster invers dar. 
+
+Farbcodes siehe http://irssi.org/documentation/formats.

@@ -1,0 +1,12 @@
+.. id: 27
+.. status: approved
+.. approved: True
+.. author: Evgeni
+.. author_email: sargentd@die-welt.net
+.. date_utc: 2009-05-31 13:51:55
+
+Mhhh, anyone tried s3backer? http://code.google.com/p/s3backer/<br />
+
+<br />
+
+Seems to export a loopback device on top of which one can do anything you want.

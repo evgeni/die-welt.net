@@ -1,0 +1,13 @@
+.. id: 22993
+.. status: approved
+.. approved: True
+.. author: Sune Beck
+.. author_email: sunebeck@gmail.com
+.. author_IP: 77.66.3.165
+.. date_utc: 2013-05-07 21:47:38
+
+What do you think you'll be doing with your OpenVZ host? What is the preferred alternative?
+
+
+
+It seems people say that LXC is not totally ready, for instance guests can reboot the host machine, etc.

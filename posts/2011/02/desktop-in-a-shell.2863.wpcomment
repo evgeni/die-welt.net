@@ -1,0 +1,18 @@
+.. id: 2863
+.. status: approved
+.. approved: True
+.. author: Nate
+.. author_email: n0nb@n0nb.us
+.. author_url: http://n0nb.us
+.. author_IP: 68.234.124.194
+.. date_utc: 2011-02-21 00:35:20
+
+Very interesting post.  I have considered using screen but ran into some issue with the way Vim behaved so I've kept it on the back burner.  I am looking forward to your post.
+
+
+
+One question, are you running your initial screen session from a terminal emulator or the console?  I am running XFCE4 on my Sid box which I log into to read my mail remotely with its terminal emulator.  I know little about the terminfo settings in your screenrc so I don't know if they will conflict in some way with XFCE4's terminal.
+
+
+
+Thanks!

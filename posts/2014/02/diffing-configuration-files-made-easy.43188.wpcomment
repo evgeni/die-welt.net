@@ -1,0 +1,10 @@
+.. id: 43188
+.. status: approved
+.. approved: True
+.. author: Leo Antunes
+.. author_email: costela@debian.org
+.. author_url: http://costela.net
+.. author_IP: 79.237.68.177
+.. date_utc: 2014-02-16 17:49:18
+
+I never actually used it, so this may be a stupid suggestion, but what about augeas? If it does what it says, it could already handle parsing of many config formats and leave only the actual diffing up to you. Plus it has python bindings...

@@ -1,0 +1,13 @@
+.. id: 180
+.. status: approved
+.. approved: True
+.. author: Zhenech
+.. author_email: sargentd@die-welt.net
+.. author_url: http://www.die-welt.net
+.. date_utc: 2007-02-04 13:06:38
+
+Don't do this, if you have an ATI card (as I do): http://ati.cchtml.com/show_bug.cgi?id=566<br />
+
+<br />
+
+The ati-devs are just too lazy and seem not to understand the purpose of an rc-kernel...

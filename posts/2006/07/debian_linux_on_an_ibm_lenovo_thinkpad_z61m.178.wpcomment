@@ -1,0 +1,15 @@
+.. id: 178
+.. status: approved
+.. approved: True
+.. author: Zhenech
+.. author_email: sargentd@die-welt.net
+.. author_url: http://www.die-welt.net
+.. date_utc: 2007-02-02 00:16:33
+
+Yeah, I think I know both problems.<br />
+
+1) The soundcard is very crappy, I have a Audigy 2 NX USB attached, when I want to hear music ;) I think the Intel high-definition-shit is working with 2.6.19 a bit better.<br />
+
+2) There is a bug in the tg3-driver of kernels 2.6.17 until 2.6.19-rc5 which MAYBE (I ususaly don't suspend at home, and outwards I don't use ethernet, just wlan) causes your problem.<br />
+
+You can try my 2.6.19.2 kernel from http://files.die-welt.net/z61m/kernel/ maybe it helps a bit ;)

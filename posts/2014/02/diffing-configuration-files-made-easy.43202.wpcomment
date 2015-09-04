@@ -1,0 +1,10 @@
+.. id: 43202
+.. status: approved
+.. approved: True
+.. author: Paul Wise
+.. author_email: pabs@debian.org
+.. author_url: http://wiki.debian.org/PaulWise
+.. author_IP: 175.38.160.168
+.. date_utc: 2014-02-17 03:51:10
+
+How about basing it on augeas + Config::Model instead? Config::Model can deal with migrations of variables, so diffing two different versions of a config file where nothing was changed between them would print with no diffs.

@@ -1,0 +1,7 @@
+.. id: 25
+.. status: approved
+.. approved: True
+.. author: aqua
+.. date_utc: 2009-05-31 01:38:17
+
+Also have a look at duplicity, which works pretty well for encrypted rsync-like incremental backup and offers an S3 mode.

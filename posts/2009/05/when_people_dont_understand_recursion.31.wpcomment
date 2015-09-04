@@ -1,0 +1,14 @@
+.. id: 31
+.. status: approved
+.. approved: True
+.. author: Tim
+.. author_email: tim@io41.com
+.. date_utc: 2009-05-28 21:12:11
+
+I happen to have been to a talk about longurlplease by its author and know that he is well aware about the fact that he did not implement recursion. It's not that he doesn't &quot;understand&quot; about it.<br />
+
+<br />
+
+@M.Pomme yes, implementing it directly is an option, but can be a *lot* slower, especially for popular urls. The services caches the results and can thereby server them much much faster than if the extension was to resolve them itself.<br />
+
+As for the privacy issue, I'm not sure it's a terribly good argument. Url shorting services have privacy issues themselves. They sell the information and perform statistical analysis on them. Using longurlplease will actually break their behaviour for each of the sites. Of course, technically it's now possible for longurlplease to gather and market the info, but from the code I saw, he did not do that. I'd prefer to trust longurlplease with my browser request data than trust any of the tiny-url services. :-)

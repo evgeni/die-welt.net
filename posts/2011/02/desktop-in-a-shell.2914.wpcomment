@@ -1,0 +1,22 @@
+.. id: 2914
+.. status: approved
+.. approved: True
+.. author: Seegras
+.. author_email: seegras@discordia.ch
+.. author_url: http://seegras.discordia.ch/
+.. author_IP: 84.75.149.111
+.. date_utc: 2011-02-22 12:58:55
+
+I'm one of those people too, with mutt, newsbeuter etc. on the console. And generally happy with it, but... 
+
+
+
+Right now I use calcurse as calendar, however, I'm not really satisfied with it. I took a look at remind/wyrd, and even wrote the beginnings of a conversion-script from calcurse to remind, but there is one thing that this still lacks: caldave-support. 
+
+
+
+And on a related note, a way to synchronize address-books with mutt to whatever (e.g. kaddressbook, android, maybe via webdav) would also be very useful. 
+
+
+
+So in my opinion, the "console-desktop" just isn't here right now ;)

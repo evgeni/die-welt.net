@@ -1,0 +1,14 @@
+.. id: 21706
+.. status: approved
+.. approved: True
+.. author: Jeff Epler
+.. author_email: jepler@unpythonic.net
+.. author_url: http://emergent.unpy.net/
+.. author_IP: 206.222.212.217
+.. date_utc: 2013-03-30 14:27:20
+
+QR codes should incorporate a 4-module "quiet zone".  jquery-qrcode should do this in createCanvas / createTable.  This might silently fix opera too, as the stretched final row would be all blank.
+
+
+
+I sent a pull request about this: <a href="https://github.com/jeromeetienne/jquery-qrcode/pull/43" rel="nofollow">pull request</a>.

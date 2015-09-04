@@ -1,0 +1,9 @@
+.. id: 131
+.. status: approved
+.. approved: True
+.. author: Zhenech
+.. author_email: sargentd@die-welt.net
+.. author_url: http://www.die-welt.net
+.. date_utc: 2007-03-07 00:24:22
+
+@Lord-carlos: Tatsache, wenn man general.useragent.extra.firefox auf &quot;Iceweasel/2.0.0.2&quot; hat, funktioniert Google-Maps tadellos. Wenn man aber - wie ich - &quot;Iceweasel/2.0.0.2 (Firefox)&quot; hat, um dumme JavaScripte zu befriedigen, gehts nicht mehr. Die Frage ist nun, was Google da so intelligentes als Abfrage eingebaut hat. Aber wenn ich ehrlich bin, will ich das glaub ich gar nicht wissen.

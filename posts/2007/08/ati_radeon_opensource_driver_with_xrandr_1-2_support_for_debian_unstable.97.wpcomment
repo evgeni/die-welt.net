@@ -1,0 +1,11 @@
+.. id: 97
+.. status: approved
+.. approved: True
+.. author: Zhenech
+.. author_email: sargentd@die-welt.net
+.. author_url: http://https://www.die-welt.net
+.. date_utc: 2007-08-30 11:36:24
+
+It works on lenny too? Nice. It was built on sid, though.<br />
+
+However, the new driver brings some instability with OpenGL games for me :( And disables DRI, look at http://www.thinkwiki.org/wiki/Xorg_RandR_1.2#Notes_for_X31_.2F_Radeon_7000_users

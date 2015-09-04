@@ -1,0 +1,15 @@
+.. id: 2425
+.. status: approved
+.. approved: True
+.. author: evgeni
+.. author_email: evgeni@golov.de
+.. author_IP: 62.143.232.104
+.. date_utc: 2011-01-09 12:09:19
+.. parent_id: 2414
+.. wordpress_user_id: 1
+
+Nice, will check that out. But that's not what I meant in the first place. I'm looking for something that has a setup like identi.ca/status.net: there is one single main instance, powered by opensource software, which almost everyone is using (while still be able to install an own one). Bonus points for inter-instance p2p sync as status.net is doing it.
+
+
+
+Btw, I also got http://diigo.com recommended -- will check that out too.

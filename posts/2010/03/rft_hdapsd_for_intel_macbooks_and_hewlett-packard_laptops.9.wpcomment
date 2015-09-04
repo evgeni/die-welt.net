@@ -1,0 +1,8 @@
+.. id: 9
+.. status: approved
+.. approved: True
+.. author: dolph
+.. author_email: dolph@centrum.sk
+.. date_utc: 2010-03-08 01:29:15
+
+tested on hp 6930p and it seems I did not manage to provoke hdd head parking even with sensitivity=1 (verbose mode on). How do I check if parking occured?<br />

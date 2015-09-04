@@ -1,0 +1,13 @@
+.. id: 3044
+.. status: approved
+.. approved: True
+.. author: Screwtape
+.. author_email: thristian@gmail.com
+.. author_IP: 150.101.126.144
+.. date_utc: 2011-02-28 02:13:27
+
+I'd long given up using mutt at $EMPLOYER because of strange crashes and hangs - reading your guide, I'm betting the problem is that I left 'timeout' (and perhaps 'imap_passive') set at the default. I've changed my config and I'm going to try it out!
+
+
+
+Thanks very much!

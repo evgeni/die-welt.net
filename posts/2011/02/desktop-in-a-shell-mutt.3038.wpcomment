@@ -1,0 +1,38 @@
+.. id: 3038
+.. status: approved
+.. approved: True
+.. author: zobel
+.. author_email: zobel@debian.org
+.. author_url: http://blog.zobel.ftbfs.de
+.. author_IP: 79.228.72.216
+.. date_utc: 2011-02-27 22:26:43
+
+Hi Evgeni,
+
+
+
+i found a very nice way recently to not have the IMAP password in clear text in the .muttrc. This requires gnome and the gnome-keyring though.
+
+
+
+a) Fetch gnome-keyring-query.c from http://www.gentoo-wiki.info/HOWTO_Use_gnome-keyring_to_store_SSH_passphrases and compile it. I put the binary in my $HOME/bin.
+
+
+
+b) Set the following in your .muttrc:
+
+
+
+set my_pw_ftbfs=`~/bin/gnome-keyring-query get mutt_ftbfs`
+
+account-hook ftbfs.de 'set imap_user=zobel@ftbfs.de imap_pass=$my_pw_ftbfs'
+
+
+
+c) Now set the password in the gnome Keyring:
+
+# echo "yoursecretpassword " | ~/bin/gnome-keyring-query set mutt_ftbfs
+
+
+
+Yes, gnome-keyring-query could be a bit smarter, but it works for me quite well.

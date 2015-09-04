@@ -1,0 +1,10 @@
+.. id: 2421
+.. status: approved
+.. approved: True
+.. author: Ken Bloom
+.. author_email: kbloom@gmail.com
+.. author_url: http://mypages.iit.edu/~kbloom1/
+.. author_IP: 207.229.180.58
+.. date_utc: 2011-01-09 00:46:42
+
+Is there, perhaps, a distributed database that only guarantees eventual consistency behind this? Maybe you're hitting different servers that aren't entirely up to date.

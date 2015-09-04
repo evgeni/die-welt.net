@@ -1,0 +1,9 @@
+.. id: 175
+.. status: approved
+.. approved: True
+.. author: Zhenech
+.. author_email: sargentd@die-welt.net
+.. author_url: http://https://www.die-welt.net
+.. date_utc: 2007-05-08 01:17:47
+
+Ne so war das nicht gemeint mit der Sun-Lizenz. Java ist (derzeit noch, das ist sich ja am ändern) unter eine proprietären Lizenz, man darf es Weitergeben, aber nicht ändern und man muss AFAIK den User die Lizenz vorm Nutzen lesen lassen... Das tut zB Debian in ihren Java Paketen, aber Mustek nicht, aber mich solls im Endeffekt nicht stören.

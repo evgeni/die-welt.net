@@ -1,0 +1,17 @@
+.. id: 8
+.. status: approved
+.. approved: True
+.. author: Stefano Rivera
+.. author_email: stefano@rivera.za.net
+.. author_url: http://tumbleweed.org.za/
+.. date_utc: 2010-03-07 20:55:14
+
+Two issues (on my MacBook 2,1)<br />
+
+<br />
+
+The applesmc module on my (Ubuntu lucid kernel) machine is /sys/devices/platform/applesmc.768/position<br />
+
+<br />
+
+Any sensitivity less than around 200 seems to park the disk in normal usage.<br />

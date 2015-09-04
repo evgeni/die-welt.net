@@ -1,0 +1,36 @@
+.. id: 27151
+.. status: approved
+.. approved: True
+.. author: Luca
+.. author_email: luca@pretto.eu
+.. author_IP: 192.168.9.200
+.. date_utc: 2013-07-17 08:25:24
+.. parent_id: 27118
+
+Your recent commit suits well the given request; and now it works as expected: thanks! 
+
+
+
+Another little tip regards cron configuration. I suspect your instructions on README.md miss the username field.
+
+This is what I've added to /etc/cron.d/powerdyn
+
+
+
+
+
+# PowerDyn 
+
+# Connect every 15m to specified name server and update (a remotely configured) dynamic-ip DNS record
+
+
+
+*/15  *   *   *   *             root    ssh -4 -T -i /root/.ssh/id_rsa powerdyn@my.cool.powerdyn.server.tld
+
+
+
+
+
+Cheers!
+
+Luca

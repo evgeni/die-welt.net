@@ -1,0 +1,9 @@
+.. id: 22
+.. status: approved
+.. approved: True
+.. author: mru
+.. author_email: mru@mru.im
+.. author_url: http://blog.spamt.net
+.. date_utc: 2009-05-30 12:48:56
+
+have a look at duplicity (http://duplicity.nongnu.org), it already supports S3, encrypted and incremental backups.

@@ -1,0 +1,11 @@
+.. id: 23012
+.. status: approved
+.. approved: True
+.. author: evgeni
+.. author_email: evgeni@golov.de
+.. author_IP: 37.201.77.59
+.. date_utc: 2013-05-08 04:42:23
+.. parent_id: 22993
+.. wordpress_user_id: 1
+
+LXC was the planed way, yes, but the journey is far from ready yet. If you mean the sysfs hack to reboot (http://blog.bofh.it/debian/id_413), this does not work anymore. At least not if you drop enough capabilities :)

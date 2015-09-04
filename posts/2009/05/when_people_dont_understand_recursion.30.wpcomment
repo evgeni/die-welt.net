@@ -1,0 +1,11 @@
+.. id: 30
+.. status: approved
+.. approved: True
+.. author: M.Pomme
+.. date_utc: 2009-05-28 12:03:04
+
+After 2 or 3 recursion, it is very likely that the poster of the tiny url is trying to rick roll you or worse, so this is really a minor issue.<br />
+
+<br />
+
+However it would be just as good if the service was implemented directly in the extension, i don't see the point of having the extension call a webservice. This would swipe the privacy concerns<br />

@@ -1,0 +1,19 @@
+.. id: 27093
+.. status: approved
+.. approved: True
+.. author: evgeni
+.. author_email: evgeni@golov.de
+.. author_IP: 109.85.36.8
+.. date_utc: 2013-07-16 06:50:39
+.. parent_id: 26092
+.. wordpress_user_id: 1
+
+Hi,
+
+
+
+yes this would be possible, in some setups at least. For me I have <code>dorei.kerker.die-welt.net</code> as my dynamic hostname, but the domain maintained with PowerDNS is <code>die-welt.net</code> directly, thus the stiff config. I'll see if I can come up with some automatic behaviour as an alternative.
+
+
+
+Greets

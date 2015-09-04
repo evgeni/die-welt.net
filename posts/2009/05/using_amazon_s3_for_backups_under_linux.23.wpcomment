@@ -1,0 +1,8 @@
+.. id: 23
+.. status: approved
+.. approved: True
+.. author: pratfall
+.. author_email: pratfall@mailinator.com
+.. date_utc: 2009-05-30 17:21:53
+
+I set up encfs on s3fs not more than 12 hours ago, and it works fine. I'm using it to hold my music collection and stream via MPD, though, not do backups. I think encfs+s3fs+rdiffbackup could work, but take a look at the discussion thread on the s3fs google page- there's some talk about s3fs blocking IO while it uploads to S3. For simple backups, and not file storage, I would echo mru's suggestion of Duplicity. It encrypts everything with GPG, and supports S3 directly. I'd be interested to see BoxBackup writing to an S3 bucket, but I'd expect the same blocking IO problem could show up.

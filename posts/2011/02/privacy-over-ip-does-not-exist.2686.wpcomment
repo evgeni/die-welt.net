@@ -1,0 +1,18 @@
+.. id: 2686
+.. status: approved
+.. approved: True
+.. author: rozie
+.. author_email: rozie@poczta.onet.pl
+.. author_url: http://rozie.blox.pl/
+.. author_IP: 85.221.182.215
+.. date_utc: 2011-02-13 07:37:59
+
+Well, the most reliable way to identify people is by they language (dogs bark, cats meow) or their believes (dogs like bones, cats like milk). Random name and email won't help much here indeed.
+
+
+
+But IP, browser data, OS data and referrer can be easily (and in pretty comfortable way) hidden. There are ready tools for this.
+
+
+
+Of course using masking techniques is fingerprint as well... ;-)

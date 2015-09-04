@@ -1,0 +1,10 @@
+.. id: 703
+.. status: approved
+.. approved: True
+.. author: Bernd Zeimetz
+.. author_email: bzed@debian.org
+.. author_url: http://bzed.de
+.. author_IP: 178.203.118.3
+.. date_utc: 2010-09-03 07:27:39
+
+What about Zine? It is a really nice wordpress replacement, written in Python. Or just use ikiwiki ;-)

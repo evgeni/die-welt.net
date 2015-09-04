@@ -1,0 +1,19 @@
+.. id: 2878
+.. status: approved
+.. approved: True
+.. author: Nate
+.. author_email: n0nb@n0nb.us
+.. author_url: http://n0nb.us
+.. author_IP: 68.234.124.194
+.. date_utc: 2011-02-21 13:46:00
+.. parent_id: 2876
+
+I tried screen on my desktop and while I like your changes, there are still two issues that may keep me from using it.  First is that I get no audible bell, i.e. PC speaker beep from within screen.  Second is that attempting to navigate by word in Vim using Ctl-arrow results in some weird text manipulation.  I was hurriedly replying to a message on Debian User so I didn't investigate further.
+
+
+
+Typically, I only use Mutt, or Midnight Commander, or Bash aliases on my remote login sessions so it isn't critical that I keep a program running.  That said, since switching Mutt to Maildir it does not seem to mind much if I leave the one on the desktop running and then work with mail via a remote login.
+
+
+
+What editor do you use?  I'm always looking for Mutt tips so your next post should be interesting.

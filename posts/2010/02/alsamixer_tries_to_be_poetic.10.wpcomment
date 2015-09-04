@@ -1,0 +1,9 @@
+.. id: 10
+.. status: approved
+.. approved: True
+.. author: Floris Bruynooghe
+.. author_email: floris.bruynooghe@gmail.com
+.. author_url: http://bruynooghe.blogspot.com
+.. date_utc: 2010-02-04 22:54:00
+
+I think we should have more error messages like that.  At some point I tried replacing all critical and error messages in our code at work with haikus, the result was nice but indeed just too time consuming to keep up :-(

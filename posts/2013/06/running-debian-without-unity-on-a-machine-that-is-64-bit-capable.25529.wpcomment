@@ -1,0 +1,15 @@
+.. id: 25529
+.. status: approved
+.. approved: True
+.. author: evgeni
+.. author_email: evgeni@golov.de
+.. author_IP: 37.201.77.59
+.. date_utc: 2013-06-19 20:00:40
+.. parent_id: 25527
+.. wordpress_user_id: 1
+
+Who/whatever that freeserver stuff is, it's not me. They seem to copy lots of planets there.
+
+
+
+For the survey: as Ubuntu x86 does not boot on non-PAE hardware anyways, there is no gain in having x86 at all, that is correct.

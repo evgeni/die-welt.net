@@ -1,0 +1,20 @@
+.. id: 99
+.. status: approved
+.. approved: True
+.. author: Tom Verbeek
+.. author_url: http://www.skalio.com
+.. date_utc: 2007-08-16 11:35:42
+
+Vielen Dank für den Test auch von uns, den Herstellern von TeamBeam. Evgeni ist ein Eintrag auf der Dankesliste sicher!<br />
+
+<br />
+
+Die (theoretische) Sicherheitslücke ist jetzt geschlossen worden - alle Usereingaben werden geprüft und von Tags gestrippt.<br />
+
+<br />
+
+TeamBeam richtet sich an Anwender, die schnell und vor allem EINFACH große Daten verschicken wollen. FTP ist deswegen (und wegen anderen Einschränkungen) keine echte Alternative.<br />
+
+<br />
+
+Gruß, Tom.

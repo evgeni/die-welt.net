@@ -1,0 +1,9 @@
+.. id: 19740
+.. status: approved
+.. approved: True
+.. author: oxtan
+.. author_email: oxtan@example.com
+.. author_IP: 31.151.153.51
+.. date_utc: 2012-09-16 08:51:26
+
++1 for the microserver, but if you really want a nice file server, use an opensolaris derivative instead of debian. Do not get me wrong, I love debian, but for a NAS zfs, nfs and cifs are way better than what you get with any linux distribution.

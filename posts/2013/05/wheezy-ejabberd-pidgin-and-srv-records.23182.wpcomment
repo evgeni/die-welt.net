@@ -1,0 +1,43 @@
+.. id: 23182
+.. status: approved
+.. approved: True
+.. author: Konstantin Khomoutov
+.. author_email: flatworm@users.sourceforge.net
+.. author_url: http://kostix.myopenid.com
+.. author_IP: 178.252.99.145
+.. date_utc: 2013-05-11 10:45:49
+.. parent_id: 23033
+
+(Speaking with my ejabberd-in-Debian-maintainer's hat on.)
+
+
+
+While I personally despise Lua as a programming language, you seem to be too biased for no real reason.  This approach might have sense when you're pondering participation in a (F/OSS) project, but when you're just want to *use* something this is far less justified IMO.  For instance, I also despise C++, so should I quit using APT suite?  In fact, I just do not care until it works (well, idiotic configuration file format aside...)
+
+
+
+I'm going to present several assorted facts in no particular order about Prosody and Ejabberd (I simply have no time to neatly arrange them and create some sort of proper narrative, sorry).
+
+
+
+* Lua has a very fast VM.  I'm not sure how Prosody scales for thousands of concurrent users per server though but clearly that's not your use case (and not mine, either, FWIW).
+
+* Erlang is over-hyped at the moment.  It's a great language/runtime (I enjoy it) but not without its severe shortcomings.  Absence of a fast standard regexp and unicode/utf-8 libraries has been remedied only quite recently.  Lack of support for proper ("packed") strings is still there, I beleive, and this does affect ejabberd: ProcessOne announce of 13.03b1 mentions huge rewrite of most of internals to port them from using Erlang strings to the so-called "binaries" to reduce memory consumption which might be quite high with ejabberd under heavy load.
+
+* Ejabberd got real traction at the moment where it just had no real alternatives: jabberd2 was abandoned (or at least stagnated) and clearly lacked in features (no MUC for instance), and OpenFire was buggy and it was Java. Since then jabberd2 was revived and appears to be live enough, Prosody has been created and supposedly OpenFire wasn't standing still as well.  So there's more than one option now.
+
+* Prosody supports certain "enterprisey" features like LDAP auth.  I did not check but at least they exist.
+
+* Ejabberd *might* get complicated for some people for no apparent reason (for them).  For instance, its built-in support for clustering (which 0.1% of users need) which is done using Erlang machinery is the source for recurrent problems for users.  Its idea that the config file is using for bootstrapping a configuration database (unless told to overwrite bits of it by means of using three different knobs) is as well bizzare for mere mortals.  I might go on but let's stop here; it would be cool if certain things were simpler.
+
+* I, for one, do not like the direction to where ejabberd is being led by its current owner. [1] clearly hints at that there are two ejabberds, and it's not hard to read through the standard marketing gobbledygook to understand which one is going to receive more love.  I do have doubts that ejabberd might eventually be let go as it happened to Thunderbird.  Currently the upstream is still supportive and communicative (but I'm aware this might be due to the fact I've got direct contacts there) but if this will change, I'm sure I'll jump the ship as the package maintainer.
+
+
+
+TL;DR
+
+Considering the state of affairs with a cold head, I think Prosody looks like a viable alternative to ejabberd.
+
+
+
+1. http://lists.jabber.ru/pipermail/ejabberd/2013-March/007974.html

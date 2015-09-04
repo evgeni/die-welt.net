@@ -1,0 +1,18 @@
+.. id: 2730
+.. status: approved
+.. approved: True
+.. author: Giorgos
+.. author_email: giorgos.skafidas@gmx.com
+.. author_IP: 83.212.182.67
+.. date_utc: 2011-02-14 12:15:48
+.. parent_id: 2713
+
+There shouldn't be any harm in keeping them enabled for stationary devices as well. Being known on the Internet by your MAC address, you will have less (if any) of an incentive to deal with the other privacy issues you raised.
+
+
+
+Browsers change their fingerprints and behaviour, cookies and LSOs get deleted, people switch browsers, OSes, ISPs and move homes but your MAC will probably stay with you throughout your network card's lifetime (unless you make a habit of spoofing it).
+
+
+
+PS. Just out of curiosity, are you able to get a reverse DNS entry for my IP?

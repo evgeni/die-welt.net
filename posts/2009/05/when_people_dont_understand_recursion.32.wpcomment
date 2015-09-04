@@ -1,0 +1,25 @@
+.. id: 32
+.. status: approved
+.. approved: True
+.. author: Evgeni
+.. author_email: sargentd@die-welt.net
+.. author_url: http://www.die-welt.net
+.. date_utc: 2009-05-29 08:29:29
+
+@Tim: I'm sure the author understands recursion, that's why I wrote that he prolly does not want recursion.<br />
+
+The service might &quot;help&quot; with regular twitter etc posts that shorten the URL because they have to, but as it is still possible to hide the final URL from the viewer, there will be evil-guys doing so.<br />
+
+<br />
+
+@Tim&amp;M.Pomme about privacy:<br />
+
+There is no code *yet* that would do this. But I think tinyurl and others started like this too: as a pure useful service.<br />
+
+So in the end, where is the difference in resolving that URL via longurlplease or via tinyurl? In both cases there is a third-party which will know that you (or at least the browser X that can send packets from your IP) want to access a site.<br />
+
+Even funnier: with the help of the site the shorturl links to, one could find out, how many people really click on the link of those who see it.<br />
+
+<br />
+
+Just my 0.02€

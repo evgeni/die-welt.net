@@ -1,0 +1,9 @@
+.. id: 2512
+.. status: approved
+.. approved: True
+.. author: Stéphane
+.. author_email: invalid@invalid.fr
+.. author_IP: 82.245.99.50
+.. date_utc: 2011-01-22 17:07:01
+
+9 and 10 are probably a strategy from spammers: if you filter comment manually or use an automatic filter, they have a better probability you validate spam, considering it as a double post or valid comment. Bayesian filter have no opportunity to find it (except if the website link is included in the checked data).

@@ -1,0 +1,9 @@
+.. id: 2957
+.. status: approved
+.. approved: True
+.. author: MrJoel
+.. author_email: mrjoel@lixil.net
+.. author_IP: 166.205.10.200
+.. date_utc: 2011-02-25 15:43:23
+
+What is the advantage of set mbox="!" instead of set move=no?

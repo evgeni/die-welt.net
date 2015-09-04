@@ -1,0 +1,13 @@
+.. id: 2876
+.. status: approved
+.. approved: True
+.. author: evgeni
+.. author_email: evgeni@golov.de
+.. author_IP: 134.99.154.42
+.. date_utc: 2011-02-21 12:26:34
+.. parent_id: 2863
+.. wordpress_user_id: 1
+
+I rarely use Vim, so no issues with that here :)
+
+The initial session is usually started from my laptop via ssh using Xfce4 and it's xfce4-terminal. So no conflicts here. And I must admit I have no clue what the terminfo stuff does, as my screenrc is based on some friends and these lines were just copied over.

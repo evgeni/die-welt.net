@@ -1,0 +1,28 @@
+.. id: 2885
+.. status: approved
+.. approved: True
+.. author: Iñigo
+.. author_email: poisonbit@gmail.com
+.. author_url: http://poisonbit.wordpress.com
+.. author_IP: 83.173.181.240
+.. date_utc: 2011-02-21 15:47:15
+
+Hi, nice post.
+
+
+
+I've this in my shell rc, so I don't need to launch screen:
+
+
+
+[ -n "$SSH_CONNECTION" ] &amp;&amp; \
+
+    [ "x$TERM" != 'xscreen' ] &amp;&amp; \
+
+        screen -dR
+
+
+
+
+
+Greetings.

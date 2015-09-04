@@ -1,0 +1,10 @@
+.. id: 23032
+.. status: approved
+.. approved: True
+.. author: Leo Antunes
+.. author_email: costela@debian.org
+.. author_url: http://costela.net
+.. author_IP: 62.143.88.88
+.. date_utc: 2013-05-08 14:19:00
+
+Have you checked out prosody? I've chucked my old ejabberd instance out the window ~1 year ago and haven't looked back. I'm not sure if it's a complete replacement feature-wise, but it has all the basics and has a much smaller footprint and a helpful migration script. Maybe worth a look.

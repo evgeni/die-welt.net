@@ -1,0 +1,9 @@
+.. id: 2918
+.. status: approved
+.. approved: True
+.. author: Marcel
+.. author_email: marcelcoding@googlemail.com
+.. author_IP: 130.149.23.4
+.. date_utc: 2011-02-22 14:23:37
+
+Did you check out byobu? It is a screen wrapper that comes with a nice set of status messages and so on – no need to write your own .screenrc ;) It was written for Ubuntu but is in the Debian repos as well (but an older version of it).

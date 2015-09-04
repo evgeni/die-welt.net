@@ -1,0 +1,32 @@
+.. id: 19908
+.. status: approved
+.. approved: True
+.. author: Thomas Goirand
+.. author_email: zigo@debian.org
+.. author_url: http://www.gplhost.com
+.. author_IP: 2001:470:17:b9::2
+.. date_utc: 2012-09-23 13:10:01
+
+Hi,
+
+
+
+First of all, if you wish not to use quota, you can use:
+
+
+
+maildirmake /path/to/mailbox/Maildir
+
+rm -f /path/to/mailbox/Maildir/maildirsize
+
+
+
+this will remove all quota. But I would strongly suggest you to switch to something better than Maildrop. It had (and still has) many shortcomings, one of them being that you can totally destroy your system from within a .maifilter file. Things like this aren't possible if you switch to let's say Dovecot Sieve, which I have switched to (from maildrop).
+
+
+
+Cheers,
+
+
+
+Thomas

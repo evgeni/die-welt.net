@@ -1,0 +1,11 @@
+.. id: 21623
+.. status: approved
+.. approved: True
+.. author: stefan
+.. author_email: stefan.schwarzburg@googlemail.com
+.. author_IP: 84.112.252.52
+.. date_utc: 2013-03-23 14:37:00
+
+Nice work. 
+
+If you are looking for something completely browserless, with autocompletion of available wifinetwork ssids, etc, have a look at qreator (https://launchpad.net/qreator).

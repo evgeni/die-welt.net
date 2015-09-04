@@ -1,0 +1,11 @@
+.. id: 3039
+.. status: approved
+.. approved: True
+.. author: evgeni
+.. author_email: evgeni@golov.de
+.. author_IP: 2.200.155.118
+.. date_utc: 2011-02-27 22:38:10
+.. parent_id: 3038
+.. wordpress_user_id: 1
+
+Hi Martin, goobook supports gnome-keyring via python-keyring too. I should have a look at it. Thanks for the tip.

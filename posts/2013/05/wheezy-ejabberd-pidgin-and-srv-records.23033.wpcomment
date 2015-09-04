@@ -1,0 +1,11 @@
+.. id: 23033
+.. status: approved
+.. approved: True
+.. author: evgeni
+.. author_email: evgeni@golov.de
+.. author_IP: 37.24.188.98
+.. date_utc: 2013-05-08 14:25:58
+.. parent_id: 23032
+.. wordpress_user_id: 1
+
+Nah, ejabberd runs fine otherwise, never bothered to look for alternatives. Also: exchange Erlang for LUA?

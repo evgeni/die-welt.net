@@ -1,0 +1,9 @@
+.. id: 182
+.. status: approved
+.. approved: True
+.. author: Zhenech
+.. author_email: sargentd@die-welt.net
+.. author_url: http://www.die-welt.net
+.. date_utc: 2007-02-11 18:08:29
+
+The sound should work out of the box with a recent kernel. The wireless need some more packages, and there is no magic in Debian, which installs them, so you need to do it yourself. Afterwards everything will run.

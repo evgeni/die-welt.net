@@ -1,0 +1,7 @@
+.. id: 177
+.. status: approved
+.. approved: True
+.. author: Andreas
+.. date_utc: 2007-02-01 23:07:51
+
+I'm running a Debian 2.6.18 kernel on my Thinkpad z61m and I have problems with sound (sometimes?) not working after a resuming from suspend-to-ram. Resume also crashes if the ethernet cable is attached. Anyone knows why?

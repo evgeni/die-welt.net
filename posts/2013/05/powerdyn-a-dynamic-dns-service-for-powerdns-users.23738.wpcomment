@@ -1,0 +1,15 @@
+.. id: 23738
+.. status: approved
+.. approved: True
+.. author: XX
+.. author_email: diewelt.5.spam_jfs2@xoxy.net
+.. author_IP: 80.145.192.4
+.. date_utc: 2013-05-19 23:53:49
+
+To do it correctly, you need also disable port-forwarding etc. (if you have not done it via your sshd configuration)
+
+by using: 
+
+
+
+no-port-forwarding,no-X11-forwarding,no-agent-forwarding,no-pty,command="..." in authorized_keys.

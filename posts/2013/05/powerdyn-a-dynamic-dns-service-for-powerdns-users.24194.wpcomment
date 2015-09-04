@@ -1,0 +1,9 @@
+.. id: 24194
+.. status: approved
+.. approved: True
+.. author: mic
+.. author_email: m@virtualfreedom.de
+.. author_IP: 93.196.20.168
+.. date_utc: 2013-05-27 20:28:43
+
+IIRC the ssh client is still able to execute scp, for example to retrieve the script

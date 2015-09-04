@@ -1,0 +1,13 @@
+.. id: 21574
+.. status: approved
+.. approved: True
+.. author: anon
+.. author_email: anon@yopmail.com
+.. author_IP: 173.254.216.69
+.. date_utc: 2013-03-20 21:29:29
+
+Don't do this, in-browser javascript security is useless, you can never be sure that the code you're shown in view-source is really the code you end up executing.
+
+
+
+What's more, if you use this, you're trusting google as well, since you're pulling in javascript libraries from googleapis.com.

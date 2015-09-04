@@ -1,0 +1,57 @@
+.. id: 113
+.. status: approved
+.. approved: True
+.. author: Mario
+.. author_email: wang@email.it
+.. author_url: http://www.rebol.it
+.. date_utc: 2007-05-02 13:24:37
+
+I am currently looking for a more general approach as my hard disk is a real mess (no naming conventions).<br />
+
+<br />
+
+I'd like to share some of my findings, hoping these help.<br />
+
+<br />
+
+<br />
+
+If you need the CLI:<br />
+
+<br />
+
+http://www.die.net/doc/linux/man/man1/hardlink.1.html<br />
+
+http://dancameron.org/asides/1572<br />
+
+This manual page documents hardlink, a program which consolidates duplicate files in one or more directories using hardlinks.<br />
+
+hardlink traverses one or more directories searching for duplicate files. When it finds duplicate files, it uses one of them as the master. It then removes all other duplicates and places a hardlink for each one pointing to the master file. This allows for conservation of disk space where multiple directories on a single filesystem contain many duplicate files.<br />
+
+<br />
+
+http://www.die.net/doc/linux/man/man1/fdupes.1.html<br />
+
+<br />
+
+<br />
+
+If you don't need to stick to the shell:<br />
+
+http://www.pixelbeat.org/fslint/<br />
+
+http://www.linux.org/apps/AppId_8359.html<br />
+
+<br />
+
+http://linux.softpedia.com/get/System/Diagnostics/Duper-1417.shtml<br />
+
+<br />
+
+Please let me know via email if you find something better!<br />
+
+<br />
+
+   Regards,<br />
+
+    Mario

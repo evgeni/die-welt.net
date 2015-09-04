@@ -1,0 +1,8 @@
+.. id: 59
+.. status: approved
+.. approved: True
+.. author: Evgeni
+.. author_email: sargentd@die-welt.net
+.. date_utc: 2008-05-22 15:47:24
+
+I think there is a mpd-bemused bridge, so you could do so with bemused, but I dont know any way to control mpd via wifi (except by browsing my phpMP with a browser, but that kinda sucks).

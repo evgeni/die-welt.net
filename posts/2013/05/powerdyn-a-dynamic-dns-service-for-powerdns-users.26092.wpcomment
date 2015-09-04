@@ -1,0 +1,25 @@
+.. id: 26092
+.. status: approved
+.. approved: True
+.. author: Luca
+.. author_email: luca@pretto.eu
+.. author_IP: 192.168.9.200
+.. date_utc: 2013-06-28 11:16:07
+
+Great script. Thank you very much.
+
+
+
+Please note, for anybody facing "ImportError: No module named MySQLdb" (just like me) that you just have to execute "apt-get install python-mysqldb" (on Debian Wheezy).
+
+
+
+Anyway, wouldn't be possible to get the settings.domain (for updating SOA) directly from the authorized_keys command?
+
+I have several second level domains to update, and with current behaviour I can't succeed.
+
+
+
+Thank you again.
+
+Luca

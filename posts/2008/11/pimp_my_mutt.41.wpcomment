@@ -1,0 +1,9 @@
+.. id: 41
+.. status: approved
+.. approved: True
+.. author: Evgeni
+.. author_email: sargentd@die-welt.net
+.. author_url: http://www.die-welt.net
+.. date_utc: 2008-11-07 20:09:51
+
+Well, you get all in the folder browser if you don't set imap_list_subscribed, but there is no way to show them all in the sidebar. That's what actually subscribe is for, you see what you want to see :)

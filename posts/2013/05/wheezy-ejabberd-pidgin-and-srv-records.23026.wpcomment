@@ -1,0 +1,16 @@
+.. id: 23026
+.. status: approved
+.. approved: True
+.. author: Konstantin Khomoutov
+.. author_email: flatworm@users.sourceforge.net
+.. author_url: http://kosix.myopenid.com
+.. author_IP: 192.168.2.100
+.. date_utc: 2013-05-08 10:54:57
+
+Unfortunately, when I asked [1] the folks who were affected by the issue being discussed to test the fix and report back, no one replied.  And then exactly one user reported his difficulty with the fix for #654853 (the necessity to use that "fqdn" option in some setups) some five days before the Wheezy release. So we had no time to do a documentation patch. May be it will be prepared and included in the nearest point release (if RMs will allow us to do so) -- we now have a bug [2] for that.
+
+
+
+1. http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=654853#71
+
+2. http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=706590

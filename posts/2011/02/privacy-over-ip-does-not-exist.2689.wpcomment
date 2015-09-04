@@ -1,0 +1,11 @@
+.. id: 2689
+.. status: approved
+.. approved: True
+.. author: evgeni
+.. author_email: evgeni@golov.de
+.. author_IP: 62.143.232.104
+.. date_utc: 2011-02-13 08:35:46
+.. parent_id: 2685
+.. wordpress_user_id: 1
+
+Well, you are coming from a GB-located TOR node. You have JavaScript disabled and most probably not running Firefox 3.6.3 on Windows 7 as your user-agent suggests. I do not know more (yet).

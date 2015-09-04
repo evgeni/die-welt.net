@@ -1,0 +1,17 @@
+.. id: 3097
+.. status: approved
+.. approved: True
+.. author: Jubal
+.. author_email: miroslaw@makabra.org
+.. author_IP: 212.73.251.26
+.. date_utc: 2011-03-03 15:42:24
+
+Evgeni,
+
+
+
+This looks really nice (and mutt is blazingly fast when you compare it to other IMAP clients); I might give it another try now…
+
+
+
+There's one small problem, though – it seems that your ‘sidebar dotted’ patch assumes that the folder name has to start with INBOX (and thus does not shorten any non-INBOX-contained hierarchies I'm using). Perhaps adding a configuration option to set the hierarchy prefix or prefix list (preferably using a regexp) would be a solution here?
