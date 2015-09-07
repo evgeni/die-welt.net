@@ -7,19 +7,12 @@ Now today I had to delete some mail from an account I don't use regularly (and
 So I thought how to automate this, so I could actually use mutt with multiple accounts (without offline-imap and friends, which is what you find on the web).
 
 It's damn easy:
-
 </p><pre># muttrc
-
 set imap_user=account1
-
 set imap_pass=password
-
 set folder="imaps://imap.one.example.com/INBOX"
-
 set spoolfile="imaps://imap.one.example.com/INBOX"
-
 ...
-
 push &lt;change-folder&gt;imaps://account2@imap.two.example.com/&lt;enter&gt;</pre>
 
 Well, what does this do? It advises mutt to use <code>imap.one.example.com</code>, but then just jumps to <code>imap.two.example.com</code> at the end of the config, resulting in both accounts being loaded into the sidebar and usable. That's it, one line and it is awesome!

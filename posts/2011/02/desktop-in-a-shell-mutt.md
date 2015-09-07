@@ -7,27 +7,20 @@ I'm running <code>mutt-patched</code> from Debian Squeeze, so not all options ma
 First, tell mutt to fetch mail from <code>imap.die-welt.net</code> via IMAP:
 
 </p><pre>set imap_user=username
-
 set imap_pass=password
-
 set folder="imaps://imap.die-welt.net/INBOX"
-
 set spoolfile="imaps://imap.die-welt.net/INBOX"</pre>
 
 Now, enable IMAP-IDLE, list subscribed folders, reconnect to the server if needed and mark mail as read when you open it:
 
 <pre>set imap_idle
-
 set imap_check_subscribed
-
 unset imap_passive
-
 unset imap_peek</pre>
 
 Let mutt save sent mail to the Sent directory on the IMAP server, and postponed mail to Drafts:
 
 <pre>set record=+Sent
-
 set postponed=+Drafts</pre>
 
 Read mail should stay where it is:
@@ -61,19 +54,14 @@ As mutt knows where I receive mail, let it set From accordingly:
 Let mutt cache some stuff and find its certificates:
 
 <pre>set header_cache="~/.mutt/cache/headers"
-
 set message_cachedir="~/.mutt/cache/bodies"
-
 set certificate_file=~/.mutt/certificates
-
 set ssl_ca_certificates_file=/etc/ssl/certs/ca-certificates.crt</pre>
 
 Show only interesting headers in an useful order:
 
 <pre>ignore headers *
-
 unignore headers from to subject date cc
-
 hdr_order from to cc subject date</pre>
 
 Fix stupid MUAs behaviour (e.g. filenames like <code>=?iso-8859-1?Q?file=5F=E4=5F991116=2Ezip?=</code>):
@@ -87,15 +75,11 @@ Beep on new mail, will generate a "!" in the window name in screen:
 mutt-patched has the great sidebar patch, assign ctrl-n, ctrl-p to select next, prev folder, ctrl-o to open selected folder:
 
 <pre>bind index \Cp sidebar-prev
-
 bind index \Cn sidebar-next
-
 bind index \Co sidebar-open</pre>
-
 And toggle sidebar visibility with ctrl-b:
 
 <pre>macro index \Cb '&lt;enter-command&gt;toggle sidebar_visible&lt;enter&gt;&lt;refresh&gt;'
-
 macro pager \Cb '&lt;enter-command&gt;toggle sidebar_visible&lt;enter&gt;&lt;redraw-screen&gt;'</pre>
 
 Since 1.5.20-2, mutt patched contains <a href="http://www.die-welt.net/2008/11/pimp_my_mutt/">my sidebar-dotted and sidebar-sorted patches</a>.
@@ -103,31 +87,22 @@ Since 1.5.20-2, mutt patched contains <a href="http://www.die-welt.net/2008/11/p
 Let mutt shorten the displayed path (e.g. <code>debian-devel</code> instead of <code>INBOX.ml.debian-devel</code>) and sort the folders (the are returned in random order when using  imap_check_subscribed):
 
 <pre>set sidebar_shortpath
-
 set sidebar_sort</pre>
 
 Now let's set some colors (that match the rest of my "desktop"):
 
 <pre>color sidebar_new yellow default
-
 color normal white default
-
 color hdrdefault brightcyan default
-
 color signature green default
-
 color attachment brightyellow default
-
 color quoted green default
-
 color quoted1 white default
-
 color tilde blue default</pre>
 
 And add some useful macros for marking new and old messages as read:
 
 <pre>macro index .n "&lt;tag-pattern&gt;~N&lt;enter&gt;&lt;tag-prefix&gt;&lt;clear-flag&gt;N&lt;clear-flag&gt;*" "Catchup all new messages"
-
 macro index .o "&lt;tag-pattern&gt;~O&lt;enter&gt;&lt;tag-prefix&gt;&lt;clear-flag&gt;O&lt;clear-flag&gt;*" "Catchup all old messages"</pre>
 
 When forwarding mail, I like it to be forwarded as an attachment (YMMV):
@@ -137,63 +112,42 @@ When forwarding mail, I like it to be forwarded as an attachment (YMMV):
 I'm using <a href="http://code.google.com/p/goobook/">goobook</a> in mutt to fetch my addressbook from Google. As there is no Debian package for goobook (yet), you have to install it yourself (via <code>easy_install</code>):
 
 <pre>apt-get install python-argparse python-gdata python-simplejson python-keyring python-nose
-
 easy_install goobook</pre>
 
 Configuration is easy via <code>~/.goobookrc</code>:
 
 <pre>[DEFAULT]
-
 # If not given here, email and password is taken from .netrc using
-
 # machine google.com
-
 email: me@gmail.com
-
 password: password</pre>
 
 And then add the following to your <code>.muttrc</code>:
 
 <pre>set query_command="goobook query '%s'"
-
 bind editor  complete-query
-
 macro index,pager a "&lt;pipe-message&gt;goobook add&lt;return&gt;" "add the sender address to Google contacts"</pre>
-
 That's all for mutt, but...
 
 We are running mutt in a screen, so let's add the following to <code>.screenrc</code> to fix transparency and cut&amp;paste (see <a href="http://wiki.mutt.org/?MuttFaq/Appearance">http://wiki.mutt.org/?MuttFaq/Appearance</a>):
 
 <pre> defbce on
-
  term screen-bce</pre>
 
 And as mutt uses mstmp (yes, I know, mutt can handle SMTP itself...), this is my <code>.msmtprc</code>:
 
 <pre>defaults
-
 domain dorei.kerker.die-welt.net
-
 tls on
-
 account die-welt.net
-
 host smtp.die-welt.net
-
 from sargentd@die-welt.net
-
 auth on
-
 user username
-
 password password
-
 tls_starttls on
-
 tls_certcheck off
-
 # Set a default account
-
 account default : die-welt.net</pre>
 
 C'est tout! That is my personal mutt configuration, you can download it as one file here: <a href="http://files.die-welt.net/muttrc.txt">my .muttrc</a>. And as everyone loves screenshots, here is one:

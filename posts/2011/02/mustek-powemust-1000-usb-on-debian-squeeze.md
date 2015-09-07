@@ -7,23 +7,16 @@ When I replaced the old machine, I had to connect the UPS via USB instead of ser
 <strong>nut.conf:</strong>
 
 </p><pre>MODE=standalone
-
 UPSD_OPTIONS=""
-
 UPSMON_OPTIONS=""</pre>
 
 <strong>ups.conf:</strong>
 
 <pre>[powermust]
-
     driver = blazer_usb
-
     port = schrank
-
     vendorid = 0665
-
     productid = 5161
-
     desc = "Mustek PowerMust 1000"</pre>
 
 <em>Yes, <code>port</code> has to be set, but can be any random string.</em>
@@ -31,37 +24,23 @@ UPSMON_OPTIONS=""</pre>
 <strong>upsd.conf:</strong>
 
 <pre>ACL all 0.0.0.0/0
-
 ACL localhost 127.0.0.1/32
-
 ACCEPT localhost
-
 REJECT all</pre>
 
 <strong>upsmon.conf:</strong>
 
 <pre>RUN_AS_USER nut
-
 MONITOR powermust@localhost 1 nut nut master
-
 MINSUPPLIES 1
-
 SHUTDOWNCMD "/sbin/shutdown -h +0"
-
 POLLFREQ 5
-
 POLLFREQALERT 5
-
 HOSTSYNC 15
-
 DEADTIME 15
-
 POWERDOWNFLAG /etc/killpower
-
 RBWARNTIME 43200
-
 NOCOMMWARNTIME 300
-
 FINALDELAY 5</pre>
 
 <strong>upssched.conf:</strong>
