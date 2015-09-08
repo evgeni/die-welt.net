@@ -1,6 +1,7 @@
 ## -*- coding: utf-8 -*-
 <%namespace name="base" file="base_helper.tmpl" import="*" />
 <%namespace name="notes" file="annotation_helper.tmpl" import="*" />
+<%namespace name="welt" file="welt_helper.tmpl" import="*" />
 ${set_locale(lang)}
 ${base.html_headstart()}
 <%block name="extra_head">
@@ -14,49 +15,12 @@ ${template_hooks['extra_head']()}
 <section id="head">
 <!-- Menubar -->
 
-<nav class="overlay navbar navbar-inverse navbar-static-top" role="navigation">
+<nav class="overlay navbar navbar-static-top" role="navigation">
     <div class="container"><!-- This keeps the margins nice -->
-
-<div>
-                        <div class="social-wrapper">
-                            <a href="https://plus.google.com/+EvgeniGolov/" class="btn btn-social" title="Evgeni Golov (Zhenech) on Google+">
-                                <i class="fa fa-google-plus fa-2x"></i></a>
-                            <a href="https://twitter.com/Zhenech" class="btn btn-social" title="Evgeni Golov (Zhenech) on Twitter">
-                                <i class="fa fa-twitter fa-2x"></i></a>
-                            <a href="https://github.com/evgeni" class="btn btn-social" title="Evgeni Golov (Zhenech) on GitHub">
-                                <i class="fa fa-github fa-2x"></i></a>
-                            <a href="/pix/" class="btn btn-social" title="Pictures">
-                                <i class="fa fa-camera fa-2x"></i></a>
-                            <a href="/about/" class="btn btn-social" title="About">
-                                <i class="fa fa-info fa-2x"></i></a>
-                            <a href="/projects/" class="btn btn-social" title="Projects">
-                                <i class="fa fa-rocket fa-2x"></i></a>
-                            <a href="/archive.html" class="btn btn-social" title="Archive">
-                                <i class="fa fa-archive fa-2x"></i></a>
-                            <a href="/categories/" class="btn btn-social" title="Tags">
-                                <i class="fa fa-tags fa-2x"></i></a>
-                            <a href="/rss.xml" class="btn btn-social" title="RSS">
-                                <i class="fa fa-rss fa-2x"></i></a>
-                        </div>
-            <a class="logo" href="${abs_link(_link("root", None, lang))}">
-            %if logo_url:
-                <img src="${logo_url}" alt="${blog_title}" id="logo">
-            %endif
-
-            %if show_blog_title:
-                <h1 id="blog-title">${blog_title}</h1>
-            %endif
-            </a>
-
-            %if blog_description:
-            <p>${blog_description}</p>
-            %endif
-</div>
-
 
         <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
             <ul class="nav navbar-nav">
-                ${base.html_navigation_links()}
+                ${welt.html_navigation_links()}
                 ${template_hooks['menu']()}
             </ul>
             %if search_form:
@@ -75,6 +39,22 @@ ${template_hooks['extra_head']()}
                 ${template_hooks['menu_alt']()}
             </ul>
         </div><!-- /.navbar-collapse -->
+
+            <a class="logo" href="${abs_link(_link("root", None, lang))}">
+            %if logo_url:
+                <img src="${logo_url}" alt="${blog_title}" id="logo">
+            %endif
+
+            %if show_blog_title:
+                <h1 id="blog-title">${blog_title}</h1>
+            %endif
+            </a>
+
+            %if blog_description:
+            <p>${blog_description}</p>
+            %endif
+
+
     </div><!-- /.container -->
 </nav>
 

@@ -1,0 +1,7 @@
+## -*- coding: utf-8 -*-
+## Override only the functions that differ from base or boopstrap/templates/base_helper.tmpl
+<%def name="html_navigation_links()">
+    %for url, text, icon in navigation_links[lang]:
+        <li><a class="btn btn-social" href="${url}" title="${text}"><i class="fa ${icon} fa-2x"></i></a></li>
+    %endfor
+</%def>

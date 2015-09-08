@@ -115,20 +115,24 @@ i.fa {
 /*=====================================
     SOCIAL BUTTON STYLES
 ======================================*/
-.social-wrapper {
-  margin-top: 20px;
-}
-
-.social-wrapper .btn-social {
+.navbar .btn-social {
   color: white;
   background-color: rgba(92, 92, 92, 0.38);
 }
 
-.social-wrapper .btn-social:hover {
+.navbar .btn-social:hover {
   text-decoration: none;
   background-color: rgba(92, 92, 92, 0.68);
 }
 
+.nav li {
+  margin-right: 5px;
+  margin-top: 15px;
+}
+
+.nav li a {
+  padding: 10px;
+}
 /* =============================================================
    BLOG SECTION STYLES
  ============================================================ */
