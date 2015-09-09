@@ -84,7 +84,7 @@ i.fa {
   text-decoration:none;
   color:#fff;
 }
-#head .overlay {
+#head .navbar {
   background-color: rgba(40, 40, 40, 0.8);
   min-height: 200px;
 }
