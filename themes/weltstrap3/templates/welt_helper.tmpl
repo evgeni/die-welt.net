@@ -2,6 +2,23 @@
 ## Override only the functions that differ from base or boopstrap/templates/base_helper.tmpl
 <%def name="html_navigation_links()">
     %for url, text, icon in navigation_links[lang]:
-        <li><a class="btn btn-social" href="${url}" title="${text}"><i class="fa ${icon} fa-2x"></i></a></li>
+        % if isinstance(url, tuple):
+            <li class="dropdown"><a href="#" class="dropdown-toggle btn btn-social" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="${text}"><i class="fa ${icon} fa-2x"></i><b class="caret"></b></a>
+            <ul class="dropdown-menu">
+            %for suburl, text, icon in url:
+                % if rel_link(permalink, suburl) == "#":
+                    <li class="active"><a class="btn btn-social" href="${permalink}" title="${text}"><i class="fa ${icon} fa-2x"></i><span class="sr-only">${messages("(active)", lang)}</span></a>
+                %else:
+                    <li><a class="btn btn-social" href="${suburl}" title="${text}"><i class="fa ${icon} fa-2x"></a>
+                %endif
+            %endfor
+            </ul>
+        % else:
+            % if rel_link(permalink, url) == "#":
+                <li class="active"><a class="btn btn-social" href="${permalink}" title="${text}"><i class="fa ${icon} fa-2x"><span class="sr-only">${messages("(active)", lang)}</span></a>
+            %else:
+                <li><a href="${url}" class="btn btn-social" title="${text}"><i class="fa ${icon} fa-2x"></a>
+            %endif
+        % endif
     %endfor
 </%def>
