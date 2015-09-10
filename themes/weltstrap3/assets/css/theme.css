@@ -92,9 +92,10 @@ i.fa {
   -moz-background-size: cover;
   color: #fff;
 }
-#head a.logo,#head a.logo:hover {
+#head a.navbar-brand,#head a.navbar-brand:hover {
   text-decoration:none;
   color:#fff;
+  float: none;
 }
 #head .navbar {
   background-color: rgba(40, 40, 40, 0.8);
