@@ -1,7 +1,4 @@
 <html><body><p>today I've read an announcement, that spicebird, an outlook like, open source mail client with contacts, tasks, calendar and rs management. That sounds good, so I decided to give it a try. I downloaded and configured it for my default mail account here at die-welt.net. While trying around, I found some things, which should be improved:<br>
-
 </p><ul><li>Where the heck is the systray icon, I can minimize the app to? Don't need another app wasting my desktop space...</li><li>I hate HTML mails, so I want to disable them, GLOBALY! I can do that on a per-account base, but that sucks. At least I could open <strong>about:config</strong> (hey, it's Mozilla-Foo based :&gt;) and set <strong>mail.identity.default.compose_html{'</strong> to false, but where is the button to do so from the GUI!?</li><li>Also don't display HTML in mails, render as plain-text, but the options is only in View &gt; Message Body, nowhere in Preferences (what for is the Display tab then?)</li><li>Eh, and stop displaying those stupid bars on quoted text, I'm fine with <strong>&gt;</strong>, so set <strong>mail.quoted_graphical</strong> to false (again, GUI!?)</li></ul><br>
-
 <br>
-
 I think that's all (for now) - will come back when I have multiple mail accounts, news and rss-feeds activated...</body></html>

@@ -1,35 +1,18 @@
 <html><body><p>Eigentlich wollte ich das Folgende schon vor recht langer Zeit posten, aber irgendwie nie dazu gekommen. Wie auch immer...<br>
-
 <br>
-
 Ich frage mich in letzter Zeit immer öfters, was sich hier zulande Lieferdienst bzw Zustelldienst nennen darf.<br>
-
 Letztens hab ich mir online was bestellt, Tickets. Aus Gründen der Dringlichkeit wurden diese per Express des "Roten Paketdienstes" (ich nenne hier mal keine Namen) verschickt. Express heißt bei diesem Laden Zustellung am nächsten Werktag vor 12 Uhr.<br>
-
 Soweit so gut, nun war ich aber an diesem nächsten Werktag zur besagten Zeit nicht zu hause und konnte den Umschlag nicht annehmen. Unpraktischer Weise war dieser Werktag ein Freitag, und da Samstag ja kein Werktag ist (warum krieg ich dann Samstags Knöllchen wenn ich irgendwo parke wo es heißt "Halteverbot Werktags 9-19Uhr"?) musste ich bis Montag auf eine erneute Zustellung warten.<br>
-
 Mir war klar, dass ich Montag vor 12 auch nicht unbedingt an der angegebenen Lieferadresse sein werde, und so versuchte ich mein Glück auf der Webseite des Paketdienstes, wo man laut Infozettel eine alternative Lieferadresse angeben konnte. Pustekuchen, abgesehen davon, dass die Seite ein echt hässliches und sinnfreies Captcha hatte (ich HASSE Captchas), wollte die meine Paketnummer nicht annehmen. Am Telefon konnte man natürlich auch niemanden erreichen. Bis Montag morgen, da ging auch plötzlich die Webseite wieder (Zufall?). Aber die nette Dame am Telefon teilte mir mit, dass sie jetzt nichts mehr machen kann, da der Kurier ja schon ausm Haus ist (nein, die haben keine Handys...). Also bewegte ich mich zu der angegebenen Lieferadresse und hängte ein Zettel an den Briefkasten "Bitte bei &lt;Adresse von Freundin, 2 Straßen weiter&gt; angeben oder unter &lt;meine Handynummer&gt; anrufen.".<br>
-
 Kurz vor 11 war dann immer noch kein Anruf oder Umschlag bei mir eingegangen, und ich musste zur Uni, schaute aber davor noch kurz in den Briefkasten an der Lieferadresse. Und siehe da, der Umschlag lag drin, mit einem dicken Aufkleber "Persönlich! Keine Nachbarschaftszustellung!"... War da einer zu faul? Was mich allerdings mehr interessiert: wer haftet nun? Der Kurier hat keine Unterschrift von mir, dass ich den Umschlag angenommen habe. Jeder Beliebige konnte diesen aus dem Briefkasten herausholen und ich stünde dann ohne Tickets (Wert ein paar Hundert Euro) da. Würde der Paketdienst mir das erstatten? Da ich am nächsten Tag nach London musste, hat sich das ganze im Sand verlaufen und ich habe nicht versucht, das Paket als "vermisst" zu melden...<br>
-
 <br>
-
 Das Tolle an der ganzen Sache ist aber, dass es nicht bei diesem einem Mal geblieben ist.<br>
-
 Meine Freundin bestellt gelegentlich mal was bei einem Versandhaus. Die letzte Bestellung wurde aus irgendwelchen Gründen in zwei Paketen verschickt.<br>
-
 Als das Erste ankam, war natürlich keiner da, und so landete ein orangener Zettel im Briefkasten. Ach ne, nicht <strong>im</strong> Briefkasten, <strong>am</strong> Briefkasten. Der Herr vom "Gelben Paketdienst" (Tochter eines ehemaligen Deutschen Monopolisten) meinte wohl lustig sein zu müssen und klebte den Zettel mit Tesa an den Briefkasten, damit ja keiner mitbekommt, dass auf uns ein Paket bei der P*** wartet.<br>
-
 Da auf dem Paket der Name meiner Freundin steht, füllt sie die Vollmacht auf der Rückseite des orangenen Zettels und ich lauf das Ding abholen. Aber irgendwie hat das keinen interessiert, ich hab das Paket auch so bekommen. Der Herr hinterm Schalter hat sich kein Bit dafür interessiert, wer ich bin. Eine Unterschrift wollte er auch nicht...<br>
-
 Wir erinnern uns, der Zettel hing einfach so am Briefkasten. Yay.<br>
-
 Und was war mit dem zweiten Paket? Richtig, das wurde auch ohne Unterschrift und alles abgegeben...<br>
-
 <br>
-
 Was lernen wir daraus? Egal wie viel man für den Versand zahlt, es wird eh scheisse behandelt und keinen juckts obs ankommt.<br>
-
 <br>
-
 PS: Ja, es ist Failnachten, aber wen interessierts?</p></body></html>

@@ -1,25 +1,13 @@
 <html><body><p>Mein Vater hat einen alten Toshiba Satellite Pro 4600 mit einer Orinoco Gold miniPCI. Eigentlich eine voll tolle Sache, bis auf die Tatsache, dass man damit unter Windows2000 zum verrecken kein WPA hinkriegt. Deswegen hatte er in letzter Zeit meine Netgear WG511T drin, denn die Netgear-Treiber haben so ein schönes Config-Tool, wo man WPA mit nutzen kann. Es kommt aber schonmal vor, dass ich die Netgear brauche (Atheros/madwifi-ng kann mit nem kleinen Patch Packet-Injetion, meine IPW3945 nicht).<br>
-
 <br>
-
 soxx aus #hackerboard sagte mir dann, ich bräuchte eigentlich nur neuere Treiber, und empfahl mir direkt auch eine <a href="http://www.steve-m.de/wlan/orinoco/" target="_blank">kleine Sammelseite</a>, wo ich dann brav auch die aktuellsten Treiber und den neusten Client Manager runtergeladen habe. Beides installiert und was ist? Immer noch kein WPA in diesem Client Manager zum auswählen. Grml, aber vielleicht gibt es da was von <a href="http://www.microsoft.com/technet/network/wifi/wififaq.mspx" target="_blank">Microsoft</a>? Immerhin sind die der Hersteller des Betriebssystems, der Support läuft noch bis 2010 und XP kann auch WPA (seit SP2 *sigh*, und auch da mit der Software des Hardwareherstellers besser...).<br>
-
 <br>
-
 Pustekuchen:<br>
-
 Q. Which versions of Windows support WPA?<br>
-
 A. WPA is supported in Windows XP (with either Windows XP Service Pack 2 or Windows XP Service Pack 1 and the Wireless Update Rollup Package for Windows XP), Windows Server 2003 Service Pack 1, Windows Vista, and Windows Server "Longhorn." Check with your wireless adapter manufacturer for wireless client software that supports WPA for previous versions of Windows. <br>
-
 <br>
-
 <strong>DANKE BILL!</strong><br>
-
 <br>
-
 Na dann ma Google fragen, was sie so zum Thema "windows 2000 wpa" meinen. Direkt der erste Treffer (auf englisch, deutsches Google ist doof) lautet "<a href="http://www.wifinetnews.com/archives/002926.html" target="_blank">Wi-Fi Networking News: WPA for Free under Windows 2000</a>" - klingt doch schonmal vielversprechend, oder? Mal geklickt und den Artikel gelesen.<br>
-
 <br>
-
 Im Ganzen wird da eigentlich nur gesagt, dass es eine Software gibt, die das kann, weil MS es selbst nicht schafft. Dazu auch der passende Link: <a href="http://www.wirelesssecuritycorp.com/wsc/public/WPAAssistant.do">http://www.wirelesssecuritycorp.com/wsc/public/WPAAssistant.do</a>. WirelessSecurityCorp? WTF!? Klingt nicht gerade doll, naja. Wer klickt wird feststellen, dass sich dahinter McAfee Inc verbirgt. Also mal runterladen und installieren (musste ca 30mal auf diese dumme Frage ovn Windows antworten, ob ich den Treiber WIRKLICH installieren will *sigh*). Reboot, und siehe da, nach paar Klicks funktioniert der Shice wirklich und die schöne alte Orinoco macht brav WPA-PSK!</p></body></html>

@@ -1,3 +1,2 @@
 <html><body><p>Tarja hat ein Statement zu ihrem "Rauswurf" (ich berichtete...) veröffentlich. Möchte hier nicht viel zitieren. Lest selbst:<br>
-
 <a href="http://www.nightwish.fr/website/html/messagedetarja-en.htm">http://www.nightwish.fr/website/html/messagedetarja-en.htm</a></p></body></html>

@@ -1,5 +1,3 @@
 <html><body><p>Maeh, ich hasse es.</p><p>Da ist man bei seiner Freundin, chillt ein wenig vorm PC, weil sie noch am malen ist und kriegt dabei andauern Authorizierungsanfragen von ICQ Bots. Das ist sowas von nervig. Vorallem wenn man an einem P3-500 sitzt und Gaim + Firefox + XMMS eh den Rechner an seine Grenzen bringen, ohne dass da die ganze Zeit neue Fenster aufpoppen.</p><p>Meine persönliche Blacklist:<br>
-
 323166361<br>
-
 344842881</p><p>Boykotiert ICQ! Nutzt Jabber!</p></body></html>

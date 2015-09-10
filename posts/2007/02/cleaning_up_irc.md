@@ -1,5 +1,3 @@
 <html><body><p>Irgendwie hab ich gerade festgestellt, dass in voll vielen Channels wo ich war,  einfach tote Hose ist. Deswegen mal ein wenig aufgeräumt.<br>
-
 Jetzt bin ich in nur noch 22 Channels auf insgesamt 6 Netzen (früher waren das  ca 40 Chans auf 8 Netzen).<br>
-
 Vielleicht schaffe ich es noch auf &lt;= 10 Chans, so dass ich XChat gegen irssi austauschen kann ohne mir die Finger beim Fenster-Wechseln zu brechen.</p></body></html>

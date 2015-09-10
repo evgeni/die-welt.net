@@ -1,17 +1,9 @@
 <html><body><p>Wir entwickeln zur Zeit @Work ein Portal. Wie bei Portalen üblich wird man dort auch ein umfangreiches Profil anlegen können. Da dies in einer PostgreSQL Datenbank abgelegt werden soll, und das Portal in Plone realisiert werden soll, sollten die User natürlich auch in der SQL und nicht im Plone-eigenem Benutzermanagment landen, sonst hat man ja redunante Einträge teilweise. Also nutzt man das SQLPASPlugin um sowas in die SQL zu verschieben. Ich erspare euch nun weitere Details wie das in Plone funktioniert, sondern sage nur folgendes:<br>
-
 Seit längerer Zeit existiert eine Zope Instanz, wo das ganze entwickelt wird. In dieser Instanz sind mehrere Plone-Sites mit unterschiedlichen Baustellen des Portals. Am Mittwoch legte ich mir eine Kopie an, um das SQL Zeug zu testen, was auch soweit ganz gut geklappt hat. Netterweise sind meine Kollegen aber gestern auf die Idee gekommen, das Passwort des Users in der Datenbank zu ändern, so dass das in Plone/Zope gespeicherte nicht mehr ging und diese keine Verbindung zur Datenbank herstellen konnten... Wenn man nur aber die Authifizierung gegen die Datenbank laufen lässt... Ihr könnt euchs schon denken, oder? Richtig, ich kam nicht mehr in das Plone rein um die Eigenschaften der SQL-Verbindung zu ändern. Und hatte natürlich auch das neue Passwort nicht zur Hand *kotz*.<br>
-
 <br>
-
 Naja, gelöst habe ich es dann doch, aber fand die Tatsache toll, dass ich mit einem user, der außerhalb der SQL liegt auch nicht mehr reinkam, da die SQL immer gequeried wurde...<br>
-
 <br>
-
 Leider war das aber noch nicht alles für heute.<br>
-
 <br>
-
 Irgendwas ist beim Datenimport einer größeren Datenbank meines Kollegen schiefglaufen, postmaster hat sich beide CPU Cores und 1.8GB RAM gekrallt und die Load auf &gt;40 hochgejagt. /etc/init.d/postgreqsql-8.1 stop wollte auch nicht helfen, also Hart-Reset am Power-Switch gemacht... Die Kiste kam aber nicht mehr sauber hoch, /etc/nologin war noch da, init hat sich wohl festgrefressen irgendwo, also noch ein Reboot, da lief schon soweit alles, bis auf die Zope-Instanzen. Mein Herr Cheff hat nämlich letztens etwas portiert und <strong>NICHT DIE VERDAMMTEN INITSCRIPTE ANGEPASST</strong> *grrrrrr* der kriegt gleich was zu hören...<br>
-
 Gut, da war ein Tippfehler meinerseits auch noch, aber hey...</p></body></html>

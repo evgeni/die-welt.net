@@ -1,27 +1,14 @@
 <html><body><p>Wie golem.de berichtet, hat <a href="http://golem.de/0701/49953.html" target="_blank">Holtzbrinck in erento.com investiert</a> und setzt damit seine <a href="http://golem.de/0701/49812.html" target="_blank">Einkaufstour</a> <a href="http://golem.de/0701/49712.html" target="_blank">fort</a>.<br>
-
 <br>
-
 Dies hab ich mir zum Anlass genommen, die Einkäufe etwas mehr unter die Lupe zu nehmen.<br>
-
 erento.com ist ein Mietplatz (im Gegensatz zu Marktplatz?) wo man Sachen mieten und vermieten kann, die man zwar braucht, aber nicht kaufen will, weil man sie nur einmal braucht, oder eben gekauft hat aber nicht täglich braucht. Könnte vielleicht eine interessante Sache für manch einen Sparfuchs sein, aber ich habe lieber alles eigenes was ich brauche, oder leihe es mir unentgeltlich von Freunden - is einfacher und besser ;-)<br>
-
 helpster.de ist hingegen wirklich interessant, da kann man nämlich Ärzte und Medizinartikel bewerten. So hat man vor dem Besuch die Möglichkeit sich über den Arzt zu informieren und eventuell doch zu einem anderen zu gehen. Die Möglichkeit der Falschbewertung usw. lass ich hier mal außen vor.<br>
-
 <br>
-
 Jetzt haben sollche Web-Apps aber in letzter Zeit viel zu viele Sicherheitslücken, und da man sich bei den beiden Seiten einloggen muss, ist Phishing nicht weit entfernt. Leider haben es die Entwickler viel zu einfach gemacht und direkt ein paar XSS Lücken eingebaut:<br>
-
 <a href="http://www.erento.com/mieten/suche/?beschreibung=on&amp;plzsuche=&amp;suchein=erento&amp;suchtext=%3C%2Ftitle%3E%3C%2Fhead%3E%3Cbody%3E%3Ch1%3EHAHAHAH%2C+man+sollte+wissen+%3Ca+href%3Dhttp%3A%2F%2Fgolem.de%2F0701%2F49953.html%3Ewas+man+kauft%3C%2Fa%3E%3C%2Fh1%3E&amp;ausplz=" target="_blank">erento.com XSS in der Suche</a><br>
-
 <a href="http://www.helpster.de/suche.html?mode=search&amp;act=all&amp;keywords=%3Ch1%3EKatze%20imSack%20gekauft?%3C/h1%3E" target="_blank">helpster.de XSS in der Suche</a><br>
-
 <a href="http://support.helpster.de/?name=%22%3E%3Ch1%3ENa?%20Die%20Katze%20im%20Sack%20%3Ca%20href=http://golem.de/0701/49812.html%3E%20gekauft?%3C/a%3E%3C/h1%3E&amp;email=%22%3E%3Ch1%3ENa?%20Die%20Katze%20im%20Sack%20%3Ca%20href=http://golem.de/0701/49812.html%3E%20gekauft?%3C/a%3E%3C/h1%3E" target="_blank">helpster.de XSS im Supportforumalar</a><br>
-
 <br>
-
 Da ein falsches Login-Fenster einzubauen und den Link als "toller Arzt in deiner Nähe" o.ä. zu verbreiten sollte nicht all zu schwer sein, und da die meisten User das selbe Passwort für viele Sachen haben, ist man schon ziemlich weit.<br>
-
 <br>
-
 Naja, das waren meine 2 Cent zu der Sache, soll jeder sich seinen eigenen Teil dazu denken.</p></body></html>

@@ -1,17 +1,9 @@
 <html><body><p>Ich hab den folgenden Link zwar gerade an Fefe gemailt, aber dachte dann, man kann ja auch manchmal selber bloggen: <a href="http://www.teltarif.de/arch/2007/kw48/s28017.html" target="_blank">Comundo stellt Tiscali-Verbindungen aus 2002 in Rechnung</a>.<br>
-
 <br>
-
 Klingt erstmal wie ein schlechter Scherz, scheint es aber nicht zu sein: <strong>"Der Firma Tiscali war es in den letzten Jahren leider nicht immer möglich, Ihnen regelmäßig eine Rechnung zuzusenden. Es gibt einige Verbindungen aus vergangenen Monaten und Jahren, die bislang nicht bei Ihnen abgerechnet wurden. Dieses holen wir nun für Sie nach."</strong><br>
-
 Ich war gottseidank nie Tiscali Kunde, so dass ich sowas nicht bekommen habe, wundere mich aber trotzdem, warum die Fritzen die Daten noch haben? Durfte man die damals nicht nur zur Abrechnungszwecken speichern? Und auch wenn die Abrechnung versehentlich nicht erfolgt ist (so wie hier offensichtlich) - 5 Jahre die Daten aufbewahren, das übertrifft sogar die Wünsche eines berühmten Rollstuhlfahrers...<br>
-
 <br>
-
 Kommt aber netterweise noch besser, damit die Leute, die sich jetzt schon aufregen, komplett ausrasten: <strong>Der betroffene Kunde hatte seinerzeit bei Tiscali einen gekürzten Einzelverbindungsnachweis beantragt. Comundo stellte ihm nun Gesprächslisten aus den Jahren 2002 bis 2007 zu, ohne die Zielrufnummer zur kürzen.</strong><br>
-
 Abgesehen davon, dass der Kunde das explizit anders verlangt hat, muss ich die Nummern komplett speichern, wenn ich etwas abrechnen möchte? Reicht nicht die Vorwahl, die allein für die Gebühren verantwortlich ist? (Jaja, kommt und schreit dass man heute seine Handynummer portieren kann und im Festnetz unterschiedliche Anbieter hocken, für die die Rosa Riesen plötzlich mehr Geld wollen, wie für alle anderen - aber damals?)<br>
-
 <br>
-
 Alles ganz komisch, wenn mich einer fragt. Aber das tut gottseidank keiner, sonst wär ich wahrscheinlich nicht mehr hier *sigh*</p></body></html>

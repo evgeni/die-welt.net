@@ -1,13 +1,7 @@
 <html><body><p>Heute früh kam mir dieser Gedanke in den Kopf... Nachdem ich Aufgewacht bin, als Erstes mein Laptop eingeschaltet habe, Mails gecheckt habe, mir was zu frühstücken geholt habe und statt das Gemachte auch zu essen mich erstmal drangesetzt und ein <a href="http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=419835" target="_blank">Bug gegen pgadmin3</a> in Debian geschrieben. Hab sogar ein Patch mitgeschickt, wie man das Problem löst, und dabei nutze ich diese Software eigentlich gar nicht... Aber sie ist hier installiert und beim täglichen apt-get update ist mir der Bug im Paket dann aufgefallen.<br>
-
 <br>
-
 Vor ein paar Tagen war das ähnlich, aber mit proftpd: im <a href="http://blog.syscp.org/archives/58-Security-warning-Possible-remote-code-injection-when-using-Debian-SargeEtch.html" target="_blank">SysCP Blog war ein Post über eine Sicherheitslücke im proftpd</a> und ich habe dann doch tatsächlich mir Sarge und Etch chroots auf meiner Sid-Kiste erstellt, proftpd mit mysql darin installiert und den Bug reproduziert. Danach die Ursache gefunden und einen passenden <a href="http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=419255" target="_blank">Bug im Debian BTS</a> verfasst, dieser ist mittlerweile vom Upstream gefixt und ein neues Paket befindet sich in Sid.<br>
-
 <br>
-
 Mach ich wirklich zuviel vorm Rechner rum? Ich weiss es nicht genau, aber es ist definitiv einiges, immerhin sitz ich auch jetzt gerade in der Uni und warte auf einen Kumpel. Anstatt sinnvolle Sachen zu machen (ich müsste noch Aufgaben in Info, Infowiss und Analysis machen) schreibe ich nun diese Zeilen, und lese nebenbei noch debian-devel... Ja ich bin unnormal, aber ich lebe gut damit!<br>
-
 <br>
-
 PS: nachher noch ein tolles Script hochladen, was ich gestern und heute in der Vorlesung zusammengehackt habe - nie mehr nachdenken, welche Soundkarte man gerade nutzen möchte/soll ;)</p></body></html>

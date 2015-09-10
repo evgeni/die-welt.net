@@ -1,13 +1,7 @@
 <html><body><p>Ehja, oder so ähnlich. Zumindest berichtet tagesschau.de, dass <a href="http://www.tagesschau.de/aktuell/meldungen/0%2C%2COID6968546_REF1%2C00.html" target="_blank"> Frankreichs Regierung die Nutzung von Blackberrys verbietet</a>, weil:<br>
-
 <i>alle Blackberry-Daten über Server in den USA und in Großbritannien laufen. Paris fürchte, dass der US-Geheimdienst NSA, der weltweit Kommunikationswege überwacht, damit Zugriff auf geheime Regierungsdaten bekomme.</i><br>
-
 Interessanter Ansatz, aber dann müssen sie auch konsequenter-weise den gesamten EMail-Verkehr mit ausländischen Servern blocken - oder? Am besten ein FraNet aufbauen, nur politisch-korrekte Inhalte veröffentlichen und keine Verbindungen außerhalb Frankreichs erlauben...<br>
-
 Nicht, dass ich etwas gegen die Franzosen hätte (die machen guten Wein und man kann bei ihnen super Ski-Fahren...), aber so eine Lösung würde zumindest debian-user-german erfreuen *lach*. Ne mal im Ernst: die spinnen die Römer^WFranzosen!!! Und was hindert die NSA daran, einen Agenten nach Frankreich zu schicken, der sich bei irgendeinem großen Provider einschleust und DORT zeug Abhört? ... Richtig, GPG/PGP, aber das kennen die Franzosen ja offensichtlich nicht - oder ist die Nutzung von Verschlüsselungs-Software mittlerweile in frankreich verboten, weil sie sonst selbst nicht mehr Lauschen könnten?<br>
-
 <br>
-
 Ich bin froh in .de zu leben... Ne eigentlich auch nicht, aber das würde jetzt den Post sprengen...<br>
-
 Bye, ich geh einen Döner essen!</p></body></html>

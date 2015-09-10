@@ -1,11 +1,6 @@
 <html><body><p>Hab mir letztens einen neuen Brenner für mein Sony Laptop zugelegt und ihn gestern endlich zum Brennen überredet. Hab davor noch gar nicht unter Linux auf dem Lappy gebrannt.<br>
-
 Auf jeden Fall ist der Brenner in der Dockingstation des Laptops, und wird über eine FireWire Schnittstelle an den Laptop angeschlossen. /dev/scd0 ist dann das Device - zum CD/DVD Lesen ist das gut, aber wie bringt man das cdrecord bei?<br>
-
 <strong>`cdrecord -scanbus`</strong> ergibt nix, obwohl <strong>`cdrdao scanbus`</strong> den Brenner (übrigens ein QSI SBW-242U) problemlos findet. Rumgewuselt und festgestellt, dass mit <strong>`cdrecord dev=/dev/scd0 -scanbus`</strong> der Brenner angezeigt wird. Gut, aber cdrecord an sich ist doof. Ich will Klickibunti: GnomeBaker - findet den brenner nicht selbst, hab den gesagt wo der Brenner ist, hatter zwar geschluckt, aber wollte nicht brennen. Sau. Dann k3b mal drauf *ächtz*, scheiß kdelibs. Der findet den Brenner sofort, nur brennen tut er auch ned. Irgendwas mit Error 255 bei cdrecord. Naja, auf jeden Fall ging es dann, als ich <strong>dev=/dev/scd0</strong> in den cdrecord Optionen von k3b eingetragen habe. Dat wird zwar bestimmt schiefgehen, wenn ich dann 2 Brenner ansprechen will, aber das sollte in dem alten Laptop nie passieren :-)<br>
-
 <br>
-
 Fazit: Mein Sony Vaio PCG-R505R/GK brennt nun zufrieden unter Debian Linux (Sid) mit k3b und ich bin glücklich.<br>
-
 Naja, fast. Er will immer noch keine CSS geschützten DVDs abspielen, was auch an FireWire liegt, glaub ich zumindest.</p></body></html>

