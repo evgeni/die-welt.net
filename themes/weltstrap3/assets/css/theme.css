@@ -110,11 +110,11 @@ i.fa {
   font-weight: 600;
   line-height: 55px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 #head p {
   font-weight: 900;
-  line-height: 35px;
   font-size: 16px;
   color: #46beac;
 }
