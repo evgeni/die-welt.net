@@ -115,12 +115,14 @@ i.fa {
 /*=====================================
     SOCIAL BUTTON STYLES
 ======================================*/
-.navbar .btn-social {
+.navbar .btn-social,
+.navbar-inverse .navbar-nav > li > a.btn-social {
   color: white;
   background-color: rgba(92, 92, 92, 0.38);
 }
 
-.navbar .btn-social:hover {
+.navbar .btn-social:hover,
+.navbar-inverse .navbar-nav > li > a.btn-social:hover {
   text-decoration: none;
   background-color: rgba(92, 92, 92, 0.68);
 }
