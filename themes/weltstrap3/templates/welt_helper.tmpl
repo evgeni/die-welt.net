@@ -7,7 +7,7 @@
             <ul class="dropdown-menu">
             %for suburl, text, icon in url:
                 % if rel_link(permalink, suburl) == "#":
-                    <li class="active"><a class="btn btn-social" href="${permalink}" title="${text}"><i class="fa ${icon} fa-2x"></i><span class="sr-only">${messages("(active)", lang)}</span></a>
+                    <li> a class="btn btn-social" href="${permalink}" title="${text}"><i class="fa ${icon} fa-2x"></i><span class="sr-only">${messages("(active)", lang)}</span></a>
                 %else:
                     <li><a class="btn btn-social" href="${suburl}" title="${text}"><i class="fa ${icon} fa-2x"></a>
                 %endif
@@ -15,7 +15,7 @@
             </ul>
         % else:
             % if rel_link(permalink, url) == "#":
-                <li class="active"><a class="btn btn-social" href="${permalink}" title="${text}"><i class="fa ${icon} fa-2x"><span class="sr-only">${messages("(active)", lang)}</span></a>
+                <li><a class="btn btn-social" href="${permalink}" title="${text}"><i class="fa ${icon} fa-2x"><span class="sr-only">${messages("(active)", lang)}</span></a>
             %else:
                 <li><a href="${url}" class="btn btn-social" title="${text}"><i class="fa ${icon} fa-2x"></a>
             %endif
