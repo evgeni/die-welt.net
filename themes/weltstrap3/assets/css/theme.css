@@ -41,6 +41,18 @@ i.fa {
   width: 25px;
 }
 
+.collapse-only {
+  display: none;
+}
+
+.in .collapse-only {
+  display: inherit;
+}
+
+.in .fa {
+  display: none;
+}
+
 .card {
   height: 100%;
   width: 200px;

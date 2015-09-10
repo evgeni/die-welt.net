@@ -17,6 +17,14 @@ ${template_hooks['extra_head']()}
 
 <nav class="navbar navbar-inverse navbar-static-top">
     <div class="container"><!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+        </div>
         <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
             <ul class="nav navbar-nav">
                 ${welt.html_navigation_links()}
@@ -39,12 +47,6 @@ ${template_hooks['extra_head']()}
             </ul>
         </div><!-- /.navbar-collapse -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
             <a class="logo" href="${abs_link(_link("root", None, lang))}">
             %if logo_url:
                 <img src="${logo_url}" alt="${blog_title}" id="logo">
@@ -58,7 +60,6 @@ ${template_hooks['extra_head']()}
             %if blog_description:
                 <p>${blog_description}</p>
             %endif
-
         </div><!-- /.navbar-header -->
     </div><!-- /.container -->
 </nav>

@@ -15,9 +15,9 @@
             </ul>
         % else:
             % if rel_link(permalink, url) == "#":
-                <li><a class="btn btn-social" href="${permalink}" title="${text}"><i class="fa ${icon} fa-2x"><span class="sr-only">${messages("(active)", lang)}</span></a>
+                <li><a class="btn btn-social" href="${permalink}" title="${text}"><i class="fa ${icon} fa-2x"></i><span class="collapse-only">${text}</span><span class="sr-only">${messages("(active)", lang)}</span></a>
             %else:
-                <li><a href="${url}" class="btn btn-social" title="${text}"><i class="fa ${icon} fa-2x"></a>
+                <li><a href="${url}" class="btn btn-social" title="${text}"><i class="fa ${icon} fa-2x"></i><span class="collapse-only">${text}</span></a>
             %endif
         % endif
     %endfor
