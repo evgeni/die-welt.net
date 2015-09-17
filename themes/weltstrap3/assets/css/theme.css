@@ -1,27 +1,15 @@
-﻿/*=============================================================
-    Authour URL: www.designbootstrap.com
+﻿/*
+  css based on "minimal" from www.designbootstrap.com
+  license: mit
+*/
 
-    http://www.designbootstrap.com/
-
-    License: MIT
-
-    http://opensource.org/licenses/MIT
-
-    100% Free To use For Personal And Commercial Use.
-
-    IN EXCHANGE JUST TELL PEOPLE ABOUT THIS WEBSITE
-
-========================================================  */
-
-
-/* =============================================================
-   GENERAL STYLES
- ============================================================ */
-
-@import url(http://fonts.googleapis.com/css?family=Montserrat); /* FREE GOOGLE FONT */
+/*
+  general style
+*/
+@import url(http: //fonts.googleapis.com/css?family=montserrat); /* free google font */
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Montserrat, sans-serif;
   line-height: 30px;
   font-size: 16px;
 }
@@ -31,26 +19,8 @@ section {
   padding-bottom: 80px;
 }
 
-/*** ego fiddle ***/
-.social_share_privacy_area li.help_info .info,
-.social_share_privacy_area li.help_info.icon .info {
-  width: 160px !important;
-}
-
-i.fa {
-  width: 25px;
-}
-
-.collapse-only {
-  display: none;
-}
-
-.in .collapse-only {
-  display: inherit;
-}
-
-.in .fa {
-  display: none;
+.social_share_privacy_area li.help_info .info,.social_share_privacy_area li.help_info.icon .info {
+  width: 160px!important;
 }
 
 .card {
@@ -59,46 +29,48 @@ i.fa {
   overflow-y: visible;
   overflow-x: visible;
   position: fixed;
-  bottom: 0em;
+  bottom: 0;
   right: 5em;
 }
 
 .card_content {
-  padding: 10px;
   position: absolute;
   bottom: -336px;
-  transition: all 0.5s ease;
+  transition: all .5s ease;
+  padding: 10px;
 }
 
 .card_content h3 {
   font-size: 1.5em;
-  margin-bottom: 0.5em;
+  margin-bottom: .5em;
   text-align: center;
 }
 
 .card_content:hover {
-  bottom: 0.5em;
+  bottom: .5em;
 }
 
-/* =============================================================
-   HEAD SECTION STYLES
- ============================================================ */
+/*
+ head style
+*/
 
 #head {
   background: url(../img/header.jpg) no-repeat center center;
-  padding: 0;
   -webkit-background-size: cover;
   background-size: cover;
   -moz-background-size: cover;
   color: #fff;
+  padding: 0;
 }
+
 #head a.navbar-brand,#head a.navbar-brand:hover {
-  text-decoration:none;
-  color:#fff;
+  text-decoration: none;
+  color: #fff;
   float: none;
 }
+
 #head .navbar {
-  background-color: rgba(40, 40, 40, 0.8);
+  background-color: rgba(40,40,40,0.8);
   min-height: 200px;
 }
 
@@ -121,23 +93,22 @@ i.fa {
 
 .adv-div {
   vertical-align: middle;
-  color: #808080;
+  color: gray;
   margin: 30px;
 }
 
-/*=====================================
-    SOCIAL BUTTON STYLES
-======================================*/
-.navbar .btn-social,
-.navbar-inverse .navbar-nav > li > a.btn-social {
-  color: white;
-  background-color: rgba(92, 92, 92, 0.38);
+/*
+ button style
+*/
+
+.navbar .btn-social,.navbar-inverse .navbar-nav > li > a.btn-social {
+  color: #FFF;
+  background-color: rgba(92,92,92,0.38);
 }
 
-.navbar .btn-social:hover,
-.navbar-inverse .navbar-nav > li > a.btn-social:hover {
+.navbar .btn-social:hover,.navbar-inverse .navbar-nav > li > a.btn-social:hover {
   text-decoration: none;
-  background-color: rgba(92, 92, 92, 0.68);
+  background-color: rgba(92,92,92,0.68);
 }
 
 .nav li {
@@ -148,69 +119,85 @@ i.fa {
 .nav li a {
   padding: 10px;
 }
-/* =============================================================
-   BLOG SECTION STYLES
- ============================================================ */
-#blog {
-  min-height:400px;
+
+i.fa {
+  width: 25px;
 }
+
+.collapse-only,.in .fa {
+  display: none;
+}
+
+.in .collapse-only {
+  display: inherit;
+}
+
+/*
+ blog style
+*/
+
+#blog {
+  min-height: 400px;
+}
+
 .img-blog {
   width: 200px;
   height: 200px;
   text-align: center;
 }
 
-.custom-blog, .h-entry {
+.custom-blog,.h-entry {
   padding-bottom: 30px;
   border-bottom: 1px dotted #e1e1e1;
   margin-bottom: 30px;
 }
 
-.custom-blog p, .h-entry p {
+.custom-blog p,.h-entry p {
   padding-bottom: 10px;
 }
 
-.custom-blog h1,
-.custom-blog h1>a,
-.h-entry h1,
-.h-entry h1>a {
+.custom-blog h1,.custom-blog h1>a,.h-entry h1,.h-entry h1>a {
   padding-bottom: 20px;
   color: #46beac;
   line-height: 50px;
 }
 
 .page-set {
-  text-align:center;
-  padding:5px;
+  text-align: center;
+  padding: 5px;
 }
 
-/*================================
-    COMMENT STYLES
- ============================  */
+/*
+ comment style
+*/
+
 .comment-sec h1 {
-  padding-bottom:30px;
-}
-.comment-sec .comment-wrapper {
-  padding:20px;
-  border:1px dashed rgba(92, 92, 92, 0.38);
-  margin:10px;
-}
-.set-post {
-  padding:20px;
-  margin:10px;
+  padding-bottom: 30px;
 }
 
-/*================================
-    FOOTER SECTION STYLES
- ============================  */
-footer {
+.comment-sec .comment-wrapper {
+  border: 1px dashed rgba(92,92,92,0.38);
+  margin: 10px;
   padding: 20px;
+}
+
+.set-post {
+  margin: 10px;
+  padding: 20px;
+}
+
+/*
+ footer style
+*/
+
+footer {
   color: #46beac;
   font-size: 16px;
-  background-color: rgba(16, 16, 16, 0.9);
+  background-color: rgba(16,16,16,0.9);
+  padding: 20px;
 }
 
-footer a, footer a:hover, footer a:focus {
+footer a,footer a:hover,footer a:focus {
   color: #46beac;
   text-decoration: none;
   margin-right: 10px;
