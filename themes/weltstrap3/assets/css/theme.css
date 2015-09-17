@@ -23,6 +23,10 @@ section {
   width: 160px!important;
 }
 
+/*
+ social share buttons
+*/
+
 .card {
   height: 100%;
   width: 200px;
@@ -91,12 +95,6 @@ section {
   color: #46beac;
 }
 
-.adv-div {
-  vertical-align: middle;
-  color: gray;
-  margin: 30px;
-}
-
 /*
  button style
 */
@@ -136,27 +134,17 @@ i.fa {
  blog style
 */
 
-#blog {
-  min-height: 400px;
-}
-
-.img-blog {
-  width: 200px;
-  height: 200px;
-  text-align: center;
-}
-
-.custom-blog,.h-entry {
+.h-entry {
   padding-bottom: 30px;
   border-bottom: 1px dotted #e1e1e1;
   margin-bottom: 30px;
 }
 
-.custom-blog p,.h-entry p {
+.h-entry p {
   padding-bottom: 10px;
 }
 
-.custom-blog h1,.custom-blog h1>a,.h-entry h1,.h-entry h1>a {
+.h-entry h1,.h-entry h1>a {
   padding-bottom: 20px;
   color: #46beac;
   line-height: 50px;
