@@ -16,7 +16,7 @@ I almost went that way. But I felt that urge need to read the docs before. So I 
 
 Really? I have to check the returned <strong>STRING</strong> to know if there was an error? Go home HTML5, you're drunk!
 
-Okay, okay. No canvas rendered to images then. Let's just render the QR code as a <code>&lt;table&gt;</code> instead of a <code>&lt;canvas&gt;</code> when the browser looks like Opera. There is nothing one could do wrong with tables, right? But let's test with the <a href="http://jeromeetienne.github.com/jquery-qrcode/examples/basic.html">basic example</a> first:<a href="/wp-content/uploads/2013/03/opera-qrcode.png"><img class="aligncenter size-medium wp-image-1123" title="opera-qrcode" src="/wp-content/uploads/2013/03/opera-qrcode-132x300.png" alt="" width="132" height="300"></a>
+Okay, okay. No canvas rendered to images then. Let's just render the QR code as a <code>&lt;table&gt;</code> instead of a <code>&lt;canvas&gt;</code> when the browser looks like Opera. There is nothing one could do wrong with tables, right? But let's test with the <a href="http://jeromeetienne.github.com/jquery-qrcode/examples/basic.html">basic example</a> first:<a class="image-reference" href="/wp-content/uploads/2013/03/opera-qrcode.png"><img class="aligncenter size-medium wp-image-1123" title="opera-qrcode" src="/wp-content/uploads/2013/03/opera-qrcode-132x300.png" alt="" width="132" height="300"></a>
 
 Yes, this is 2013. Yes, this is Opera 12.14. Yes, the rendering of a fucking HTML table is wrong. Needles to say, Iceweasel and Chromium render the example just fine. I bet even a recent Internet Explorer would...
 

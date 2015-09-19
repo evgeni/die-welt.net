@@ -4,7 +4,7 @@ In the last months I noticed some strange behavior with their site: when surfing
 
 Today I noticed another funny thing: bookmarks without an owner:
 
-<a href="/wp-content/uploads/2011/01/delicious-no_user.png"><img class="alignnone size-medium wp-image-769" title="delicious bookmark without a user" src="/wp-content/uploads/2011/01/delicious-no_user-300x31.png" alt="" width="300" height="31">
+<a class="image-reference" href="/wp-content/uploads/2011/01/delicious-no_user.png"><img class="alignnone size-medium wp-image-769" title="delicious bookmark without a user" src="/wp-content/uploads/2011/01/delicious-no_user-300x31.png" alt="" width="300" height="31">
 
 </a>Again, not sure what is happening here. Did the user delete his account? Delicious says all bookmarks will be gone when deleting, so this should be something different, but again, I have no clue.
 

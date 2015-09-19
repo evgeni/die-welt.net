@@ -91,6 +91,6 @@ and done, you@jabberserver.example.com is online :)
 
 The all awaited screenshot (from my last irssi-post):
 
-<a href="/wp-content/uploads/2010/12/irssi-awl.png"><img class="alignnone size-medium wp-image-759" title="irssi advanced windowlist" src="/wp-content/uploads/2010/12/irssi-awl-300x181.png" alt="" width="300" height="181"></a>
+<a class="image-reference" href="/wp-content/uploads/2010/12/irssi-awl.png"><img class="alignnone size-medium wp-image-759" title="irssi advanced windowlist" src="/wp-content/uploads/2010/12/irssi-awl-300x181.png" alt="" width="300" height="181"></a>
 
 And the whole <code>~/.irssi/config</code>: <a href="http://files.die-welt.net/irssi-config.txt">http://files.die-welt.net/irssi-config.txt</a>, read it carefully while waiting for the next post about newsbeuter :)</body></html>

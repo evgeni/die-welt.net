@@ -28,6 +28,6 @@ The only culprit here is than one has to use Google Reader to subscribe to feeds
 
 Oh, and here comes the screenshot you waited for:
 
-<a href="/wp-content/uploads/2011/03/newsbeuter.png"><img src="/wp-content/uploads/2011/03/newsbeuter-300x171.png" alt="" title="newsbeuter" width="300" height="171" class="alignnone size-medium wp-image-874"></a>
+<a class="image-reference" href="/wp-content/uploads/2011/03/newsbeuter.png"><img src="/wp-content/uploads/2011/03/newsbeuter-300x171.png" alt="" title="newsbeuter" width="300" height="171" class="alignnone size-medium wp-image-874"></a>
 
 And no, I do not post my config here, you have to copy-paste it from above, hard, isn't it? :)</body></html>

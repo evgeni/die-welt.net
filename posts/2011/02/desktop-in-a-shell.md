@@ -85,6 +85,6 @@ My <code>.screenrc</code> looks like this:
 
 That's all for my screen setup. The obvious, boring screenshot follows:
 
-<a href="/wp-content/uploads/2011/02/screen.png"><img class="alignnone size-medium wp-image-826" title="screen" src="/wp-content/uploads/2011/02/screen-300x171.png" alt="" width="300" height="171"></a>
+<a class="image-reference" href="/wp-content/uploads/2011/02/screen.png"><img class="alignnone size-medium wp-image-826" title="screen" src="/wp-content/uploads/2011/02/screen-300x171.png" alt="" width="300" height="171"></a>
 
 See you next time, when I will present my mutt setup here.</body></html>
