@@ -133,7 +133,7 @@ NAVIGATION_LINKS = {
         ("/pix/", "Pictures", "fa-camera"),
         ("/about/", "About", "fa-info"),
         ("/archive.html", "Archives", "fa-archive"),
-        ("/categories/index.html", "Tags", "fa-tags"),
+        ("/categories/", "Tags", "fa-tags"),
         ("/rss.xml", "RSS feed", "fa-rss"),
     ),
 }
