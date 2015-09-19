@@ -152,6 +152,6 @@ account default : die-welt.net</pre>
 
 C'est tout! That is my personal mutt configuration, you can download it as one file here: <a href="http://files.die-welt.net/muttrc.txt">my .muttrc</a>. And as everyone loves screenshots, here is one:
 
-<a href="/wp-content/uploads/2011/02/mutt.png"><img title="mutt" src="https://www.die-welt.net/wp-content/uploads/2011/02/mutt-300x171.png" alt="the default view of my mutt" width="300" height="171"></a>
+<a href="/wp-content/uploads/2011/02/mutt.png"><img title="mutt" src="/wp-content/uploads/2011/02/mutt-300x171.png" alt="the default view of my mutt" width="300" height="171"></a>
 
 Oh, the next chapter will be about <code>irssi</code>, but not before next Sunday (March 6th) as I'll be offline for a week, skiing in Austria :)</body></html>

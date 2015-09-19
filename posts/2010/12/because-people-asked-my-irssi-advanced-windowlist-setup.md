@@ -26,4 +26,4 @@ Now let's customize awl a bit:
 
 Done! Your irssi should look like this now:
 
-<a href="/wp-content/uploads/2010/12/irssi-awl.png"><img class="alignnone size-medium wp-image-759" title="irssi advanced windowlist" src="https://www.die-welt.net/wp-content/uploads/2010/12/irssi-awl-300x181.png" alt="" width="300" height="181"></a></body></html>
+<a href="/wp-content/uploads/2010/12/irssi-awl.png"><img class="alignnone size-medium wp-image-759" title="irssi advanced windowlist" src="/wp-content/uploads/2010/12/irssi-awl-300x181.png" alt="" width="300" height="181"></a></body></html>

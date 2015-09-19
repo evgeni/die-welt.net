@@ -1,4 +1,4 @@
-<html><body><img class="alignleft size-full wp-image-596" title="meiner einer" src="/wp-content/uploads/2010/07/moi_ausrufezeichen.jpg" alt="" width="120" height="160">That's me, Evgeni! :)
+<html><body><img class="alignleft size-full wp-image-596" title="meiner einer" src="/wp-content/uploads/2010/07/moi_ausrufezeichen.jpg" alt="" width="120" height="160"><br/>That's me, Evgeni! :)
 
 
 
