@@ -609,6 +609,7 @@ DEPLOY_COMMANDS = {
 # "OUTPUT_PATH/relative_destination/gallery_name"
 # Default is:
 # GALLERY_FOLDERS = {"galleries": "galleries"}
+GALLERY_FOLDERS = {"pix": "pix"}
 # More gallery options:
 # THUMBNAIL_SIZE = 180
 # MAX_IMAGE_SIZE = 1280
