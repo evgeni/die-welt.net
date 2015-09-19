@@ -199,3 +199,7 @@ footer a,footer a:hover,footer a:focus {
 .glyphicon, time.listdate {
   padding-right: .5em;
 }
+
+.alignleft {
+  float: left;
+}
