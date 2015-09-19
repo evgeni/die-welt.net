@@ -184,11 +184,10 @@ footer {
   background-color: rgba(16,16,16,0.9);
   padding: 20px;
   margin-top: 20px;
+  text-align: center;
 }
 
 footer a,footer a:hover,footer a:focus {
   color: #46beac;
   text-decoration: none;
-  margin-right: 10px;
-  margin-left: 10px;
 }
