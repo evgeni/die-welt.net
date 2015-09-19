@@ -1,4 +1,4 @@
-<html><body><p>Wie ich gestern <a href="http://www.die-welt.net/index.php/blog/96/Amazon.de_vs_ISO-8859-15">bloggte</a>, hat Amazon.de derzeit ein Problem mit ihren Mail-Headern.<br>
+<html><body><p>Wie ich gestern <a href="/2006/12/amazon-de_vs_iso-8859-15">bloggte</a>, hat Amazon.de derzeit ein Problem mit ihren Mail-Headern.<br>
 <br>
 Heute erhielt ich die folgende Antwort (gekürzt):<br>
 <br>

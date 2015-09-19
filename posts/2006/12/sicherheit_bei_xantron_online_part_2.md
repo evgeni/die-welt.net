@@ -1,4 +1,4 @@
-<html><body><p>Vor einiger Zeit berichtete ich über die <a href="http://www.die-welt.net/index.php/blog/88/Sicherheit_bei_Xantron_Online">Sicherheit bei Xantron Online</a>. Genauer gesagt über die Tatsache, dass dort das Default Passwort die Postleitzahl ist. Jetzt bin ich dazu gekommen, mal zu schauen, was passiert wenn man bereits ein sicheres Passwort hat und dieses per Web anfordert, weil es vergessen worden ist.<br>
+<html><body><p>Vor einiger Zeit berichtete ich über die <a href="/2006/11/sicherheit_bei_xantron_online">Sicherheit bei Xantron Online</a>. Genauer gesagt über die Tatsache, dass dort das Default Passwort die Postleitzahl ist. Jetzt bin ich dazu gekommen, mal zu schauen, was passiert wenn man bereits ein sicheres Passwort hat und dieses per Web anfordert, weil es vergessen worden ist.<br>
 <br>
 Nunja, man muss halt die Postleitzahl eingeben, und die Kundennummer natürlich, danach wird das Passwort in Plaintext (unverschlüsselt) an die eingetragene E-Mail Adresse versandt.<br>
 <br>

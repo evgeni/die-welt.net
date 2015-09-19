@@ -133,7 +133,7 @@ NAVIGATION_LINKS = {
         ("/pix/", "Pictures", "fa-camera"),
         ("/about/", "About", "fa-info"),
         ("/archive.html", "Archives", "fa-archive"),
-        ("/categories/", "Tags", "fa-tags"),
+        ("/category/", "Tags", "fa-tags"),
         ("/rss.xml", "RSS feed", "fa-rss"),
     ),
 }
@@ -338,7 +338,7 @@ POSTS_SECTIONS = False
 # output / TRANSLATION[lang] / TAG_PATH / index.html (list of tags)
 # output / TRANSLATION[lang] / TAG_PATH / tag.html (list of posts for a tag)
 # output / TRANSLATION[lang] / TAG_PATH / tag.xml (RSS feed for a tag)
-# TAG_PATH = "categories"
+TAG_PATH = "category"
 
 # If TAG_PAGES_ARE_INDEXES is set to True, each tag's page will contain
 # the posts themselves. If set to False, it will be just a list of links.
@@ -377,7 +377,7 @@ HIDDEN_TAGS = ['mathjax']
 # output / TRANSLATION[lang] / CATEGORY_PATH / index.html (list of categories)
 # output / TRANSLATION[lang] / CATEGORY_PATH / CATEGORY_PREFIX category.html (list of posts for a category)
 # output / TRANSLATION[lang] / CATEGORY_PATH / CATEGORY_PREFIX category.xml (RSS feed for a category)
-# CATEGORY_PATH = "categories"
+CATEGORY_PATH = "category"
 # CATEGORY_PREFIX = "cat_"
 
 # If CATEGORY_ALLOW_HIERARCHIES is set to True, categories can be organized in
