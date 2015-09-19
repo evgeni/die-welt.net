@@ -191,3 +191,11 @@ footer a,footer a:hover,footer a:focus {
   color: #46beac;
   text-decoration: none;
 }
+
+/*
+ misc style
+*/
+
+.glyphicon, time.listdate {
+  padding-right: .5em;
+}
