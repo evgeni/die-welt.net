@@ -1,4 +1,4 @@
-<html><body><p>Another week, another post from my <a href="https://www.die-welt.net/2011/02/desktop-in-a-shell/">desktop in a shell</a> series. This time: <code>newsbeuter</code>, my RSS/Atom/whatever feed-reader of choice.
+<html><body><p>Another week, another post from my <a href="/2011/02/desktop-in-a-shell/">desktop in a shell</a> series. This time: <code>newsbeuter</code>, my RSS/Atom/whatever feed-reader of choice.
 
 Newsbeuter is a config-and-forget kind of tool. You only have to touch it when you change from a static <code>~/.newsbeuter/urls</code> to Google Reader or something (like I did some time ago). In the following I will explain both ways (as both are short and it would not fill a whole post then *g*).
 
