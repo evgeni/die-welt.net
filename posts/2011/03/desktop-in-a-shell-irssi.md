@@ -1,6 +1,6 @@
-<html><body><p>Continuing my series about my <a href="https://www.die-welt.net/2011/02/desktop-in-a-shell/">desktop in a shell</a>, in this chapter I will present you my irssi setup.
+<html><body><p>Continuing my series about my <a href="/2011/02/desktop-in-a-shell/">desktop in a shell</a>, in this chapter I will present you my irssi setup.
 
-Irssi is the most customized part of my setup, using many scripts from the irssi-scripts Debian package and some "from the internet", handling 6 irc networks with a total of 34 channels plus <del>Jabber</del>XMPP, ICQ, Twitter and identi.ca.﻿
+Irssi is the most customized part of my setup, using many scripts from the irssi-scripts Debian package and some "from the internet", handling 6 irc networks with a total of 34 channels plus <del>Jabber</del>XMPP, ICQ, Twitter and identi.ca.
 
 </p><h2>My "custom" irssi settings</h2>
 
@@ -32,7 +32,7 @@ Show notices in the active window or the corresponding query instead of the stat
 No further configuration needed.
 
 <h3>adv_windowlist.pl (from <a href="http://anti.teamidiot.de/static/nei/*/Code/Irssi/adv_windowlist.pl">anti.teamidiot.de</a>)</h3>
-Some really smart windowlist, see <a href="http://www.die-welt.net/2010/12/because-people-asked-my-irssi-advanced-windowlist-setup/">my previous post about adv_windowlist.pl</a>, I won't explain its features and settings here again.
+Some really smart windowlist, see <a href="/2010/12/because-people-asked-my-irssi-advanced-windowlist-setup/">my previous post about adv_windowlist.pl</a>, I won't explain its features and settings here again.
 
 <h3>autorealname.pl (from irssi-scripts)</h3>
 Show peoples real-name when they join (my $nick ←→ $name memory is poor :()

@@ -1,8 +1,8 @@
-<html><body><p>Some (long) time ago, I wrote an article <a href="http://www.die-welt.net/2006/09/mustek_powemust_1000_usb_unter_debian_sarge/">how to setup a Mustek PowerMust 1000 USB on Debian Sarge</a>. Since then Etch, Lenny and now Squeeze were released and the machine the UPS was attached to was replaced.
+<html><body><p>Some (long) time ago, I wrote an article <a href="/2006/09/mustek_powemust_1000_usb_unter_debian_sarge/">how to setup a Mustek PowerMust 1000 USB on Debian Sarge</a>. Since then Etch, Lenny and now Squeeze were released and the machine the UPS was attached to was replaced.
 
 Yesterday I have upgraded this machine from Lenny to Squeeze and of course <a href="http://packages.debian.org/nut">nut</a> has kicked me in the nuts, telling me it can't connect to the UPS.
 
-When I replaced the old machine, I had to connect the UPS via USB instead of serial, as the new machine has only one serial port and that one is needed for the serial console to my Sun Netra T1. On Lenny, I was using the <code>megatec_usb</code> driver which seems borked on Squeeze and is superseeded by the ﻿<code>blazer_usb</code> one. So here is my <code>nut</code> setup on Squeeze:
+When I replaced the old machine, I had to connect the UPS via USB instead of serial, as the new machine has only one serial port and that one is needed for the serial console to my Sun Netra T1. On Lenny, I was using the <code>megatec_usb</code> driver which seems borked on Squeeze and is superseeded by the <code>blazer_usb</code> one. So here is my <code>nut</code> setup on Squeeze:
 
 <strong>nut.conf:</strong>
 

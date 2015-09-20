@@ -1,4 +1,4 @@
-<html><body><p>Continuing my series about a <a href="http://www.die-welt.net/2011/02/desktop-in-a-shell/">desktop in a shell</a>, today I will present you my <code>mutt</code> setup. I use mutt because it has no bugs and is a really good MUA for people loving consoles ;)
+<html><body><p>Continuing my series about a <a href="/2011/02/desktop-in-a-shell/">desktop in a shell</a>, today I will present you my <code>mutt</code> setup. I use mutt because it has no bugs and is a really good MUA for people loving consoles ;)
 
 First of all you have to know, that all my mail is forwarded to my server and sorted into Maildirs via maildrop, so I do not care about sorting on my "desktop", which just fetches the mail via IMAP from the server ;)
 
@@ -82,7 +82,7 @@ And toggle sidebar visibility with ctrl-b:
 <pre>macro index \Cb '&lt;enter-command&gt;toggle sidebar_visible&lt;enter&gt;&lt;refresh&gt;'
 macro pager \Cb '&lt;enter-command&gt;toggle sidebar_visible&lt;enter&gt;&lt;redraw-screen&gt;'</pre>
 
-Since 1.5.20-2, mutt patched contains <a href="http://www.die-welt.net/2008/11/pimp_my_mutt/">my sidebar-dotted and sidebar-sorted patches</a>.
+Since 1.5.20-2, mutt patched contains <a href="/2008/11/pimp_my_mutt/">my sidebar-dotted and sidebar-sorted patches</a>.
 
 Let mutt shorten the displayed path (e.g. <code>debian-devel</code> instead of <code>INBOX.ml.debian-devel</code>) and sort the folders (the are returned in random order when using  imap_check_subscribed):
 

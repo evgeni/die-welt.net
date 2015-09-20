@@ -13,5 +13,5 @@ So there seem to be two solutions for me:<br>
 <br>
 But wait, where is the <strong>how not to make a website</strong> part? Here it is:<br>
 On my journey, I found this blog-post: http://andrewjpage.com/index.php?/archives/93-IASpell-could-not-be-started-in-Kile.html (yes, not linked). Running Iceweasel with AdBlock, the page looked like:<br>
-<img src="http://www.die-welt.net/upload/stupid_block.png" alt="http://www.die-welt.net/upload/stupid_block.png"><br>
+<img src="/upload/stupid_block.png" alt="/upload/stupid_block.png"><br>
 Wtf?! I'm not allowed to see the content, just because I block stupid ads?</p></body></html>

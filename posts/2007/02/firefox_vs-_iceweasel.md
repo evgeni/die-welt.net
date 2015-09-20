@@ -1,7 +1,7 @@
 <html><body><p>I've just came across a link to the <a href="http://fireftp.mozdev.org/" target="_blank">FireFTP Firefox plugin</a>. It should be a nice ftp-client for Firefox, so I thought, I could try it.<br>
 <br>
 But fortune is against me today:<br>
-<img src="http://www.die-welt.net/upload/you_need_firefox.png" alt="http://www.die-welt.net/upload/you_need_firefox.png"><br>
+<img src="/upload/you_need_firefox.png" alt="/upload/you_need_firefox.png"><br>
 <br>
 Hey! I AM using Firefox! Or maybe not? I'm using Iceweasel 2.0.0.1, which is a Firefox with all trademarked stuff removed. And it uses Iceweasel in it's User-Agent string, so this nice JavaScript works too good:<br>
 <br>

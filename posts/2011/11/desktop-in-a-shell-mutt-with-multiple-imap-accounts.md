@@ -1,6 +1,6 @@
-<html><body><p>It's been a long time since my last post about my "<a href="http://www.die-welt.net/category/desktop-in-a-shell/">desktop in a shell</a>", but today I stumbled over something absolutely awesome I want to share with you.
+<html><body><p>It's been a long time since my last post about my "<a href="/category/desktop-in-a-shell/">desktop in a shell</a>", but today I stumbled over something absolutely awesome I want to share with you.
 
-A bit of background: I am using <a href="http://www.die-welt.net/2011/02/desktop-in-a-shell-mutt/">mutt</a> with a single imap server (where everything is forwarded to), because I disliked the idea of having multiple mutt instances running and did not want to play the "<code>&lt;change-folder&gt;imaps://other.server.tld/&lt;enter&gt;</code>" game too much.
+A bit of background: I am using <a href="/2011/02/desktop-in-a-shell-mutt/">mutt</a> with a single imap server (where everything is forwarded to), because I disliked the idea of having multiple mutt instances running and did not want to play the "<code>&lt;change-folder&gt;imaps://other.server.tld/&lt;enter&gt;</code>" game too much.
 
 Now today I had to delete some mail from an account I don't use regularly (and where the webmail sucks), so I switched my screen to mutt and actually did the <code>&lt;change-folder&gt;</code> game and was like wow... because the account showed up in my sidebar and I could just jump between the folders of both accounts.
 

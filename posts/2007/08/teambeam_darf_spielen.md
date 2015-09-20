@@ -1,4 +1,4 @@
-<html><body><strong><em>Hinweis</em>: Dieser Artikel ist aus dem Jahr 2007 und spiegelt die Situation zum Zeitpunkt des Verfassens wieder. Meines Wissens nach (und wie <a href="http://www.die-welt.net/2007/08/teambeam_sicher_noch_nicht/#comment-95">Tom von TeamBeam auch kommentiert</a>) wurden alle hier beschriebenen Probleme kurz nach der Veröffentlichung behoben. Der Artikel spiegelt <em>nicht</em> die heutige Situation wieder!</strong>
+<html><body><strong><em>Hinweis</em>: Dieser Artikel ist aus dem Jahr 2007 und spiegelt die Situation zum Zeitpunkt des Verfassens wieder. Meines Wissens nach (und wie <a href="/2007/08/teambeam_sicher_noch_nicht/#comment-95">Tom von TeamBeam auch kommentiert</a>) wurden alle hier beschriebenen Probleme kurz nach der Veröffentlichung behoben. Der Artikel spiegelt <em>nicht</em> die heutige Situation wieder!</strong>
 
 Gestern Abend bloggte ich ja bereits meine ersten Ansichten zum Thema TeamBeam.
 
