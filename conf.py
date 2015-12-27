@@ -538,7 +538,7 @@ REDIRECTIONS = []
 # in a `nikola deploy` command as you like.
 DEPLOY_COMMANDS = {
     'default': [
-	    "rsync -rav --delete output/ root@shokki.die-welt.net:/srv/syscp/webs/sargentd/beta.die-welt.net",
+	    "rsync -rav --delete output/ root@shokki.die-welt.net:/srv/syscp/webs/sargentd/die-welt.net",
     ]
 }
 
