@@ -21,7 +21,7 @@ BLOG_AUTHOR = "evgeni"  # (translatable)
 BLOG_TITLE = "die-welt.net"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
-SITE_URL = "http://www.die-welt.net/"
+SITE_URL = "https://www.die-welt.net/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://www.die-welt.net/"
@@ -825,7 +825,7 @@ COMMENT_SYSTEM = "isso"
 # depends on what comment system you use. The default is
 # "nikolademo" which is a test account for Disqus. More information
 # is in the manual.
-COMMENT_SYSTEM_ID = "http://comments.die-welt.net/"
+COMMENT_SYSTEM_ID = "https://comments.die-welt.net/"
 
 # Enable annotations using annotateit.org?
 # If set to False, you can still enable them for individual posts and pages
