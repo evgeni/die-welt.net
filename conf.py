@@ -51,6 +51,7 @@ BLOG_DESCRIPTION = "a broken world by Evgeni Golov"  # (translatable)
 # fr        French
 # hi        Hindi
 # hr        Croatian
+# hu        Hungarian
 # id        Indonesian
 # it        Italian
 # ja        Japanese [NOT jp]
@@ -60,7 +61,7 @@ BLOG_DESCRIPTION = "a broken world by Evgeni Golov"  # (translatable)
 # pa        Punjabi
 # pl        Polish
 # pt        Portuguese
-# pt_br     Portuguese (Brasil)
+# pt_br     Portuguese (Brazil)
 # ru        Russian
 # sk        Slovak
 # sl        Slovene
@@ -177,14 +178,12 @@ POSTS = (
     ("posts/*.md", "", "post.tmpl"),
     ("posts/*.html", "", "post.tmpl"),
 )
-
 PAGES = (
     ("stories/*.rst", "", "story.tmpl"),
     ("stories/*.txt", "", "story.tmpl"),
     ("stories/*.md", "", "story.tmpl"),
     ("stories/*.html", "", "story.tmpl"),
 )
-
 
 
 # Below this point, everything is optional
@@ -203,11 +202,11 @@ TIMEZONE = "UTC"
 # Note that this does not affect DATE_FORMAT.
 # FORCE_ISO8601 = False
 
-# Date format used to display post dates.
+# Date format used to display post dates. (translatable)
 # (str used by datetime.datetime.strftime)
 # DATE_FORMAT = '%Y-%m-%d %H:%M'
 
-# Date format used to display post dates, if local dates are used.
+# Date format used to display post dates, if local dates are used. (translatable)
 # (str used by moment.js)
 # JS_DATE_FORMAT = 'YYYY-MM-DD HH:mm'
 
@@ -251,9 +250,22 @@ TIMEZONE = "UTC"
 # 'markdown' is MarkDown
 # 'html' assumes the file is HTML and just copies it
 COMPILERS = {
-    "rest": ('.txt', '.rst'),
+    "rest": ('.rst', '.txt'),
     "markdown": ('.md', '.mdown', '.markdown'),
+    "textile": ('.textile',),
+    "txt2tags": ('.t2t',),
+    "bbcode": ('.bb',),
+    "wiki": ('.wiki',),
+    "ipynb": ('.ipynb',),
     "html": ('.html', '.htm'),
+    # PHP files are rendered the usual way (i.e. with the full templates).
+    # The resulting files have .php extensions, making it possible to run
+    # them without reconfiguring your server to recognize them.
+    "php": ('.php',),
+    # Pandoc detects the input from the source filename
+    # but is disabled by default as it would conflict
+    # with many of the others.
+    # "pandoc": ('.rst', '.md', '.txt'),
 }
 
 # Create by default posts in one file format?
@@ -338,7 +350,13 @@ POSTS_SECTIONS = False
 # output / TRANSLATION[lang] / TAG_PATH / index.html (list of tags)
 # output / TRANSLATION[lang] / TAG_PATH / tag.html (list of posts for a tag)
 # output / TRANSLATION[lang] / TAG_PATH / tag.xml (RSS feed for a tag)
+# (translatable)
 TAG_PATH = "category"
+
+# See TAG_PATH's "list of tags" for the default setting value. Can be overwritten
+# here any path relative to the output directory.
+# (translatable)
+# TAGS_INDEX_PATH = "tags.html"
 
 # If TAG_PAGES_ARE_INDEXES is set to True, each tag's page will contain
 # the posts themselves. If set to False, it will be just a list of links.
@@ -377,6 +395,7 @@ HIDDEN_TAGS = ['mathjax']
 # output / TRANSLATION[lang] / CATEGORY_PATH / index.html (list of categories)
 # output / TRANSLATION[lang] / CATEGORY_PATH / CATEGORY_PREFIX category.html (list of posts for a category)
 # output / TRANSLATION[lang] / CATEGORY_PATH / CATEGORY_PREFIX category.xml (RSS feed for a category)
+# (translatable)
 CATEGORY_PATH = "category"
 # CATEGORY_PREFIX = "cat_"
 
@@ -490,9 +509,6 @@ CREATE_MONTHLY_ARCHIVE = True
 # output / TRANSLATION[lang] / RSS_PATH / rss.xml
 # RSS_PATH = ""
 
-# Number of posts in RSS feeds
-# FEED_LENGTH = 10
-
 # Slug the Tag URL. Easier for users to type, special characters are
 # often removed or replaced as well.
 # SLUG_TAG_PATH = True
@@ -508,6 +524,7 @@ CREATE_MONTHLY_ARCHIVE = True
 # relative URL.
 #
 # If you don't need any of these, just set to []
+REDIRECTIONS = []
 
 # Presets of commands to execute to deploy. Can be anything, for
 # example, you may use rsync:
@@ -742,10 +759,10 @@ IMAGE_FOLDERS = {'images': 'images'}
 
 # 'Read more...' for the index page, if INDEX_TEASERS is True (translatable)
 INDEX_READ_MORE_LINK = '<p class="more"><a href="{link}">{read_more}…</a></p>'
-# 'Read more...' for the RSS_FEED, if RSS_TEASERS is True (translatable)
-RSS_READ_MORE_LINK = '<p><a href="{link}">{read_more}…</a> ({min_remaining_read})</p>'
+# 'Read more...' for the feeds, if FEED_TEASERS is True (translatable)
+FEED_READ_MORE_LINK = '<p><a href="{link}">{read_more}…</a> ({min_remaining_read})</p>'
 
-# Append a URL query to the RSS_READ_MORE_LINK in Atom and RSS feeds. Advanced
+# Append a URL query to the FEED_READ_MORE_LINK in Atom and RSS feeds. Advanced
 # option used for traffic source tracking.
 # Minimum example for use with Piwik: "pk_campaign=feed"
 # The following tags exist and are replaced for you:
@@ -753,7 +770,7 @@ RSS_READ_MORE_LINK = '<p><a href="{link}">{read_more}…</a> ({min_remaining_rea
 # {feedFormat}                  The name of the syndication format.
 # Example using replacement for use with Google Analytics:
 # "utm_source={feedRelUri}&utm_medium=nikola_feed&utm_campaign={feedFormat}_feed"
-RSS_LINKS_APPEND_QUERY = False
+FEED_LINKS_APPEND_QUERY = False
 
 # A HTML fragment describing the license, for the sidebar.
 # (translatable)
@@ -831,7 +848,6 @@ COMMENT_SYSTEM_ID = "http://comments.die-welt.net/"
 # (Uses the INDEX_FILE setting, so if that is, say, default.html,
 # it will instead /foo/default.html => /foo)
 # (Note: This was briefly STRIP_INDEX_HTML in v 5.4.3 and 5.4.4)
-# Default = False
 STRIP_INDEXES = True
 
 # Should the sitemap list directories which only include other directories
@@ -892,6 +908,13 @@ PRETTY_URLS = True
 # </script>
 # """
 
+# Want to use KaTeX instead of MathJax? While KaTeX is less featureful,
+# it's faster and the output looks better.
+# If you set USE_KATEX to True, you also need to add an extra CSS file
+# like this:
+# EXTRA_HEAD_DATA = """<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">"""
+# USE_KATEX = False
+
 # Do you want to customize the nbconversion of your IPython notebook?
 # IPYNB_CONFIG = {}
 # With the following example configuration you can use a custom jinja template
@@ -925,7 +948,7 @@ MARKDOWN_EXTENSIONS = ['fenced_code', 'codehilite', 'extra']
 # <li><a class="addthis_button_twitter"></a>
 # </ul>
 # </div>
-# <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+# <script src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
 # <!-- End of social buttons -->
 # """
 
@@ -948,21 +971,31 @@ COPY_SOURCES = False
 # them. Generate Atom for tags by setting TAG_PAGES_ARE_INDEXES to True.
 # Atom feeds are built based on INDEX_DISPLAY_POST_COUNT and not FEED_LENGTH
 # Switch between plain-text summaries and full HTML content using the
-# RSS_TEASER option. RSS_LINKS_APPEND_QUERY is also respected. Atom feeds
+# FEED_TEASER option. FEED_LINKS_APPEND_QUERY is also respected. Atom feeds
 # are generated even for old indexes and have pagination link relations
 # between each other. Old Atom feeds with no changes are marked as archived.
 # GENERATE_ATOM = False
+
+# Only inlclude teasers in Atom and RSS feeds. Disabling include the full
+# content. Defaults to True.
+# FEED_TEASERS = True
+
+# Strip HTML from Atom annd RSS feed summaries and content. Defaults to False.
+# FEED_PLAIN = False
+
+# Number of posts in Atom and RSS feeds.
+# FEED_LENGTH = 10
+
+# Include preview image as a <figure><img></figure> at the top of the entry.
+# Requires FEED_PLAIN = False. If the preview image is found in the content,
+# it will not be included again. Image will be included as-is, aim to optmize
+# the image source for Feedly, Apple News, Flipboard, and other popular clients.
+# FEED_PREVIEWIMAGE = True
 
 # RSS_LINK is a HTML fragment to link the RSS or Atom feeds. If set to None,
 # the base.tmpl will use the feed Nikola generates. However, you may want to
 # change it for a FeedBurner feed or something else.
 # RSS_LINK = None
-
-# Show only teasers in the RSS and Atom feeds? Default to True
-RSS_TEASERS = False
-
-# Strip HTML in the RSS feed? Default to False
-# RSS_PLAIN = False
 
 # A search form to search this site, for the sidebar. You can use a Google
 # custom search (https://www.google.com/cse/)
@@ -1076,7 +1109,7 @@ UNSLUGIFY_TITLES = True
 # If webassets is installed, bundle JS and CSS into single files to make
 # site loading faster in a HTTP/1.1 environment but is not recommended for
 # HTTP/2.0 when caching is used. Defaults to True.
-#USE_BUNDLES = False
+# USE_BUNDLES = True
 
 # Plugins you don't want to use. Be careful :-)
 # DISABLED_PLUGINS = ["render_galleries"]
@@ -1091,6 +1124,8 @@ UNSLUGIFY_TITLES = True
 # LINK_CHECK_WHITELIST = []
 
 # If set to True, enable optional hyphenation in your posts (requires pyphen)
+# Enabling hyphenation has been shown to break math support in some cases,
+# use with caution.
 # HYPHENATE = False
 
 # The <hN> tags in HTML generated by certain compilers (reST/Markdown)
