@@ -6,7 +6,6 @@
 /*
   general style
 */
-@import url(https://fonts.googleapis.com/css?family=Montserrat); /* free google font */
 
 html {
   position: relative;
@@ -14,7 +13,7 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'DejaVu Sans', sans-serif;
   line-height: 30px;
   font-size: 16px;
   margin-bottom: 60px;
