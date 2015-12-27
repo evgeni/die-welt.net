@@ -2,7 +2,7 @@
 RewriteEngine On
 RewriteBase /
 RewriteRule ^feed/$ /rss.xml [R=301,L]
-RewriteRule ^category/(.*)/feed/$ /category/$1/feed/ [R=301,L] 
+RewriteRule ^category/(.*)/feed/$ /category/$1.xml [R=301,L]
 </IfModule>
 
 # enable expirations
