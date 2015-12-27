@@ -1,4 +1,4 @@
-﻿/*
+/*
   css based on "minimal" from www.designbootstrap.com
   license: mit
 */
@@ -9,7 +9,7 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat); /* free google font */
 
 body {
-  font-family: Montserrat, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 30px;
   font-size: 16px;
 }
