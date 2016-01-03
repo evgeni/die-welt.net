@@ -1,0 +1,70 @@
+==================================================================
+https://keybase.io/evgeni
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://die-welt.net
+  * I am evgeni (https://keybase.io/evgeni) on keybase.
+  * I have a public key with fingerprint C575 A957 E819 BA18 BF07  E766 A1B0 9B42 3339 61E8
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "c575a957e819ba18bf07e766a1b09b42333961e8",
+            "host": "keybase.io",
+            "key_id": "a1b09b42333961e8",
+            "uid": "c4a1c9b6e0b3b27234a73092ecdff000",
+            "username": "evgeni"
+        },
+        "service": {
+            "hostname": "die-welt.net",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1418667051,
+    "expire_in": 157680000,
+    "prev": "946f4ba6142a231bdb034e3f0220679cbb30ec4875dddbaef0bd0291de76033a",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+owGbwMvMwMW4cMNsJ2PLxBeMpw98TGII6VcxqVZKyk+pVLKqVspOBVNpmXnpqUUF
+RZl5JUpWSsmm5qaJlqbmqRaGlkmJhhZJaQbmqeZmZomGSQaWSSZGxsbGlmaGqRZK
+OkoZ+cUgHUBjkhKLU/Uy84FiQE58ZgpQFIv6UrBEskmiYbJlklmqQZJxkpG5kbFJ
+ormxgaVRanJKWpqBgQFIYXFqUV5ibipQdWpZempeplKtjhJQrCwzORXkYpDFUPmU
+zFTd8tScEr281BKgzoKi/JL85PwcoExGSUlBsRVIZ0llAUhpeWpSPNSQ+KTMvBSg
+t4E6ylKLijPz85SsDIEqk0syQaYamhhamJmZG5ga6iilVhRkFqXGZ4JUmJqbWQBd
+aACyJ7UMaKSliVmaSVKimaGJUaKRsWFSSpKBsUmqcZqBkZGBmbllclKSsUFqsomF
+uWlKSkpSYmqaQVKKgZGlYQowRA2MjROVQN4qzMtXsjIBOjMxHWhkcWZ6XmJJaVGq
+Ui1XJ5MMCwMjFwMbKxMo5hi4OAVg8cneyP8//NlEFtb7WUe9GNKzMkVTLyuqHzIJ
+LFr/Ljn7pvvEhJndTw4vvvPxke9i9+UGtWfk2WWf+NWZZFxpt129sKneec5szfiP
+YqfbUnnC1m088HVXydUdq3leXToc/UZLv/vLDp4XtfOapU6Hy+13+3Z9X610ldWl
+g+/WMh3j71AW/8BxyUN7ps3n3YarfibULX5l7Ldg5+0rwUcc8y18p8w/fE2xmqut
+X66bcemBf8mOr1ZN2FJ+/dpl3fYDKZ9nPmUTn/35hPBJpbJtSTFhPT2KjM/vKHNs
+Oj3tfcO/xm3rvdMuZ+qci6qctdOu4KF1V8jGc8mrvprc55uTFnBH5fNVLoWvMayL
+377UynJgvcgjnaVUsfig26MwE5Hc3Rlv/rXcsQqod14Q+PmT+1eFOQuVL1hYFk7X
+/nxTjPfYwkuFFnsPnwxxOxHP06ryxmFddhX7URebz5ds1FKus+4ReVko0vy6x7/z
+ZYbx6sgSdy0d78ppp63WSyRnW+//FH/i/M93ngXN7vJHWxxl1jxgPLvH/n9L6kQ1
+C3OHe1M8vE6ZmS9u2fSBU/BUVv+G+QeDYo2N6md8aZjruV5rfvu+c1lf/A2m7tnh
+99Mx44isMucUDW/3DU+v3JHmFO0zyig1n/iy4pzQ7stLkw7NcA8UvJ4/sf9fnPmW
+jbkWLsvZzP2bFWsWCs7+OV925b47n+oeLrDcvmV5Va/RxNeRxbZaAA==
+=OMct
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/evgeni
+
+==================================================================
+
