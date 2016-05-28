@@ -1,7 +1,7 @@
 <html><body><p><img class="image-reference" src="/wp-content/uploads/2014/04/bsp2014_small.png" alt="bsp2014_small" class="aligncenter size-medium wp-image-1295"></p>
 <p>This weekend, <a href="http://bzed.de/">Bernd Zeimetz</a> organized a BSP at the offices of <a href="https://www.conova.com/">conova</a> in Salzburg, Austria.
 Three days of discussions, bugfixes, <a href="https://lists.debian.org/debian-devel-announce/2014/04/msg00012.html">sparc removals</a> and a lot of fun and laughter.</p>
-<p>We squashed a total of 87 bugs: 66 bugs affecting Jessie/Sid were closed, 9 downgraded and 8 closed via removals. As people tend to care about (old)stable, 3 bugs were fixed in Wheezy and one in Squeeze. These numbers might be not totaly correct, as were kinda creative at counting... <a href="http://www.marga.com.ar/blog/">Marga</a> promised a talk about "an introduction to properly counting bugs using the 'Haus vom Nikolaus' algorithm to the base of 7".</p>
+<p>We squashed a total of 87 bugs: 66 bugs affecting Jessie/Sid were closed, 9 downgraded and 8 closed via removals. As people tend to care about (old)stable, 3 bugs were fixed in Wheezy and one in Squeeze. These numbers might be not totaly correct, as were kinda creative at counting... <a href="http://www.marga.com.ar/">Marga</a> promised a talk about "an introduction to properly counting bugs using the 'Haus vom Nikolaus' algorithm to the base of 7".</p>
 <p><a href="/wp-content/uploads/2014/04/IMG_20140427_182902.jpg"><img src="/wp-content/uploads/2014/04/IMG_20140427_182902-225x300.jpg" alt="IMG_20140427_182902" width="225" height="300" class="aligncenter size-medium wp-image-1294"></a></p>
 <p>Speaking of numbers, I touched the following bugs (not all RC):</p>
 <ul>
@@ -21,7 +21,7 @@ Verify that the bug is fixed in the latest release and mark it as done.</li>
 Mark bug as done, the changelog was missing a proper "Closes" tag.</li>
 <li><a href="http://bugs.debian.org/661167">#661167</a>: <strong>nagios-plugins-contrib</strong>: please include nagios-check-printer-status<br>
 Mark bug as done, the changelog was missing a proper "Closes" tag.</li>
-<li><a href="http://bugs.debiab.org/745895">#745895</a>: <strong>nagios-plugins-contrib</strong>: does not compile against Varnish 4.0.0<br>
+<li><a href="http://bugs.debian.org/745895">#745895</a>: <strong>nagios-plugins-contrib</strong>: does not compile against Varnish 4.0.0<br>
 Write a patch for supporting the Varnish 3 and 4 APIs at the same time. Also <a href="https://github.com/varnish/varnish-nagios/pull/3">proposed the patch upstream</a>.</li>
 <li><a href="http://bugs.debian.org/744922">#744922</a>: <strong>nagios-plugins-contrib</strong>: check_packages: check for security updates broken<br>
 Forward our <code>security_updates_critical</code> patch and Felix' fixes to it upstream, then updating <code>check_packages</code> to the latest upstream version.</li>
