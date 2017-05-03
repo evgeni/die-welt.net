@@ -194,10 +194,10 @@ POSTS = (
     ("posts/*.html", "", "post.tmpl"),
 )
 PAGES = (
-    ("stories/*.rst", "", "story.tmpl"),
-    ("stories/*.txt", "", "story.tmpl"),
-    ("stories/*.md", "", "story.tmpl"),
-    ("stories/*.html", "", "story.tmpl"),
+    ("pages/*.rst", "", "story.tmpl"),
+    ("pages/*.txt", "", "story.tmpl"),
+    ("pages/*.md", "", "story.tmpl"),
+    ("pages/*.html", "", "story.tmpl"),
 )
 
 
