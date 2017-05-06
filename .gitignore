@@ -1,5 +1,7 @@
 *.pyc
 .doit.db
+.doit.db.db
 cache/
 output/
 state_data.json
+.venv
