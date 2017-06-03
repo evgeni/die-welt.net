@@ -1,7 +1,7 @@
 .. title: Breaking glass, OnePlus service and Android backups
 .. slug: breaking-glass-oneplus-service-and-android-backups
 .. date: 2017-06-02 23:31:00 UTC
-.. tags: 
+.. tags: english,linux,planet-debian,software,hardware
 .. category: 
 .. link: 
 .. description: 
