@@ -73,6 +73,7 @@ BLOG_DESCRIPTION = "a broken world by Evgeni Golov"  # (translatable)
 # sr_latin  Serbian (Latin)
 # sv        Swedish
 # te        Telugu
+# th        Thai
 # tr        Turkish [NOT tr_TR]
 # uk        Ukrainian
 # ur        Urdu
@@ -718,6 +719,18 @@ FILTERS = {
   ".js": [filters.yui_compressor],
 }
 
+# List of XPath expressions which should be used for finding headers
+# ({hx} is replaced by headers h1 through h6).
+# You must change this if you use a custom theme that does not use
+# "e-content entry-content" as a class for post and page contents.
+# HEADER_PERMALINKS_XPATH_LIST = ['*//div[@class="e-content entry-content"]//{hx}']
+# Include *every* header (not recommended):
+# HEADER_PERMALINKS_XPATH_LIST = ['*//{hx}']
+
+# File blacklist for header permalinks. Contains output path
+# (eg. 'output/index.html')
+# HEADER_PERMALINKS_FILE_BLACKLIST = []
+
 # Expert setting! Create a gzipped copy of each generated file. Cheap server-
 # side optimization for very high traffic sites or low memory servers.
 # GZIP_FILES = False
@@ -954,6 +967,8 @@ CONTENT_FOOTER = 'Contents &copy; {date} <a href="mailto:{email}">{author}</a> /
 # tuples of tuples of positional arguments and dicts of keyword arguments
 # to format().  For example, {'en': (('Hello'), {'target': 'World'})}
 # results in CONTENT_FOOTER['en'].format('Hello', target='World').
+# If you need to use the literal braces '{' and '}' in your footer text, use
+# '{{' and '}}' to escape them (str.format is used)
 # WARNING: If you do not use multiple languages with CONTENT_FOOTER, this
 #          still needs to be a dict of this format.  (it can be empty if you
 #          do not need formatting)
@@ -1186,15 +1201,15 @@ FEED_TEASERS = False
 #
 SEARCH_FORM = """
 <!-- DuckDuckGo custom search -->
-<form method="get" id="search" action="//duckduckgo.com/"
- class="navbar-form pull-right navbar-right">
+<form method="get" id="search" action="https://duckduckgo.com/"
+ class="navbar-form pull-left">
 <input type="hidden" name="sites" value="%s">
 <input type="hidden" name="k8" value="#444444">
 <input type="hidden" name="k9" value="#D51920">
 <input type="hidden" name="kt" value="h">
 <input type="text" name="q" maxlength="255"
- placeholder="Search&hellip;" style="margin-top: 4px; color: #000">
-<input type="submit" value="DuckDuckGo Search" style="visibility: hidden; width: 0px">
+ placeholder="Search&hellip;" class="span2" style="margin-top: 4px;">
+<input type="submit" value="DuckDuckGo Search" style="visibility: hidden;">
 </form>
 <!-- End of custom search -->
 """ % SITE_URL
