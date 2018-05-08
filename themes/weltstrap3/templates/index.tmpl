@@ -1,6 +1,7 @@
 ## -*- coding: utf-8 -*-
 <%namespace name="helper" file="index_helper.tmpl"/>
 <%namespace name="comments" file="comments_helper.tmpl"/>
+<%namespace name="static_comments" file="static_comments_helper.tmpl"/>
 <%inherit file="base.tmpl"/>
 
 <%block name="extra_head">
@@ -28,6 +29,9 @@
             <li class="dateline"><a href="${post.permalink()}" rel="bookmark"><time class="published dt-published" datetime="${post.formatted_date('webiso')}" title="${post.formatted_date(date_format)}">${post.formatted_date(date_format)}</time></a></li>
             % if not post.meta('nocomments') and site_has_comments:
                 <li class="commentline">${comments.comment_link(post.permalink(), post._base_path)}</li>
+            % endif
+            % if not post.meta('nocomments') and site_has_static_comments:
+                <span class="comment-count">${static_comments.add_static_comment_count(post.comments, lang)}</span>
             % endif
         </ol>
     </header>
