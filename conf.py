@@ -193,12 +193,15 @@ POSTS = (
     ("posts/*.txt", "", "post.tmpl"),
     ("posts/*.md", "", "post.tmpl"),
     ("posts/*.html", "", "post.tmpl"),
+    ("posts/*.wp", "", "post.tmpl"),
+
 )
 PAGES = (
     ("pages/*.rst", "", "page.tmpl"),
     ("pages/*.txt", "", "page.tmpl"),
     ("pages/*.md", "", "page.tmpl"),
     ("pages/*.html", "", "page.tmpl"),
+    ("pages/*.wp", "", "page.tmpl"),
 )
 
 
@@ -286,6 +289,7 @@ COMPILERS = {
     # but is disabled by default as it would conflict
     # with many of the others.
     # "pandoc": ('.rst', '.md', '.txt'),
+    "wordpress": ('.wp', '.wordpress'),
 }
 
 # Create by default posts in one file format?
@@ -995,7 +999,7 @@ RSS_COPYRIGHT_FORMATS = CONTENT_FOOTER_FORMATS
 # systems.  The following comment systems are supported by Nikola:
 #   disqus, facebook, googleplus, intensedebate, isso, livefyre, muut
 # You can leave this option blank to disable comments.
-COMMENT_SYSTEM = "isso"
+COMMENT_SYSTEM = ""
 # And you also need to add your COMMENT_SYSTEM_ID which
 # depends on what comment system you use. The default is
 # "nikolademo" which is a test account for Disqus. More information
