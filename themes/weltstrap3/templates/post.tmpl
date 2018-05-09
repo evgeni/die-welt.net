@@ -2,6 +2,7 @@
 <%namespace name="helper" file="post_helper.tmpl"/>
 <%namespace name="pheader" file="post_header.tmpl"/>
 <%namespace name="comments" file="comments_helper.tmpl"/>
+<%namespace name="static_comments" file="static_comments_helper.tmpl"/>
 <%inherit file="base.tmpl"/>
 
 <%block name="extra_head">
@@ -44,6 +45,12 @@
         <h2>${messages("Comments")}</h2>
         ${comments.comment_form(post.permalink(absolute=True), post.title(), post._base_path)}
         </section>
+    % endif
+    % if not post.meta('nocomments') and (site_has_comments or site_has_static_comments):
+  <div class="comments">
+    <h2>${messages("Comments", lang)}</h2>
+    ${static_comments.add_static_comments(post.comments, lang)}
+  </div>
     % endif
     ${helper.mathjax_script(post)}
 </article>
