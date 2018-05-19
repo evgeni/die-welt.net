@@ -1,0 +1,53 @@
+.. id: 286
+.. status: approved
+.. approved: True
+.. author_IP: 127.0.0.1
+.. date_utc: 2016-10-27 23:38:30
+.. author: C.J. Collier
+.. author_email: cjcollier@linuxfoundation.org
+.. author_url: https://wp.colliertech.org/cj/
+
+Hey there!  
+
+Note that these are the defaults that are set if you do not otherwise configure:
+
+
+<pre style="font-family: monospace; white-space: pre;">
+(
+  'display_nokey'         => '$N${cumode_space}$H$C$S',
+  'display_key'           => '$Q${cumode_space}$H$C$S',
+  'display_nokey_visible' => '%2$N${cumode_space}$H$C$S',
+  'display_key_visible'   => '%2$Q${cumode_space}$H$C$S',
+  'display_nokey_active'  => '%1$N${cumode_space}$H$C$S',
+  'display_key_active'    => '%1$Q${cumode_space}$H$C$S',
+  'display_header'        => '%8$C|${N}',
+  'name_display'          => '$0',
+  'separator'             => ' ',
+  'separator2'            => '',
+  'abbrev_chars'          => "~\x{301c}",
+  'viewer_item_bg'        => sb_format_expand( '{sb_background}' ),
+ )
+</pre>
+
+I had to fix your commands up a bit.
+
+<pre style="font-family: monospace; white-space: pre;">
+
+# Shorten window names to 10 chars, so we can get more windows in one row:
+# /set awl_block 10
+# /set awl_sbar_maxlength ON
+                                                                                                                                                       
+# Display a maximum of 5 rows of windows
+# /set awl_maxlines 5
+                                                                                                                                                       
+# Shorten the windowname layout a bit, strip the shortcut display, remove the braces around the window number
+# /format awl_display_key   $N$H$C$S
+# /format awl_display_nokey $N$H$C$S
+                                                                                                                                                       
+# I prefer to only show window number:
+# /format awl_display_key $N
+# /format awl_display_nokey $N
+                                                                                                                                                       
+# Do not show network|nick header
+# /format -delete awl_display_header
+</pre>

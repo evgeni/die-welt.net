@@ -1,0 +1,9 @@
+.. id: 290
+.. status: approved
+.. approved: True
+.. author_IP: 127.0.0.1
+.. date_utc: 2017-08-23 02:48:16
+.. author: sharuzzaman
+.. author_email: sharuzzaman@gmail.com
+
+Please make your cgdiff installable with pip. Currently there is no python app in PyPI that can do yaml diff
