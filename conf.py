@@ -1206,14 +1206,14 @@ FEED_TEASERS = False
 SEARCH_FORM = """
 <!-- DuckDuckGo custom search -->
 <form method="get" id="search" action="https://duckduckgo.com/"
- class="navbar-form pull-left">
+ class="navbar-form pull-right navbar-right">
 <input type="hidden" name="sites" value="%s">
 <input type="hidden" name="k8" value="#444444">
 <input type="hidden" name="k9" value="#D51920">
 <input type="hidden" name="kt" value="h">
 <input type="text" name="q" maxlength="255"
- placeholder="Search&hellip;" class="span2" style="margin-top: 4px;">
-<input type="submit" value="DuckDuckGo Search" style="visibility: hidden;">
+ placeholder="Search&hellip;" class="span2" style="margin-top: 4px; color: #000">
+<input type="submit" value="DuckDuckGo Search" style="visibility: hidden; width: 0px">
 </form>
 <!-- End of custom search -->
 """ % SITE_URL
