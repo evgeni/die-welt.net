@@ -1,0 +1,13 @@
+[Core]
+Name = wordpress
+Module = wordpress
+
+[Nikola]
+PluginCategory = Compiler
+MinVersion = 7.6.1
+
+[Documentation]
+Author = Felix Fontein
+Version = 0.2
+Website = https://felix.fontein.de
+Description = Compile Wordpress-similar text into HTML
