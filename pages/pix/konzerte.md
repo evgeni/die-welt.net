@@ -1,1 +1,0 @@
-<html><body><p>[album id=3 template=extend]</p></body></html>
