@@ -1,6 +1,5 @@
 ## -*- coding: utf-8 -*-
 <%namespace name="base" file="base_helper.tmpl" import="*" />
-<%namespace name="notes" file="annotation_helper.tmpl" import="*" />
 <%namespace name="welt" file="welt_helper.tmpl" import="*" />
 ${set_locale(lang)}
 ${base.html_headstart()}
@@ -91,11 +90,6 @@ ${base.late_load_js()}
     </script>
     <!-- end fancy dates -->
     <%block name="extra_js"></%block>
-    % if annotations and post and not post.meta('noannotations'):
-        ${notes.code()}
-    % elif not annotations and post and post.meta('annotations'):
-        ${notes.code()}
-    % endif
     <script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
