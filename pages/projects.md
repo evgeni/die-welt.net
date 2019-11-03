@@ -4,17 +4,17 @@
 
 
 
-<strong>bley</strong> was developed dyring my <a href="http://www.cn.uni-duesseldorf.de/publications/details/Golov2009a.html"> bachelor's thesis at the Heinrich-Heine-University Duesseldorf</a> and now continues to grow as my time permits.
+<strong>bley</strong> was developed dyring my <a href="https://www.cn.uni-duesseldorf.de/publications/details/Golov2009a.html"> bachelor's thesis at the Heinrich-Heine-University Duesseldorf</a> and now continues to grow as my time permits.
 
 
 
-<a href="http://bley.mx">bley homepage</a>
+<a href="https://bley.mx">bley homepage</a>
 
 <h3>hdapsd</h3>
 
 HDAPS daemon for IBM/Lenovo ThinkPads and Apple iBooks/PowerBooks. It's a disk protection user-space daemon. It monitors the acceleration values through the HDAPS or AMS interface and automatically initiates disk head parking if a fall or sliding of the laptop is detected.
 
-<a href="http://github.com/evgeni/hdapsd">hdapsd homepage</a>
+<a href="https://github.com/evgeni/hdapsd">hdapsd homepage</a>
 
 <h3>statusnet-widget</h3>
 
@@ -22,6 +22,6 @@ StatusNet Widget aims to provide an easy integration of your StatusNet (identi.c
 
 
 
-<a href="http://wordpress.org/extend/plugins/statusnet-widget/">statusnet-widget at wordpress.org</a>
+<a href="https://wordpress.org/extend/plugins/statusnet-widget/">statusnet-widget at wordpress.org</a>
 
-<a href="http://github.com/evgeni/wp-statusnet-widget">statusnet-widget at github.com</a></body></html>
+<a href="https://github.com/evgeni/wp-statusnet-widget">statusnet-widget at github.com</a></body></html>

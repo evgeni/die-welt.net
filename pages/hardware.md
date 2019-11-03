@@ -1,6 +1,6 @@
 <html><body><h3>Computer</h3>
 
-<h4><a href="http://en.wiktionary.org/wiki/%E3%81%AA%E3%81%AA">nana</a> - Lenovo ThinkPad X201s</h4>
+<h4><a href="https://en.wiktionary.org/wiki/%E3%81%AA%E3%81%AA">nana</a> - Lenovo ThinkPad X201s</h4>
 
 <strong>OS:</strong> Debian GNU/Linux Sid
 
@@ -24,7 +24,7 @@
 
 <strong>USE:</strong> Workstation :)
 
-<h4><a href="http://en.wiktionary.org/wiki/%E6%98%A0%E7%94%BB">eiga</a> - HTPC based on Zotac ION</h4>
+<h4><a href="https://en.wiktionary.org/wiki/%E6%98%A0%E7%94%BB">eiga</a> - HTPC based on Zotac ION</h4>
 
 <strong>OS:</strong> Debian GNU/Linux Sid
 
@@ -48,7 +48,7 @@
 
 <strong>USE:</strong> XBMC
 
-<h4><a href="http://en.wiktionary.org/wiki/%E5%A5%B4%E9%9A%B7">dorei</a> - homeserver</h4>
+<h4><a href="https://en.wiktionary.org/wiki/%E5%A5%B4%E9%9A%B7">dorei</a> - homeserver</h4>
 
 <strong>OS</strong>: Debian GNU/Linux 5.0 Lenny
 
