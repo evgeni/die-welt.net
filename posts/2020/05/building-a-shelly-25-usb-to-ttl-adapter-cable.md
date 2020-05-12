@@ -21,30 +21,30 @@ Now, there are various tutorials on the Internet how to build a compatible conne
 
 We'll need 6 female-to-female jumper wires and a 1.27mm pitch male header. Jumper wires I had at home, the header I got is a [SL 1X20G 1,27 from reichelt.de](https://www.reichelt.de/20pol-stiftleiste-gerade-rm-1-27-sl-1x20g-1-27-p51694.html) for 0.61€. It's a 20 pin one, so we can make 3 adapters out of it if needed. Oh and we'll need some isolation tape.
 
-![SL 1X20G 1,27](/upload/shelly/SL1X20G.png)
+![SL 1X20G 1,27](/upload/shelly/SL1X20G.jpg)
 
 The first step is to cut the header into 6 pin chunks. Make sure not to cut too close to the 6th pin as the whole thing is rather fragile and you might lose it.
 
-![SL 1X20G 1,27 cut into pieces](/upload/shelly/SL1X20G_cut.png)
+![SL 1X20G 1,27 cut into pieces](/upload/shelly/SL1X20G_cut.jpg)
 
 It now fits very well into the Shelly with the longer side of the pins.
 
-![Shelly 2.5 with pin headers attached](/upload/shelly/shelly_with_pins.png)
+![Shelly 2.5 with pin headers attached](/upload/shelly/shelly_with_pins.jpg)
 
 Second step is to strip the plastic part of one side of the jumper wires. Those are designed to fit 2.54mm pitch headers and won't work for our use case otherwise.
 
-![jumper wire with removed plastic](/upload/shelly/jumper_wire_remove.png)
+![jumper wire with removed plastic](/upload/shelly/jumper_wire_remove.jpg)
 
 As the connectors are still too big, even after removing the plastic, the next step is to take some pliers and gently press the connectors until they fit the smaller pins of our header.
 
-![Shelly 2.5 with pin headers and a jumper wire attached](/upload/shelly/shelly_with_pins_and_cable.png)
+![Shelly 2.5 with pin headers and a jumper wire attached](/upload/shelly/shelly_with_pins_and_cable.jpg)
 
 Now is the time to put everything together. To avoid short circuiting the pins/connectors, apply some isolation tape while assembling, but not too much as the space is really limited.
 
-![Shelly 2.5 with pin headers and a jumper wire attached and taped](/upload/shelly/shelly_with_pins_and_cable_and_tape.png)
+![Shelly 2.5 with pin headers and a jumper wire attached and taped](/upload/shelly/shelly_with_pins_and_cable_and_tape.jpg)
 
 And we're done, a wonderful (lol) and working (yay) Shelly 2.5 cable that can be attached to any USB-TTL adapter, like the pictured FTDI clone you get almost everywhere.
 
-![Shelly 2.5 with full cable and FTDI attached](/upload/shelly/shelly_with_ftdi.png)
+![Shelly 2.5 with full cable and FTDI attached](/upload/shelly/shelly_with_ftdi.jpg)
 
 Yes, in an ideal world we would have soldered the header to the cable, but I didn't feel like soldering on that limited space. And yes, shrink-wrap might be a good thing too, but again, limited space and with isolation tape you only need one layer between two pins, not two.
