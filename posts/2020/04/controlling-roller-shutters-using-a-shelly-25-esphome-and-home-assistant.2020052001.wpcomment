@@ -1,0 +1,35 @@
+.. id: 2020052001
+.. approved: True
+.. author: Christian
+.. date_utc: 2020-05-20 18:21:40
+.. compiler: markdown
+
+Hi Evgeni,
+
+Erstmal ein grosses Kompliment an dich, cooler Blog!!
+
+Ich beschäftige mich seit ein paar Wochen mit ESPs und Home Assistant.
+
+Nun bin ich an der Rolladensteuerung.
+
+Dazu habe ich mir nun ein paar tuya Module bestellt, die ich dann mit
+ESPHome flashen möchte.
+Falls dich das Modul interessiert:
+https://www.loratap.com/sc500w-p0108.html
+
+Habe nun deinen Beitrag gelesen und finde ihn GENIAL, ganz besonders die
+Kindersicherung.
+
+Aber nach kurzem trocken-lesen, ein paar Fragen:
+
+- Wenn die Rolladen mit einem Taster betätigt werden, kannst du sie über
+einen erneutes tasten anhalten?
+
+- Wenn du die Rolladen über den taster bedienst, wird ein Stop "gemessen"
+oder wird der Status irgendwie anders an HomeAssistant geschickt?
+
+Würde mich freuen wenn du mir kurz antwortest.
+
+
+Grüße
+Christian

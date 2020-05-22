@@ -1,0 +1,27 @@
+.. id: 2020052002
+.. parent_id: 2020052001
+.. approved: True
+.. author: Evgeni
+.. date_utc: 2020-05-20 19:30:40
+.. compiler: markdown
+
+Moin!
+
+Das Modul sieht dem Shelly ziemlich ähnlich :)
+
+Zu deinen Fragen:
+
+- ich habe Schalter, keine Taster, dran, und ja, wenn ich den Schalter auf
+"aus" stelle hält der Rolladen an (siehe
+https://github.com/evgeni/esphome-configs/blob/master/shelly25.yaml#L150-L152).
+Sicherlich kriegt man ähnliches auch mit einem Taster hin.
+
+- die Rolladen sind in esphome als "time cover" definiert, d.h. esphome
+kann aus der Dauer die sich der Rolladen bewegt ungefähr berechnen wie weit
+offen er ist. Und dies wird auch an HomeAssistant übermittelt. Ist nicht
+sehr genau, aber mir reicht's.
+
+Hoffe das hilft dir!
+
+Grüße
+Evgeni

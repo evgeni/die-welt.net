@@ -1,0 +1,23 @@
+.. id: 2020052101
+.. parent_id: 2020052003
+.. approved: True
+.. author: Evgeni
+.. date_utc: 2020-05-21 05:10:40
+.. compiler: markdown
+
+Hey,
+
+wenn du meine Config mit einem Taster benutzt wirst du den Taster
+festhalten müssen, bis der Rolladen ganz bewegt ist, beim Loslassen gibt es
+ein "off" event. Alternativ können binaey sensors irgendwie "click" und
+"double click" events, evtl geht damit was. Oder man müsste im "on" Lambda
+prüfen ob der Rolladen sich gerade bewegt und entsprechend "stop" senden.
+
+Hime Assistant hat eine "esphome" Integration die mit der esphome api
+spricht, der kriegt eigentlich alles mit was dann passiert, ausser es ist
+als "internal" markiert.
+
+Ach, darf/soll ich unsere Unterhaltung hier als Kommentare in mein Blog
+werfen?
+
+Grüße
