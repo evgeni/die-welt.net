@@ -211,3 +211,11 @@ footer a,footer a:hover,footer a:focus {
 .alignleft {
   float: left;
 }
+
+.comment-level {
+  margin-left: 1em;
+}
+
+.comment-level-1 {
+  margin-left: 0px;
+}
