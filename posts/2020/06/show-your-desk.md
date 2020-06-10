@@ -45,7 +45,7 @@ It's connected to a Lenovo ThinkPad Thunderbolt 3 Dock (Gen 1). After 2 years wi
 
 - the internal USB hub just vanishing from existence until a full power cycle of the dock was performed, but that might have been caused by my USB-switch which I recently removed.
 - the NIC negotiating at 100MBit/s instead of 1000MBit/s and then keeping on re-negotiating every few minutes, disconnecting me from the network, but I've not seen that since the Fedora 32 upgrade.
-- the USB-attached keyboard not working during boot as it needs some [Thinderbolt magic](https://fedoramagazine.org/thunderbolt-how-to-use-keyboard-during-boot-time/).
+- the USB-attached keyboard not working during boot as it needs some [Thunderbolt magic](https://fedoramagazine.org/thunderbolt-how-to-use-keyboard-during-boot-time/).
 
 The ThinkPad stands on a [Adam Hall Stands SLT001E](https://www.adamhall.com/shop/bd-en/stands-tripods/multimedia-equipment/5527/slt-001-e), a rather simple stand for laptops and other equipment (primarily made for DJs I think). The Dock fits exactly between the two feet of the stand, so that is nice and saves space on the table. Using the stand I can use the laptop screen as a second screen when I want it - but most often I do not and have the laptop lid closed while working.
 
