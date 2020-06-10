@@ -9,8 +9,6 @@
 .. type: text
 -->
 
-# show your desktop
-
 Some days ago I posted a picture of my desk on [Mastodon](https://chaos.social/@zhenech/104273419185014424) and [Twitter](https://twitter.com/zhenech/status/1267733105470832642).
 
 ![standing desk with a monitor, laptop etc](/upload/IMG_20200602_094035.jpg)
