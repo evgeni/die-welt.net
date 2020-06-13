@@ -219,3 +219,7 @@ footer a,footer a:hover,footer a:focus {
 .comment-level-1 {
   margin-left: 0px;
 }
+
+article img {
+  max-width: 100%;
+}
