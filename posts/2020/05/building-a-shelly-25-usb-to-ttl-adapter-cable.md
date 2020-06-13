@@ -13,7 +13,7 @@ When you want to flash your Shelly 2.5 with anything but the original firmware f
 
 In theory, this is not a problem as the Shelly has a quite exposed and well documented interface:
 
-![Shelly 2.5 pinout](https://shelly.cloud/wp-content/uploads/2019/01/pin_out-650x397.png)
+![Shelly 2.5 pinout](https://shelly.cloud/wp-content/uploads/2020/06/pin_out.png)
 
 However, on closer inspection you'll notice that your normal jumper wires don't fit as the Shelly has a connector with 1.27mm (0.05in) pitch and 1mm diameter holes.
 
