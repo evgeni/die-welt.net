@@ -11,7 +11,7 @@
 
 Some days ago I posted a picture of my desk on [Mastodon](https://chaos.social/@zhenech/104273419185014424) and [Twitter](https://twitter.com/zhenech/status/1267733105470832642).
 
-![standing desk with a monitor, laptop etc](/upload/IMG_20200602_094035.jpg)
+[![standing desk with a monitor, laptop etc](/upload/IMG_20200602_094035.jpg)](/upload/IMG_20200602_094035.jpg)
 
 After that I got multiple questions about the setup, so I thought "[Michael](https://dnsmichi.at/2020/04/28/first-time-all-remote-my-new-workspace-feat-standing-desk-and-curved-monitor/) and [Michael](https://michael.stapelberg.ch/posts/2020-05-23-desk-setup/) did posts about their setups, you could too!"
 
