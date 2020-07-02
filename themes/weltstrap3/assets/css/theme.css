@@ -64,7 +64,7 @@ section {
 */
 
 #head {
-  background: url(../img/header.jpg) no-repeat center center;
+  background: url(/assets/img/header.jpg) no-repeat center center;
   -webkit-background-size: cover;
   background-size: cover;
   -moz-background-size: cover;
