@@ -719,7 +719,7 @@ from nikola import filters
 
 FILTERS = {
   ".css": [filters.yui_compressor],
-  ".js": [filters.yui_compressor],
+  #".js": [filters.yui_compressor],
 }
 
 # List of XPath expressions which should be used for finding headers
