@@ -171,11 +171,11 @@
         },
         "nikola": {
             "hashes": [
-                "sha256:24270b703dd5814028ba4d5b0603b3764f32504a03c401e7faedb7b606fe0ddd",
-                "sha256:5c6c4787197fb51c72600d600e27fcec58dc2a34bd8a1cf3b50f5968bca8ba26"
+                "sha256:cee35b011667a965eca01b7d36b54649c9434ab004d8556d6563b7d899df61ed",
+                "sha256:e1693833d20e9255abe2995ea3d1cdeb9651d0045d213b3d68f4c4a81ec35e3e"
             ],
             "index": "pypi",
-            "version": "==8.1.0"
+            "version": "==8.1.1"
         },
         "piexif": {
             "hashes": [
