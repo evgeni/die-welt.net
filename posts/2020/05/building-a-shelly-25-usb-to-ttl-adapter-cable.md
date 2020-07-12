@@ -2,7 +2,7 @@
 .. title: Building a Shelly 2.5 USB to TTL adapter cable
 .. slug: building-a-shelly-25-usb-to-ttl-adapter-cable
 .. date: 2020-05-12 10:44:35 UTC
-.. tags: english,planet-debian,hardware
+.. tags: english,planet-debian,hardware,home-automation
 .. category: 
 .. link: 
 .. description: 

@@ -2,7 +2,7 @@
 .. title: Controlling roller shutters using a Shelly 2.5, ESPHome and Home Assistant
 .. slug: controlling-roller-shutters-using-a-shelly-25-esphome-and-home-assistant
 .. date: 2020-04-23 19:54:37 UTC
-.. tags: english,linux,planet-debian,software,hardware
+.. tags: english,linux,planet-debian,software,hardware,home-automation
 .. category: 
 .. link: 
 .. description: 
