@@ -9,7 +9,7 @@
 .. type: text
 -->
 
-Im [the Foreman project](https://theforeman.org), we've been maintaining a [collection of Ansible modules to manage Foreman](https://github.com/theforeman/foreman-ansible-modules/) installations [since 2017](https://github.com/theforeman/foreman-ansible-modules/commit/37938d6c531ff5cbfffb7646fbf68f12251bf204). That is, 2 years before [Ansible had the concept of collections](https://github.com/ansible/ansible/blob/stable-2.8/changelogs/CHANGELOG-v2.8.rst#major-changes) at all.
+In [the Foreman project](https://theforeman.org), we've been maintaining a [collection of Ansible modules to manage Foreman](https://github.com/theforeman/foreman-ansible-modules/) installations [since 2017](https://github.com/theforeman/foreman-ansible-modules/commit/37938d6c531ff5cbfffb7646fbf68f12251bf204). That is, 2 years before [Ansible had the concept of collections](https://github.com/ansible/ansible/blob/stable-2.8/changelogs/CHANGELOG-v2.8.rst#major-changes) at all.
 
 For that you had to set `library` (and later `module_utils` and `doc_fragment_plugins`) in `ansible.cfg` and effectively inject our modules, their helpers and documentation fragments into the main Ansible namespace. Not the cleanest solution, but it worked quiet well for us.
 
