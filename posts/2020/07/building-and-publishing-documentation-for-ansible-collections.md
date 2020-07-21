@@ -13,7 +13,7 @@ I had a draft of this article for about two months, but never really managed to 
 
 As part of my day job, I am maintaining the [Foreman Ansible Modules](https://github.com/theforeman/foreman-ansible-modules) - a collection of modules to interact with Foreman and its plugins (most notably Katello). We've been maintaining this collection (as in set of modules) since 2017, so much longer than collections (as in Ansible Collections) existed, but the introduction of Ansible Collections allowed us to provide a much easier and supported way to distribute the modules to our users.
 
-Now users usually want to things: features and documentation. Features are easy, we already have plenty of them. But documentation was a bit cumbersome: we had documentation inside the modules, so you could read it via `ansible-doc` on the command line if you had the collection installed, but we wanted to provide online readable and versioned documentation too - something the users are used to from the official Ansible documentation.
+Now users usually want two things: features and documentation. Features are easy, we already have plenty of them. But documentation was a bit cumbersome: we had documentation inside the modules, so you could read it via `ansible-doc` on the command line if you had the collection installed, but we wanted to provide online readable and versioned documentation too - something the users are used to from the official Ansible documentation.
 
 ## Building HTML from Ansible modules
 
