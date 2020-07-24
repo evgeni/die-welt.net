@@ -11,6 +11,8 @@
 
 I had a draft of this article for about two months, but never really managed to polish and finalize it, partially due to some nasty hacks needed down the road. Thankfully, one of my wishes was heard and I had now the chance to revisit the post and try a few things out. Sadly, my wish was granted only partially and the result is still not beautiful, but read yourself ;-)
 
+**UPDATE**: I've published a follow up post on [building documentation for Ansible Collections using antsibull](/2020/07/building-documentation-for-ansible-collections-using-antsibull/), as my wish was now fully granted.
+
 As part of my day job, I am maintaining the [Foreman Ansible Modules](https://github.com/theforeman/foreman-ansible-modules) - a collection of modules to interact with Foreman and its plugins (most notably Katello). We've been maintaining this collection (as in set of modules) since 2017, so much longer than collections (as in Ansible Collections) existed, but the introduction of Ansible Collections allowed us to provide a much easier and supported way to distribute the modules to our users.
 
 Now users usually want two things: features and documentation. Features are easy, we already have plenty of them. But documentation was a bit cumbersome: we had documentation inside the modules, so you could read it via `ansible-doc` on the command line if you had the collection installed, but we wanted to provide online readable and versioned documentation too - something the users are used to from the official Ansible documentation.
