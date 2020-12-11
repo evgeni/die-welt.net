@@ -7,7 +7,6 @@ verify_ssl = true
 
 [packages]
 webassets = "*"
-yuicompressor = "*"
 regex = "*"
 Nikola = "*"
 Pygments = "*"
