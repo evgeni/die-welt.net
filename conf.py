@@ -718,7 +718,7 @@ GITHUB_COMMIT_SOURCE = True
 from nikola import filters
 
 FILTERS = {
-  ".css": [filters.yui_compressor],
+  #".css": [filters.yui_compressor],
   #".js": [filters.yui_compressor],
 }
 
