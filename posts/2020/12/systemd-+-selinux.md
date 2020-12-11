@@ -47,3 +47,5 @@ A bit of poking (and good guesswork based on prior experience with a similar iss
 Well, maybe that [reexec isn't that bad after all](https://github.com/theforeman/foreman-packaging/commit/92a8ffc2ee94bab801e39460c878e220ff2fe367)? At least the socket is now properly labeled and httpd can connect to it on CentOS 8.
 
 Btw, no idea why the connection worked on CentOS 7, as there the socket was also wrongly labeled, but SELinux didn't deny httpd to open it.
+
+Big shout out to [lzap](https://lukas.zapletalovi.com/) and [ewoud](https://github.com/ekohl/) for helping me with this beast!
