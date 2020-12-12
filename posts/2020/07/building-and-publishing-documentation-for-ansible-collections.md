@@ -2,7 +2,7 @@
 .. title: Building and publishing documentation for Ansible Collections
 .. slug: building-and-publishing-documentation-for-ansible-collections
 .. date: 2020-07-20 19:17:16 UTC
-.. tags: english,linux,planet-debian,software,ansible
+.. tags: english,linux,planet-debian,software,ansible,foreman
 .. category: 
 .. link: 
 .. description: 

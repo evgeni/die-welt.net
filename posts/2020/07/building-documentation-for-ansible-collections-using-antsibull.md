@@ -2,7 +2,7 @@
 .. title: Building documentation for Ansible Collections using antsibull
 .. slug: building-documentation-for-ansible-collections-using-antsibull
 .. date: 2020-07-24 08:01:10 UTC
-.. tags: english,linux,planet-debian,software,ansible
+.. tags: english,linux,planet-debian,software,ansible,foreman
 .. category: 
 .. link: 
 .. description: 

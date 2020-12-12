@@ -2,7 +2,7 @@
 .. title: Using Ansible Molecule to test roles in monorepos
 .. slug: using-ansible-molecule-to-test-roles-in-monorepos
 .. date: 2020-07-12 08:03:17 UTC
-.. tags: english,linux,planet-debian,software,ansible
+.. tags: english,linux,planet-debian,software,ansible,foreman
 .. category: 
 .. link: 
 .. description: 

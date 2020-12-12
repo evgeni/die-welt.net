@@ -2,14 +2,14 @@
 .. title: systemd + SELinux = 🔥
 .. slug: systemd-+-selinux
 .. date: 2020-12-11 18:11:30 UTC
-.. tags: english,linux,software,foreman,selinux,systemd
+.. tags: english,linux,software,foreman,selinux,systemd,planet-debian
 .. category: 
 .. link: 
 .. description: 
 .. type: text
 -->
 
-Okay, getting a title that will ensure clicks for this post was easy. Now comes the hatd part: content!
+Okay, getting a title that will ensure clicks for this post was easy. Now comes the hard part: content!
 
 When you deploy [The Foreman](https://theforeman.org), you want a secure setup by default. That's why we ship (and enable) a SELinux policy which allows you to run the involved daemons in confined mode.
 
