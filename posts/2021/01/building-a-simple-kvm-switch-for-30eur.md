@@ -17,7 +17,7 @@ However, having to switch the used computer in two places (USB and monitor) is r
 
 Luckily, hackers gonna hack, everything, and not only receipt printers (😉). There is a tool called [`ddcutil`](https://www.ddcutil.com/) that can talk to your monitor and change various settings. And `udev` can execute commands when (USB) devices connect… You see where this is going?
 
-After installing the package (available both in Debian and Fedora), we can inspect our system with `ddcutil detect`:
+After installing the package (available both in Debian and Fedora), we can inspect our system with `ddcutil detect`. You might have to load the `i2c_dev` module (thanks Philip!) before this works -- it seems to be loaded automatically on my Fedora, but you never know 😅.
 
 ```console
 $ sudo ddcutil detect

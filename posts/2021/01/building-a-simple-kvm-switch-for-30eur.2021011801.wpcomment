@@ -1,0 +1,16 @@
+.. id: 2021011801
+.. approved: True
+.. author: Philip
+.. date_utc: 2021-01-18 14:15:00
+.. compiler: markdown
+
+Hi,
+
+Wow thanks! I never thought that would exist :-)
+
+Not worth a comment, but you could probably add that one needs to load the
+'i2c-dev' kernel module. Without it 'ddcutil' just claims "No displays found"
+and I was about to give up :-/
+
+Best,
+Philip
