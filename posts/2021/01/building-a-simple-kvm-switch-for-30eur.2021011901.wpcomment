@@ -1,0 +1,11 @@
+.. id: 2021011901
+.. approved: True
+.. author: Paul Wise
+.. date_utc: 2021-01-19 07:56:00
+.. compiler: markdown
+
+Hi,
+
+There is a tool to do this automatically:
+
+https://github.com/haimgel/display-switch
