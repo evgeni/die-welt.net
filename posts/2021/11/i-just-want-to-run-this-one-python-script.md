@@ -11,7 +11,7 @@
 
 So I couldn't sleep the other night, and my brain wanted to think about odd problems…
 
-Ever had a script that's compatible with both, Python 2 and 3, but you didn't want to bother the user to know which interpreter to call? Maybe because the script is often used in environments where only one Python is available and users just expect things to work? And it's only that one script file, no package, no additional wrapper script, nothing.
+Ever had a script that's compatible with both, Python 2 and 3, but you didn't want to bother the user to know which interpreter to call? Maybe because the script is often used in environments where only one Python is available (as either `/usr/bin/python` *OR* `/usr/bin/python3`) and users just expect things to work? And it's only that one script file, no package, no additional wrapper script, nothing.
 
 Yes, this is a rather odd scenario. And yes, using Python doesn't make it easier, but trust me, you wouldn't want to implement the same in bash.
 
