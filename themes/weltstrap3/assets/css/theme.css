@@ -214,6 +214,8 @@ footer a,footer a:hover,footer a:focus {
 
 .comment-level {
   margin-left: 1em;
+  border-left: 0.2em solid lightgray;
+  padding-left: 0.5em;
 }
 
 .comment-level-1 {
