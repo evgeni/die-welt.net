@@ -1,0 +1,18 @@
+.. id: 2021110704
+.. parent_id: 2021110703
+.. approved: True
+.. author: Larry Doolittle
+.. date_utc: 2021-11-07 20:05:00
+.. compiler: markdown
+
+> Mostly because that's what I have here (besides Zsh) and tested it on.
+
+Right.  But bash when called as `sh` reverts to (mostly) POSIX-shell features.
+
+> There was a post why one shouldn't use which recently,
+> https://hynek.me/til/which-not-posix/
+
+OK.  Good to know.  If I had bothered to run `shellcheck(1)` against a script
+with `which` in it, it would have told me that.
+
+Larry

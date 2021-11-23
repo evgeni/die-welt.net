@@ -1,0 +1,24 @@
+.. id: 2021110702
+.. parent_id: 2021110701
+.. approved: True
+.. author: Evgeni Golov
+.. date_utc: 2021-11-07 18:37:00
+.. compiler: markdown
+
+> But why bring bash into the picture?
+> `"exec" "$(command -v python3 || command -v python)" "$0" "$@"`
+> is perfectly good POSIX sh.
+
+Mostly because that's what I have here (besides Zsh) and tested it on.
+
+I do agree that this should work in any POSIX sh (`command -v` is
+rather "new" - 2008 or so, before that it was optional, but I think all
+relevant shells implement it).
+
+> I wasn't familiar with `command -v`, and would have used `which`.
+> I don't know which is older or more portable.
+
+There was a post why one shouldn't use `which` recently, but I can't find
+it. TL;DR: there are multiple implementations of which, and some
+distributions (CentOS) don't install it by default, while `command -v` is
+a built in.

@@ -1,0 +1,13 @@
+.. id: 2021110703
+.. parent_id: 2021110702
+.. approved: True
+.. author: Evgeni Golov
+.. date_utc: 2021-11-07 18:50:00
+.. compiler: markdown
+
+> There was a post why one shouldn't use which recently, but I can't find
+> it. TL;DR: there are multiple implementations of which, and some
+> distributions (CentOS) don't install it by default, while command -v is
+> a built in.
+
+And the post I meant was [https://hynek.me/til/which-not-posix/](https://hynek.me/til/which-not-posix/) :)

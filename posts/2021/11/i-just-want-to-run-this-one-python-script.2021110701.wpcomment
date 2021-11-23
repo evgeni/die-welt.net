@@ -1,0 +1,18 @@
+.. id: 2021110701
+.. approved: True
+.. author: Larry Doolittle
+.. date_utc: 2021-11-07 17:45:00
+.. compiler: markdown
+
+Cool story!
+
+But why bring bash into the picture?
+```bash
+"exec" "$(command -v python3 || command -v python)" "$0" "$@"
+```
+is perfectly good POSIX sh.
+
+I wasn't familiar with `command -v`, and would have used `which`.
+I don't know which is older or more portable.
+
+Larry
