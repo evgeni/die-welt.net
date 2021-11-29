@@ -31,9 +31,9 @@ Did anyone actually click on those links above? If you did (you didn't, right?),
 > Namespace names in Galaxy are limited to lowercase word characters (i.e., a-z, 0-9) and ‘\_’, must have a minimum length of 2 characters, and cannot start with an ‘\_’. No other characters are allowed, including ‘.’, ‘-‘, and space.
 > The first time you log into Galaxy, the server will create a Namespace for you, if one does not already exist, by converting your username to lowercase, and replacing any ‘-‘ characters with ‘\_’.
 
-For my login `evgeni` this is pretty boring, as the generated namespace is also `evgeni`. But for the GitHub user `Evil-Pnwil-666` it will become `evil_pnwil_666`. This can be a bit confusing.
+For my login `evgeni` this is pretty boring, as the generated namespace is also `evgeni`. But for the GitHub user `Evil-Pwnwil-666` it will become `evil_pwnwil_666`. This can be a bit confusing.
 
-Another confusing thing is that Galaxy supports two types of content: [roles](https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html) and [collections](https://docs.ansible.com/ansible/latest/user_guide/collections_using.html), but namespaces are only for collections! So it is `Evil-Pnwil-666.vim` if it's a role, but `evil_pnwil_666.vim` if it's a collection.
+Another confusing thing is that Galaxy supports two types of content: [roles](https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html) and [collections](https://docs.ansible.com/ansible/latest/user_guide/collections_using.html), but namespaces are only for collections! So it is `Evil-Pwnwil-666.vim` if it's a role, but `evil_pwnwil_666.vim` if it's a collection.
 
 I think part of this split is because collections were added much later and have a much more well thought design of both the artifact itself and its delivery mechanisms.
 
