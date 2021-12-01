@@ -10,6 +10,8 @@ webassets = "*"
 regex = "*"
 Nikola = "*"
 Pygments = "*"
+aiohttp = "*"
+watchdog = "*"
 
 [requires]
 python_version = "3.8"
