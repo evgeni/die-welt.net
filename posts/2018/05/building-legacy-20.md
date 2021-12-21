@@ -2,7 +2,6 @@
 .. title: Building Legacy 2.0
 .. slug: building-legacy-20
 .. date: 2018-05-27 15:15:34 UTC
-.. status: draft
 .. tags: english,linux,planet-debian,software
 .. category:
 .. link:
@@ -31,6 +30,7 @@ Also, this makes all the playbooks that were written for Ansible 2.3 unusable an
 You can't just upgrade the system Python to a newer verion in EL5, too many tools expect it to be 2.4. But you can install a second version, parallel to the current one.
 
 There are just a few gotchas with that:
+
 1. The easiest way to get a newer Python for EL5 is to install `python26` from EPEL. But EPEL for EL5 is EOL and does not get any updates anymore.
 2. Python 2.6 is also EOL itself and I am not aware of any usable 2.7 packages for EL5.
 3. While you might get Python 2.6 working, what's about all the libs that you might need for the various Ansible modules? The system ones will pretty sure not work for 2.6.
