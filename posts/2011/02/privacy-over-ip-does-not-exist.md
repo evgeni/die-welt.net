@@ -6,13 +6,13 @@ There was quite a lot of buzz about privacy with that new IPv6 thingy. Some say 
 
 First of all, that was the internet, when I started using it back in 1999:
 
-</p><p style="text-align: center;"><a href="http://en.wikipedia.org/wiki/On_the_Internet,_nobody_knows_you're_a_dog"><img class="aligncenter" src="http://upload.wikimedia.org/wikipedia/en/f/f8/Internet_dog.jpg" alt=" [© New Yorker Magazine, March 1993] On the Internet nobody knows that you are a dog'"></a>
+</p><p style="text-align: center;"><a href="http://en.wikipedia.org/wiki/On_the_Internet,_nobody_knows_you're_a_dog"><img class="aligncenter" src="https://upload.wikimedia.org/wikipedia/en/f/f8/Internet_dog.jpg" alt=" [© New Yorker Magazine, March 1993] On the Internet nobody knows that you are a dog'"></a>
 
 [© New Yorker Magazine, March 1993] On the Internet nobody knows that you are a dog'</p>
 
 And that's the internet today:
 
-<p style="text-align: center;"><a href="http://www.robcottingham.ca/cartoon/archive/your-friend-just-sniffed-you-sniff-back-yn/"><img class="aligncenter" src="http://www.robcottingham.ca/cartoon/wp-content/webcomic/noise-to-signal/2010.05.14.dog.png" alt="robcottingham.ca - How the hell does Facebook know I'm a dog?" width="500" height="550">
+<p style="text-align: center;"><a href="http://www.robcottingham.ca/cartoon/archive/your-friend-just-sniffed-you-sniff-back-yn/"><img class="aligncenter" src="https://www.robcottingham.ca/cartoon/wp-content/webcomic/noise-to-signal/2010.05.14.dog.png" alt="robcottingham.ca - How the hell does Facebook know I'm a dog?" width="500" height="550">
 
 </a>[© robcottingham.ca] How the hell does Facebook know I'm a dog?</p>
 
