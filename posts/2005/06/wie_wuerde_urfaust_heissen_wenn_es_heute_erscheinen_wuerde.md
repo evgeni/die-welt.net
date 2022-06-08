@@ -1,5 +1,5 @@
 <html><body><p>Wahscheinlich in etwa so:<br>
-Geothe.Faust.LEAKED.BETA.PERGAMENT.LOQWSCAN.eBook-HOFDAME<br>
+Geothe.Faust.LEAKED.BETA.PERGAMENT.LOWQSCAN.eBook-HOFDAME<br>
 <br>
 Beweis:<br>
 (22:27:47) SargentD: deutsch<br>
