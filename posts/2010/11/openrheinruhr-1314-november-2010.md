@@ -1,4 +1,4 @@
-<html><body><p style="text-align: center;"><a href="http://openrheinruhr.de/"><img src="http://openrheinruhr.de/images/Logo_128x128.png" alt="openrheinruhr logo"></a></p>
+<html><body><p style="text-align: center;"><a href="https://openrheinruhr.de/"><img src="https://history.openrheinruhr.de/images/Logo_128x128.png" alt="openrheinruhr logo"></a></p>
 
 On the 13/14 November 2010 there is a nice event in the so called "Ruhrpott": OpenRheinRuhr. And I'd like to invite YOU :)
 
