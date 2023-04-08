@@ -69,10 +69,11 @@ With this idea, our current job definition would look like this:
 However, this will fail:
 
 ```console
-# autopkgtest *.changes --setup-commands="apt-get update; sed -i 's/exit 101/exit 0/' /usr/sbin/policy-rc.d" -- docker debian:sid
+# autopkgtest *.changes --setup-commands="apt-get update" -- docker debian:sid
 autopkgtest [10:20:54]: starting date and time: 2023-04-07 10:20:54+0000
 autopkgtest [10:20:54]: version 5.28
-autopkgtest [10:20:54]: host a82a11789c0d; command line: /usr/bin/autopkgtest bley_2.0.0-1+gha+20230407101935+evgeni.patch.1_amd64.changes '--setup-commands=apt-get update' -- docker debian:sid
+autopkgtest [10:20:54]: host a82a11789c0d; command line:
+  /usr/bin/autopkgtest bley_2.0.0-1_amd64.changes '--setup-commands=apt-get update' -- docker debian:sid
 Unexpected error:
 Traceback (most recent call last):
   File "/usr/share/autopkgtest/lib/VirtSubproc.py", line 829, in mainloop
