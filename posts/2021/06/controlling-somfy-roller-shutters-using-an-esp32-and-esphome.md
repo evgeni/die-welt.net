@@ -22,7 +22,7 @@ $ git clone https://github.com/dimhoff/radio_stuff
 $ cd radio_stuff
 $ make -C converters am_to_ook
 $ make -C decoders decode_somfy
-$ rtl_fm -M am -f 433.42M -s 270K | ./am_to_ook -d 10 -t 2000 -  | ./decode_somfy
+$ rtl_fm -M am -f 433.42M -s 270K | ./converters/am_to_ook -d 10 -t 2000 -  | ./decoders/decode_somfy
 <press some buttons on the remote>
 ```
 
