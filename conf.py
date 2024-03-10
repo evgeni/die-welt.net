@@ -1121,6 +1121,7 @@ PRETTY_URLS = True
 #       with the MarkdownExtension class and should not be added here.
 # The default is ['fenced_code', 'codehilite']
 MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code', 'markdown.extensions.codehilite', 'markdown.extensions.extra']
+CODE_COLOR_SCHEME = 'xcode'
 
 # Extra options to pass to the pandoc command.
 # by default, it's empty, is a list of strings, for example
