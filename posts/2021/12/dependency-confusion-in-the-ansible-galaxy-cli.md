@@ -2,7 +2,7 @@
 .. title: Dependency confusion in the Ansible Galaxy CLI
 .. slug: dependency-confusion-in-the-ansible-galaxy-cli
 .. date: 2021-12-03 08:00:00 UTC
-.. tags: english,planet-debian,software,linux
+.. tags: english,planet-debian,software,linux,ansible,security
 .. category: 
 .. link: 
 .. description: 

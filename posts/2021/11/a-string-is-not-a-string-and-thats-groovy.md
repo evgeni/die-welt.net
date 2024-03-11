@@ -2,7 +2,7 @@
 .. title: A String is not a String, and that's Groovy!
 .. slug: a-string-is-not-a-string-and-thats-groovy
 .. date: 2021-11-19 14:16:00 UTC
-.. tags: english,planet-debian,software,linux
+.. tags: english,planet-debian,software,linux,foreman
 .. category: 
 .. link: 
 .. description: 

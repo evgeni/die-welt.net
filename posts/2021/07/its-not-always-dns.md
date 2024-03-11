@@ -2,7 +2,7 @@
 .. title: It's not *always* DNS
 .. slug: its-not-always-dns
 .. date: 2021-07-23 18:36:34 UTC
-.. tags: english,planet-debian,software,linux
+.. tags: english,planet-debian,software,linux,foreman
 .. category: 
 .. link: 
 .. description: 

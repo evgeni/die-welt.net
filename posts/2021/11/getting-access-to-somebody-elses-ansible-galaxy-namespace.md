@@ -2,7 +2,7 @@
 .. title: Getting access to somebody else's Ansible Galaxy namespace
 .. slug: getting-access-to-somebody-elses-ansible-galaxy-namespace
 .. date: 2021-11-29 08:00:00 UTC
-.. tags: english,planet-debian,software,linux
+.. tags: english,planet-debian,software,linux,ansible,security
 .. category: 
 .. link: 
 .. description: 

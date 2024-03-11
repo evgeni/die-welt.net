@@ -2,7 +2,7 @@
 .. title: The Mocking will continue, until CI improves
 .. slug: the-mocking-will-continue-until-ci-improves
 .. date: 2021-12-07 19:39:41 UTC
-.. tags: english,planet-debian,software,linux
+.. tags: english,planet-debian,software,linux,foreman
 .. category: 
 .. link: 
 .. description: 

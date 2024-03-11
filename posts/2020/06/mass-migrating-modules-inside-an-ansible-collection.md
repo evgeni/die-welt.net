@@ -2,7 +2,7 @@
 .. title: mass-migrating modules inside an Ansible Collection
 .. slug: mass-migrating-modules-inside-an-ansible-collection
 .. date: 2020-06-22 19:31:05 UTC
-.. tags: english,linux,planet-debian,software,ansible
+.. tags: english,linux,planet-debian,software,ansible,foreman
 .. category: 
 .. link: 
 .. description: 
