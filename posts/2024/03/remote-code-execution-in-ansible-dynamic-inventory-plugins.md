@@ -167,10 +167,12 @@ Or connect to some VPN-secured system that should not be reachable from EC2/Hetz
 
 This happens because [`set_variable(entity, varname, value)`](https://github.com/ansible/ansible/blob/56f31126ad1c69e5eda7b92c1fa15861f722af0e/lib/ansible/inventory/data.py#L245) doesn't mark the values as unsafe and Ansible processes everything with Jinja in it.
 
-In this very specific example, a possible fix would be to explicitly wrap things in `AnsibleUnsafeText`:
+In this very specific example, a possible fix would be to explicitly wrap the string in [`AnsibleUnsafeText` by using `wrap_var`](https://github.com/ansible/ansible/blob/stable-2.16/lib/ansible/utils/unsafe_proxy.py#L346-L363):
 
 ```python
-self.inventory.set_variable('exploit.example.com', 'something_funny', AnsibleUnsafeText('{{ lookup("pipe", "touch /tmp/hacked" ) }}'))
+from ansible.utils.unsafe_proxy import wrap_var
+…
+self.inventory.set_variable('exploit.example.com', 'something_funny', wrap_var('{{ lookup("pipe", "touch /tmp/hacked" ) }}'))
 ```
 
 Which then gets rendered as a string when dumping the variables using `debug`:
