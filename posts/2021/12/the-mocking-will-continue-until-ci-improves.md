@@ -133,7 +133,7 @@ $ bundle exec rake test TESTOPTS=-v
 
 Wait, I didn't change anything and it's already failing?! Fuck! I mean, cool!
 
-But the test isn't *minimal* yet. What can we reduce? `let` is just a fancy, lazy `def`, right? So instead of `let(:klass)` we should be able to write `def class` and achieve a similar outcome *and* drop that `Minitest::Spec`.
+But the test isn't *minimal* yet. What can we reduce? `let` is just a fancy, lazy `def`, right? So instead of `let(:klass)` we should be able to write `def klass` and achieve a similar outcome *and* drop that `Minitest::Spec`.
 
 ```ruby
 require 'minitest/autorun'
