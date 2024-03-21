@@ -9,7 +9,7 @@
 .. type: text
 -->
 
-[ajax' post about "ping" etiquette](https://blogs.gnome.org/markmc/2014/02/20/naked-pings/) is over 10 years old, but holds true until this day. So true, that my IRC client at work has a [script, that will reply with a link to it each time I get a naked ping](https://github.com/clouserw/scripts/blob/master/autopong.py).
+[ajax' post about "ping" etiquette](https://crustyblaa.com/naked-pings/) is over 10 years old, but holds true until this day. So true, that my IRC client at work has a [script, that will reply with a link to it each time I get a naked ping](https://github.com/clouserw/scripts/blob/master/autopong.py).
 
 But IRC is not the only means of communication. There is also mail, (video) conferencing, and GitHub/GitLab. Well, at least in the software engineering context. Oh and yes, it's 2020 and I still (proudly) have no Slack account.
 
