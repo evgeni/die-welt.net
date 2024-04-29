@@ -135,7 +135,6 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ("https://twitter.com/Zhenech", "Evgeni Golov (Zhenech) on Twitter", "fa-twitter"),
         ("https://chaos.social/@zhenech", "Evgeni Golov (Zhenech) on Mastodon", "fa-mastodon"),
         ("https://github.com/evgeni", "Evgeni Golov (Zhenech) on GitHub", "fa-github"),
         ("/about/", "About", "fa-info"),
