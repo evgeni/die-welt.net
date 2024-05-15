@@ -2,7 +2,7 @@
 .. title: Scanning with a Brother MFC-L2720DW on Linux without any binary blobs
 .. slug: scanning-with-a-brother-mfc-l2720dw-on-linux-without-any-binary-blobs
 .. date: 2020-07-15 19:08:05 UTC
-.. tags: english,linux,planet-debian,software
+.. tags: english,linux,planet-debian,software,debian
 .. category: 
 .. link: 
 .. description: 

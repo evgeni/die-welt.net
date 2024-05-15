@@ -2,7 +2,7 @@
 .. title: Using Packit to build RPMs for projects that depend on or vendor your code
 .. slug: using-packit-to-build-rpms-for-projects-that-depend-on-or-vendor-your-code
 .. date: 2024-05-14 20:12:02 UTC
-.. tags: english,linux,software,planet-debian
+.. tags: english,linux,software,planet-debian,centos
 .. category: 
 .. link: 
 .. description: 
