@@ -1,0 +1,29 @@
+.. id: 2024051601
+.. approved: True
+.. author: Thomas Goirand (zigo)
+.. date_utc: 2024-05-16 07:14:00
+.. compiler: markdown
+
+Hi,
+
+I've just read your blog post about using HPONCFG. In there you're complaining
+(rightly) about it not linking correctly to openssl.
+
+Well, you're right, BUT, you should not be using HPONCFG anymore: it's
+deprecated by HP. Instead, you should be using ilorest, which I by the way
+have packaged in Debian. The good thing is: it can do all you're doing with
+HPONCFG, but remotely, using redfish.
+
+If you install "ilorest-chif" (it's a small .so provided by HPe), you can use
+ilorest locally without any type of auth. I have repackaged ilorest-chif, but
+I can't redistribute it (it's non-free). Though if you need it, I can send it
+to you.
+
+I'd suggest you write about it in your blog post, and tell the world nobody
+should be using hponcfg anymore.
+
+I hope this helps,
+
+Cheers,
+
+Thomas Goirand (zigo)
