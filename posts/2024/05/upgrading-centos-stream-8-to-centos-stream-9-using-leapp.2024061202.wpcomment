@@ -1,0 +1,20 @@
+.. id: 2024061202
+.. parent_id: 2024061201
+.. author: Evgeni Golov
+.. date_utc: 2024-06-12 14:05:00
+.. compiler: markdown
+
+`--no-rhsm` should be only needed when you have "subscription-manager"
+installed on your systems, but why would you on a CentOS machine? :)
+
+I'd rather suggest people should not have that installed.
+
+As for CentOS Stream 8 being moved to vault, this is rather unrelated to the upgrade,
+and I think people need to touch that on their systems anyway if they keep them alive after the EOL date.
+
+
+What I did last week when I needed this was:
+
+    sed -i 's/^mirrorlist/#&/; s/^#baseurl/baseurl/; s/mirror.centos.org/vault.centos.org/' /etc/yum.repos.d/CentOS-Stream-*.repo
+
+I'll leave that here as a comment, not in the main post tho.

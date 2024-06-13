@@ -1,0 +1,30 @@
+.. id: 2024061201
+.. approved: True
+.. author: Bruce Vernon
+.. date_utc: 2024-06-12 13:34:00
+.. compiler: markdown
+
+Thank you for your excellent guide! With your help, my upgrades went smooth
+and pain free.
+
+I have two suggestions:
+
+Give explicit examples of running leapp with --no-rhsm
+
+Like:
+
+    # leapp preupgrade --no-rhsm
+
+    # leapp upgrade --no-rhsm
+
+
+Now that CentOS Stream 8 is End Of Life, you may want to add instructions for
+setting repos appstream, baseos, extras and extras-common to vault.centos.org
+to avoid
+
+    Error: Failed to download metadata for repo 'appstream':
+    Cannot prepare internal mirrorlist: No URLs in mirrorlist
+
+Thanks Again!
+
+ -Bruce
