@@ -140,11 +140,11 @@
         },
         "certifi": {
             "hashes": [
-                "sha256:0569859f95fc761b18b45ef421b1290a0f65f147e92a1e5eb3e635f9a5e4e66f",
-                "sha256:dc383c07b76109f368f6106eee2b593b04a011ea4d55f652c6ca24a754d1cdd1"
+                "sha256:3cd43f1c6fa7dedc5899d69d3ad0398fd018ad1a17fba83ddaf78aa46c747516",
+                "sha256:ddc6c8ce995e6987e7faf5e3f1b02b302836a0e5d98ece18392cb1a36c72ad56"
             ],
             "markers": "python_version >= '3.6'",
-            "version": "==2024.2.2"
+            "version": "==2024.6.2"
         },
         "charset-normalizer": {
             "hashes": [
@@ -907,11 +907,11 @@
         },
         "requests": {
             "hashes": [
-                "sha256:dd951ff5ecf3e3b3aa26b40703ba77495dab41da839ae72ef3c8e5d8e2433289",
-                "sha256:fc06670dd0ed212426dfeb94fc1b983d917c4f9847c863f313c9dfaaffb7c23c"
+                "sha256:55365417734eb18255590a9ff9eb97e9e1da868d4ccd6402399eaf68af20a760",
+                "sha256:70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6"
             ],
             "markers": "python_version >= '3.8'",
-            "version": "==2.32.2"
+            "version": "==2.32.3"
         },
         "setuptools": {
             "hashes": [
@@ -981,7 +981,6 @@
                 "sha256:f8affdf3c0f0466e69f5b3917cdd042f89c8c63aebdb9f7c078996f607cdb0f5"
             ],
             "index": "pypi",
-            "markers": "python_version >= '3.8'",
             "version": "==4.0.1"
         },
         "webassets": {
@@ -1090,11 +1089,11 @@
         },
         "zipp": {
             "hashes": [
-                "sha256:6278d9ddbcfb1f1089a88fde84481528b07b0e10474e09dcfe53dad4069fa059",
-                "sha256:dce197b859eb796242b0622af1b8beb0a722d52aa2f57133ead08edd5bf5374e"
+                "sha256:bf1dcf6450f873a13e952a29504887c89e6de7506209e5b1bcc3460135d4de19",
+                "sha256:f091755f667055f2d02b32c53771a7a6c8b47e1fdbc4b72a8b9072b3eef8015c"
             ],
             "markers": "python_version >= '3.8'",
-            "version": "==3.18.2"
+            "version": "==3.19.2"
         }
     },
     "develop": {}
