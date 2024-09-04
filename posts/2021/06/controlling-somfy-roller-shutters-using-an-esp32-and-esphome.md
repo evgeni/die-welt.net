@@ -44,6 +44,8 @@ And the end result isn't too beautiful either, but it works:
 
 [![ESP32 and CC1101 in a simple case](/upload/esp32_cc1101.jpg)](/upload/esp32_cc1101.jpg)
 
+**Update**: I've been told (by Bert, hi Bert!) that there are now slightly different [CC1101 boards sold on the internet](https://nl.aliexpress.com/item/1005005933665919.html). Mine has 10 pins, but VCC and GND are doubled. The new boards just don't have these double pins anymore and have only 8 in total. They still work, you just need to look where which pin is. :)
+
 ## Acquiring the right software
 
 In my initial research I found an Arduino sketch and was totally prepared to port it to ESP32, but luckily [somebody already did that for me](https://github.com/Legion2/Somfy_Remote_Lib)! Even better, it's explicitly using the CC1101. Okay, okay, I cheated, I actually ordered the hardware *after* I found [this](https://github.com/EinfachArne/Somfy_Remote) port and the reference to CC1101. ;)
@@ -52,7 +54,7 @@ As I am using [ESPHome](https://esphome.io) for my ESPs, the idea was to add a "
 
 Turns out, not *that* hard. You can see the code in my [GitHub repo](https://github.com/evgeni/esphome-configs/). It consists of two (relevant) files: [`somfy_cover.h`](https://github.com/evgeni/esphome-configs/blob/devel/somfy_cover.h) and [`somfy.yaml`](https://github.com/evgeni/esphome-configs/blob/devel/somfy.yaml).
 
-`somfy_cover.h` essentially wraps the communication with the `Somfy_Remote_Lib` library into an almost boilerplate [Custom Cover for ESPHome](https://esphome.io/components/cover/custom.html). There is nothing too fancy in there. The only real difference to the "Custom Cover" example from the documentation is the split into `SomfyESPRemote` (which inherits from `Component`) and `SomfyESPCover` (which inherits from `Cover`) -- this is taken from the [Custom Sensor documentation](https://esphome.io/components/sensor/custom.html#bonus-sensors-with-multiple-output-values) and allows me to define one "remote" that controls multiple "covers" using the `add_cover` function. The first two params of the function are the NVS name and key (think database table and row), and the third is the rolling code of the remote (stored in `somfy_secrets.h`, which is not in Git).
+`somfy_cover.h` essentially wraps the communication with the `Somfy_Remote_Lib` library into an almost boilerplate [Custom Cover for ESPHome](https://esphome.io/components/cover/custom.html). There is nothing too fancy in there. The only real difference to the "Custom Cover" example from the documentation is the split into `SomfyESPRemote` (which inherits from `Component`) and `SomfyESPCover` (which inherits from `Cover`) -- this is taken from the [Custom Sensor documentation](https://esphome.io/components/sensor/custom.html#bonus-sensors-with-multiple-output-values) and allows me to define one "remote" that controls multiple "covers" using the `add_cover` function. The first two params of the function are the NVS name and key (think database table and row), and the third is the rolling code of the remote you're building (stored in `somfy_secrets.h`, which is not in Git). Don't use the code of an existing remote, or the rolling code counter will get out of sync and neither the original remote, nor your fake will work anymore.
 
 In ESPHome a `Cover` shall define its properties as `CoverTraits`. Here we call `set_is_assumed_state(true)`, as we don't know the state of the shutters - they could have been controlled using the other (real) remote - and setting this to `true` allows issuing open/close commands at all times. We also call `set_supports_position(false)` as we can't tell the shutters to move to a specific position.
 
@@ -121,6 +123,15 @@ Thankfully I managed to read enough ESPHome docs, and learned how to operate `st
 ### Using ESP32's NVS
 
 The ESP32 has a [non-volatile key-value storage](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/storage/nvs_flash.html) which is much nicer than throwing bits at an emulated EEPROM. The first library I used for that explicitly used EEPROM storage and it would have required quite some hacking to make it work with NVS. Thankfully the library I am using now has a plugable storage interface, and [I could just write the NVS backend myself](https://github.com/Legion2/Somfy_Remote_Lib/pull/8) and upstream now supports that. Yay open-source!
+
+### A 3d-printed case
+
+I've just put my setup in a junction box and called it a day.
+[Bert](https://www.printables.com/@BertHaverkamp_15340) decided that's not good enough (and he's right!), so he designed [a nice 3D-printable case](https://www.printables.com/model/996065-somfy-controler-box).
+
+I think I might just print that one for me too. Looks so much better!
+
+[![ESP32 and CC1101 in a 3D-printed case](/upload/esp32_cc1101_printed_bert.webp)](/upload/esp32_cc1101_printed_bert.webp)
 
 ## Remaining issues
 
