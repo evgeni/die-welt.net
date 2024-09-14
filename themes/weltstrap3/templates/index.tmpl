@@ -31,7 +31,7 @@
                 <li class="commentline">${comments.comment_link(post.permalink(), post._base_path)}</li>
             % endif
             % if not post.meta('nocomments') and site_has_static_comments:
-                <span class="comment-count">${static_comments.add_static_comment_count(post.comments, lang)}</span>
+                <li><span class="comment-count">${static_comments.add_static_comment_count(post.comments, lang)}</span></li>
             % endif
         </ol>
     </header>
