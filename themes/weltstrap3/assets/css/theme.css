@@ -83,7 +83,8 @@ section {
   min-height: 200px;
 }
 
-#head h1 {
+#head h1,
+#head span.blog-title {
   font-family: 'Wire One', sans-serif;
   color: #fff;
   font-size: 50px;
@@ -92,6 +93,7 @@ section {
   line-height: 55px;
   text-transform: uppercase;
   margin: 0;
+  display: block;
 }
 
 #head p {

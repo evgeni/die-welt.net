@@ -18,7 +18,7 @@ ${template_hooks['extra_head']()}
     <div class="container"><!-- This keeps the margins nice -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="sr-only">${messages("Toggle navigation")}</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -48,11 +48,11 @@ ${template_hooks['extra_head']()}
         <div class="navbar-header">
             <a class="navbar-brand" href="${abs_link(_link("root", None, lang))}">
             %if logo_url:
-                <img src="${logo_url}" alt="${blog_title}" id="logo">
+                <img src="${logo_url}" alt="${blog_title|h}" id="logo">
             %endif
 
             % if show_blog_title:
-                <h1 id="blog-title">${blog_title}</h1>
+                <span id="blog-title" class="blog-title">${blog_title|h}</span>
             % endif
             </a>
 
