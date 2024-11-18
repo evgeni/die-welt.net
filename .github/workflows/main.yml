@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - devel
+    tags:
+      - '**'
+  pull_request:
+
+concurrency:
+  group: ${{ github.ref_name }}-${{ github.workflow }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Find Python version
+        run: echo "PYTHON_VERSION=$(grep python_version Pipfile | cut -d= -f 2 | tr -d '\" ')" >> "$GITHUB_ENV"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pipenv'
+      - run: pip install pipenv
+      - run: pipenv sync
+      - run: pipenv run nikola build
