@@ -1253,6 +1253,7 @@ EXTRA_HEAD_DATA = """
 <link rel="me" href="https://twitter.com/zhenech" />
 <link rel="me" href="https://chaos.social/@zhenech" />
 <link rel="me" href="https://github.com/evgeni" />
+<meta name="fediverse:creator" content="@zhenech@chaos.social">
 """
 # Google Analytics or whatever else you use. Added to the bottom of <body>
 # in the default template (base.tmpl).
