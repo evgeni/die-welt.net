@@ -92,7 +92,7 @@ But using DHCP for the same thing is much nicer, as it removes the need for auth
 
 * HT802V2 running 1.0.3.5 (and any other release older than 1.0.3.10), as that's what I have tested
 * Most probably also other HT8xxV2, as they use the same firmware
-* Most probably also HT8xx(V1), as their `/etc/rc.d/init.d/openvpn` looks very similar, according to firmware dumps
+* Most probably also HT8xx(V1), as their `/usr/share/udhcpc/default.script` and `/app/bin/vendor_test_suite.sh` looks very similar, according to firmware dumps
 
 ## Fix
 
