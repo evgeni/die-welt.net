@@ -11,7 +11,7 @@
 
 The [Grandstream HT802V2][ht802v2] uses busybox' `udhcpc` for DHCP.
 When a DHCP event occurs, `udhcpc` calls a script (`/usr/share/udhcpc/default.script` by default) to further process the received data.
-On the HT802V2 this is used to (among others) parse the data in DHCP option 43 (vendor) using the Granstream-specific parser `/sbin/parse_vendor`.
+On the HT802V2 this is used to (among others) parse the data in DHCP option 43 (vendor) using the Grandstream-specific parser `/sbin/parse_vendor`.
 
 ```
 …
