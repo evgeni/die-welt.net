@@ -22,6 +22,7 @@ The current (other) machines at home are (not all really in use):
 - Thinkpad X300 - atae (与え) means gift, as it was given to me at a very low price, almost a gift
 - Thinkstation P410 - kangae (考え), means thinking, and well, it's a Thinkstation
 - self-built homeserver - sai (さい), means dice, which in German is "Würfel", which is the same as cube, and the machine used to have an almost cubic case
+- Raspberry Pi 4 - aita (開いた), means open, it's running OpenWRT
 - Sun Netra T1 - nisshoku (日食), means solar eclipse
 - Apple iBook G4 13 - ringo (林檎), means apple
 
