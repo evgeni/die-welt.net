@@ -1,5 +1,5 @@
 <!--
-.. title: Authenticated RCE via OpenVPN Configuration File in Grandstream HT802V2 and probably others
+.. title: Authenticated RCE via OpenVPN Configuration File in Grandstream HT802V2 and probably others (CVE-2025-28176)
 .. slug: authenticated-rce-via-openvpn-configuration-file-in-grandstream-ht802v2-and-probably-others
 .. date: 2025-02-12 16:58:46 UTC
 .. tags: english,linux,software,hardware,planet-debian,security
@@ -88,6 +88,7 @@ So far I was unable to inject any further commands in this block.
 * 2025-01-14 Confirmation that the re-sent submission was received
 * 2025-01-21 [Notification that firmware 1.0.3.10 (marked as beta) for HT802V2 was released with a fix][fixed-firmware-beta]
 * 2025-02-12 [1.0.3.10 is marked as "official" (aka "stable")][fixed-firmware-official]
+* 2025-04-17 This issue was assigned **CVE-2025-28176**
 
 [CVE-2020-5739]: https://www.tenable.com/security/research/tra-2020-22
 [openvpn-scripting-integration]: https://openvpn.net/community-resources/reference-manual-for-openvpn-2-6/#scripting-integration
