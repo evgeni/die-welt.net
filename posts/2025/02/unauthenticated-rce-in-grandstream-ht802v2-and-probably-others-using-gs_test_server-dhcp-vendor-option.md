@@ -1,5 +1,5 @@
 <!--
-.. title: Unauthenticated RCE in Grandstream HT802V2 and probably others using gs_test_server DHCP vendor option
+.. title: Unauthenticated RCE in Grandstream HT802V2 and probably others using gs_test_server DHCP vendor option (CVE-2025-28177)
 .. slug: unauthenticated-rce-in-grandstream-ht802v2-and-probably-others-using-gs_test_server-dhcp-vendor-option
 .. date: 2025-02-20 11:38:57 UTC
 .. tags: english,linux,software,hardware,planet-debian,security
@@ -131,6 +131,7 @@ The crucial part is that now `prov_image_dec` is used for the decoding, which ac
 * 2025-01-14 Confirmation that the re-sent submission was received
 * 2025-01-21 [Notification that firmware 1.0.3.10 (marked as beta) for HT802V2 was released with a fix][fixed-firmware-beta]
 * 2025-02-12 [1.0.3.10 is marked as "official" (aka "stable")][fixed-firmware-official]
+* 2025-04-17 This issue was assigned **CVE-2025-28177**
 
 [ht802v2]: https://www.grandstream.com/products/gateways-and-atas/analog-telephone-adaptors/product/ht802v2
 [vendor-specific-information]: https://documentation.grandstream.com/knowledge-base/dhcp-options-linux-server-guide/#dhcp-option-43-vendor-specific-information
