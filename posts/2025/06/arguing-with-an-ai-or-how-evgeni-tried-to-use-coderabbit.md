@@ -26,11 +26,11 @@ To reduce the amount of output and not to confuse contributors, CodeRabbit was c
 What follows is a rather unscientific evaluation of CodeRabbit based on PRs in two Foreman-related repositories,
 looking at the summaries CodeRabbit posted as well as the comments/suggestions it had about the code.
 
-## Ansible 2.19 support
+# Ansible 2.19 support
 
 PR: [theforeman/foreman-ansible-modules#1848](https://github.com/theforeman/foreman-ansible-modules/pull/1848)
 
-### summary posted
+## summary posted
 
 The summary CodeRabbit posted is *technically* correct.
 
@@ -50,11 +50,11 @@ but for this PR it's just noise, especially as it only covers two of the changes
 
 Overall verdict: noise, don't need this.
 
-### comments posted
+## comments posted
 
 CodeRabbit also posted 4 comments/suggestions to the changes.
 
-#### Guard against undefined `result.task`
+### Guard against undefined `result.task`
 
 IMHO a valid suggestion, even if on the picky side as I am not sure how to make it undefined here.
 I ended up implementing it, even if with slightly different (and IMHO better readable) syntax.
@@ -63,7 +63,7 @@ I ended up implementing it, even if with slightly different (and IMHO better rea
 - Useful suggestion? So-So.
 - Wasted time? No.
 
-#### Inconsistent pipeline in `when` for composite CV versions
+### Inconsistent pipeline in `when` for composite CV versions
 
 That one was funny! The original complaint was that the `when` condition used slightly different data manipulation than the data that was passed when the condition was `true`.
 The code was supposed to do "clean up the data, but only if there are any items left after removing the first 5, as we always want to keep 5 items".
@@ -88,7 +88,7 @@ Wouldn't I have known about the `count` alias, we'd have committed that suggesti
 - Useful suggestion? Nope.
 - Wasted time? Yes.
 
-#### Apply the same fix for non-composite CV versions
+### Apply the same fix for non-composite CV versions
 
 The very same complaint was posted a few lines later, as the logic there is very similar — just slightly different data to be filtered and cleaned up.
 
@@ -108,7 +108,7 @@ the data used in the task is different — it even gets consumed by a totally di
 I ended up applying the same logic as suggested by Ewoud above.
 As *that* refactoring was possible in a consistent way.
 
-#### Ensure consistent naming for Oracle Linux subscription defaults
+### Ensure consistent naming for Oracle Linux subscription defaults
 
 One of the changes in Ansible 2.19 is that Ansible fails when there are undefined variables, even if they are only undefined for cases where they are unused.
 
@@ -123,11 +123,11 @@ the AI is as usual quick to apologize, yay.
 - Useful suggestion? Nope.
 - Wasted time? Yes.
 
-## add new parameters to the repository module
+# add new parameters to the repository module
 
 PR: [theforeman/foreman-ansible-modules#1860](https://github.com/theforeman/foreman-ansible-modules/pull/1860)
 
-### summary posted
+## summary posted
 
 Again, the summary is *technically* correct
 
@@ -140,13 +140,13 @@ That's a good thing!
 
 Overall verdict: noise (even if the amount is small), don't need this.
 
-### comments posted
+## comments posted
 
 CodeRabbit generated two comments for this PR.
 
 Interestingly, none of them overlapped with the issues `ansible-lint` and friends found.
 
-#### get rid of the FIXMEs
+### get rid of the FIXMEs
 
 Yepp, that's fair
 
@@ -154,7 +154,7 @@ Yepp, that's fair
 - Useful suggestion? Nope. (But it's not possible in this case!)
 - Wasted time? No.
 
-#### add validation for the new parameters
+### add validation for the new parameters
 
 Yepp, I forgot these (not intentionally!).
 
@@ -198,11 +198,11 @@ That should have been more prominent, as it's a **BUG**!
 - Useful suggestion? Mostly (I only had to merge the Yum and Ansible branches with the existing code).
 - Wasted time? Nope.
 
-## parameter persistence in obsah
+# parameter persistence in obsah
 
 PR: [theforeman/obsah#72](https://github.com/theforeman/obsah/pull/72)
 
-### summary posted
+## summary posted
 
 Mostly correct.
 
@@ -216,11 +216,11 @@ Again, not 100% accurate: it's missing the fact that saving the parameters is hi
 
 Overall verdict: not really useful, don't need this.
 
-### comments posted
+## comments posted
 
 Here I was a bit surprised, especially as the nitpicks were useful!
 
-#### Persist-path should respect per-user state locations (nitpick)
+### Persist-path should respect per-user state locations (nitpick)
 
 My original code used `os.environ.get('OBSAH_PERSIST_PATH', '/var/lib/obsah/parameters.yaml')` for the location of the persistence file.
 CodeRabbit correctly pointed out that this won't work for non-root users and one should respect `XDG_STATE_HOME`.
@@ -236,7 +236,7 @@ In the end I did not implement it, but mostly because I was lazy and was sure we
 - Useful suggestion? Yes.
 - Wasted time? Nope.
 
-#### Positional parameters are silently excluded from persistence (nitpick)
+### Positional parameters are silently excluded from persistence (nitpick)
 
 The library allows you to generate both positional (`foo` without `--`) and non-positional (`--foo`) parameters, but the code I wrote would only ever persist non-positional parameters.
 This was intentional, but there is no documentation of the intent in a comment — which the rabbit thought would be worth pointing out.
@@ -247,7 +247,7 @@ It's a fair nitpick and I ended up adding a comment.
 - Useful suggestion? Yes.
 - Wasted time? Nope.
 
-#### Enforce FQDN validation for `database_host`
+### Enforce FQDN validation for `database_host`
 
 The library has a way to perform type checking on passed parameters, and one of the supported types is "FQDN" — so a fully qualified domain name, with dots and stuff.
 The test playbook I added has a `database_host` variable, but I didn't bother adding a type to it, as I don't really need any type checking here.
@@ -259,7 +259,7 @@ It shows that the rest of the repository was taken into context when preparing t
 - Useful suggestion? Yes.
 - Wasted time? Nope.
 
-#### `reset_args()` can raise `AttributeError` when a key is absent
+### `reset_args()` can raise `AttributeError` when a key is absent
 
 This is a correct finding, the code is not written in a way that would survive if it tries to reset things that are not set.
 However, that's only true for the case where users pass in `--reset-<parameter>` without ever having set `parameter` before.
@@ -271,7 +271,7 @@ The suggested code is not well readable, so I ended up fixing it slightly differ
 - Useful suggestion? Meh.
 - Wasted time? A bit.
 
-#### Persisted values bypass `argparse` type validation
+### Persisted values bypass `argparse` type validation
 
 When persisting, I just `yaml.safe_dump` the parsed parameters, which means the YAML will contain native types like integers.
 
@@ -287,7 +287,7 @@ Not sure what I'll do with this comment.
 - Useful suggestion? Nope.
 - Wasted time? Not much.
 
-#### consider using `contextlib.suppress`
+### consider using `contextlib.suppress`
 
 This was added when I asked CodeRabbit for a re-review after pushing some changes.
 Interestingly, the PR already contained `try: … except: pass` code before, and it did not flag that.
@@ -301,11 +301,11 @@ But the comment as such was valid, so I fixed it in all places it is applicable,
 - Useful suggestion? Nope.
 - Wasted time? Nope.
 
-## workaround to ensure LCE and CV are always sent together
+# workaround to ensure LCE and CV are always sent together
 
 PR: [theforeman/foreman-ansible-modules#1867](https://github.com/theforeman/foreman-ansible-modules/pull/1867)
 
-### summary posted
+## summary posted
 
 > A workaround was added to the _update_entity method in the ForemanAnsibleModule class to ensure that when updating a host, both content_view_id and lifecycle_environment_id are always included together in the update payload. This prevents partial updates that could cause inconsistencies.
 
@@ -318,17 +318,18 @@ No diagram, good.
 
 Overall verdict: misleading summaries are bad!
 
-### comments posted
+## comments posted
 
 Given a small patch, there was only one comment.
 
-#### Implementation looks correct, but consider adding error handling for robustness.
+### Implementation looks correct, but consider adding error handling for robustness.
 
 This reads correct on the first glance.
 More error handling is always better, right?
 
 But if you dig into the argumentation, you see it's wrong.
 Either:
+
 - we're working with a Katello setup and the host we're updating has content, so CV and LCE will be present
 - we're working with a Katello setup and the host has no content (yet), so CV and LCE will be "updated" and we're not running into the workaround
 - we're working with a plain Foreman, then both parameters are not even accepted by Ansible
