@@ -14,6 +14,7 @@ Everybody is trying out AI assistants these days, so I figured I'd jump on that 
 I went with [CodeRabbit](https://www.coderabbit.ai/) because I've seen it on YouTube — ads work, I guess.
 
 I am trying to answer the following questions:
+
 - Did the AI find things that humans did not find (or didn't bother to mention)
 - Did the AI output help the humans with the review (useful summary etc)
 - Did the AI output help the humans with the code (useful suggestions etc)
