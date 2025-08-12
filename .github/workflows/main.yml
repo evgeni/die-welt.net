@@ -16,7 +16,7 @@ jobs:
   build:
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Find Python version
         run: echo "PYTHON_VERSION=$(grep python_version Pipfile | cut -d= -f 2 | tr -d '\" ')" >> "$GITHUB_ENV"
       - uses: actions/setup-python@v5
