@@ -28,7 +28,7 @@ jobs:
       - run: pipenv run nikola build
       - name: Upload artifact
         if: github.event_name == 'push'
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: output
 
