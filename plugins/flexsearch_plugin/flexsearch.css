@@ -140,7 +140,7 @@
 }
 
 .search-result-item a {
-    display: block;
+    display: inline;
     color: inherit;
     text-decoration: none;
 }
@@ -170,7 +170,7 @@
 .result-title {
     font-weight: 500;
     color: #212529;
-    font-size: 1rem;
+    display: inline;
 }
 
 .result-snippet {
