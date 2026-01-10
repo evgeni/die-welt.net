@@ -1264,8 +1264,6 @@ EXTRA_HEAD_DATA = """
 
 
 FLEXSEARCH_OVERLAY = """
-<script src="https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.0/dist/flexsearch.bundle.min.js"></script>
-
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize FlexSearch indices

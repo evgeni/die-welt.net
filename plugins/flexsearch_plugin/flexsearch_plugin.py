@@ -33,6 +33,9 @@ class FlexSearchPlugin(LateTask):
         super(FlexSearchPlugin, self).set_site(site)
         self.site = site
         site.register_path_handler('search_index', self.search_index_path)
+        site.template_hooks['body_end'].append(
+            '<script type="text/javascript" src="/assets/js/flexsearch.bundle.min.js"></script>'
+        )
 
     def gen_tasks(self):
         """Generate the search index after all posts are processed."""
@@ -41,6 +44,13 @@ class FlexSearchPlugin(LateTask):
 
         output_path = self.site.config['OUTPUT_FOLDER']
         index_file_path = os.path.join(output_path, 'search_index.json')
+
+        # Copy all the assets to the right places
+        filters = self.site.config['FILTERS']
+        asset_folder = os.path.join(os.path.dirname(__file__), "files")
+        for task in utils.copy_tree(asset_folder, output_path):
+            task["basename"] = str(self.name)
+            yield utils.apply_filters(task, filters)
 
         def build_index():
             """Build the entire search index from scratch, including both posts and pages."""
