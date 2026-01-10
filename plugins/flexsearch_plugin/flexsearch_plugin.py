@@ -36,6 +36,11 @@ class FlexSearchPlugin(LateTask):
         site.template_hooks['body_end'].append(
             '<script type="text/javascript" src="/assets/js/flexsearch.bundle.min.js"></script>'
         )
+        flexsearch_snippet = self.site.config.get('FLEXSEARCH_SNIPPET', 'custom')
+        if flexsearch_snippet in ['extend', 'overlay']:
+            src = os.path.join(os.path.dirname(__file__), f'flexsearch_{flexsearch_snippet}.js')
+            with open(src) as flex_file:
+                site.template_hooks['body_end'].append(f'<script>{flex_file.read()}</script>')
 
     def gen_tasks(self):
         """Generate the search index after all posts are processed."""
