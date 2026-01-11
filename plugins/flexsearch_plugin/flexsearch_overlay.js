@@ -10,9 +10,12 @@ document.addEventListener('DOMContentLoaded', function() {
         },{
             field:  "content",
             resolution: 3
+        },{
+            field: "tags",
+            resolution: 6
         }]
     });
-    var searchMode = 'all'; // Default search mode: 'all', 'title', 'content'
+    var searchMode = 'all'; // Default search mode: 'all', 'title', 'content', 'tags'
 
     // Get DOM elements
     var searchInput = document.getElementById('search_input');
@@ -56,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Load data into indices
         for (var key in data) {
             if (data.hasOwnProperty(key)) {
-                docIndex.add({id: key, title: data[key].title, content: data[key].content, type: data[key].type, url: data[key].url});
+                docIndex.add({id: key, title: data[key].title, content: data[key].content, tags: data[key].tags, type: data[key].type, url: data[key].url});
             }
         }
         // Set up filters after data is loaded
@@ -113,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Update results count
         if (resultsHeader) {
-            var searchModeText = searchMode === 'all' ? 'All' : (searchMode === 'title' ? 'Title' : 'Content');
+            var searchModeText = searchMode.charAt(0).toUpperCase() + searchMode.substring(1)
             resultsHeader.innerHTML = `<div class="search-stats">${allResults.length} results found · Search mode: ${searchModeText}</div>`;
         }
 
@@ -279,6 +282,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <button id="filter_all" class="filter-button active">All</button>
                 <button id="filter_title" class="filter-button">Title</button>
                 <button id="filter_content" class="filter-button">Content</button>
+                <button id="filter_tags" class="filter-button">Tags</button>
             </div>
         `;
 
@@ -298,6 +302,12 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('filter_content').addEventListener('click', function() {
             setSearchMode('content');
             highlightActiveFilter('filter_content');
+            performSearch();
+        });
+
+        document.getElementById('filter_tags').addEventListener('click', function() {
+            setSearchMode('tags');
+            highlightActiveFilter('filter_tags');
             performSearch();
         });
     }
