@@ -2,7 +2,7 @@
 .. title: Home Assistant, Govee Lights Local, VLANs, Oh my!
 .. slug: home-assistant-govee-lights-local-vlans-oh-my
 .. date: 2025-12-14 15:48:08 UTC
-.. tags: 
+.. tags: english,linux,planet-debian,software,home-automation
 .. category: 
 .. link: 
 .. description: 
