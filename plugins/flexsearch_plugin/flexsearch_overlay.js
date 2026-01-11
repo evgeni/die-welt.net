@@ -1,7 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize FlexSearch indices
-    var titleIndex = new FlexSearch.Index({ tokenize: "forward" });
-    var contentIndex = new FlexSearch.Index();
+    var docIndex = new FlexSearch.Document({
+        id: "id",
+        index: [{
+            field: "title",
+            tokenize: "forward",
+            resolution: 9
+        },{
+            field:  "content",
+            resolution: 3
+        }]
+    });
     var index = {};  // This will store the index data globally
     var searchMode = 'all'; // Default search mode: 'all', 'title', 'content'
 
@@ -48,11 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Load data into indices
         for (var key in index) {
             if (index.hasOwnProperty(key)) {
-                // Add to content index
-                contentIndex.add(key, index[key].content);
-
-                // Add to title index
-                titleIndex.add(key, index[key].title);
+                docIndex.add({id: key, title: index[key].title, content: index[key].content});
             }
         }
         // Set up filters after data is loaded
@@ -98,34 +103,14 @@ document.addEventListener('DOMContentLoaded', function() {
         searchResults.innerHTML = ''; // Clear previous results
 
         // Determine which indices to search based on search mode
-        var titleResults = [];
-        var contentResults = [];
         var allResults = [];
 
-        if (searchMode === 'all' || searchMode === 'title') {
-            titleResults = titleIndex.search(query);
+        var searchOpts = { merge: true };
+        if (searchMode !== 'all') {
+            searchOpts['index'] = searchMode;
         }
+        allResults = docIndex.search(query, searchOpts);
 
-        if (searchMode === 'all' || searchMode === 'content') {
-            contentResults = contentIndex.search(query);
-        }
-
-        // Combine and deduplicate results
-        if (searchMode === 'all') {
-            // First add all title results
-            allResults = titleResults.slice();
-
-            // Then add content results that aren't already in titleResults
-            contentResults.forEach(function(result) {
-                if (allResults.indexOf(result) === -1) {
-                    allResults.push(result);
-                }
-            });
-        } else if (searchMode === 'title') {
-            allResults = titleResults;
-        } else {
-            allResults = contentResults;
-        }
 
         // Update results count
         if (resultsHeader) {
@@ -153,10 +138,11 @@ document.addEventListener('DOMContentLoaded', function() {
         var displayedResults = allResults.slice(0, maxResults);
 
         // Display results
-        displayedResults.forEach(function(result) {
+        displayedResults.forEach(function(doc) {
             var div = document.createElement('div');
             div.className = 'search-result-item';
             var link = document.createElement('a');
+            var result = doc.id;
             link.href = index[result].url;
 
             // Add a badge for content type
