@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize FlexSearch indices
     var docIndex = new FlexSearch.Document({
         id: "id",
+        store: true,
         index: [{
             field: "title",
             tokenize: "forward",
@@ -11,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
             resolution: 3
         }]
     });
-    var index = {};  // This will store the index data globally
     var searchMode = 'all'; // Default search mode: 'all', 'title', 'content'
 
     // Get DOM elements
@@ -53,11 +53,10 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch('/search_index.json')
     .then(response => response.json())
     .then(data => {
-        index = data;
         // Load data into indices
-        for (var key in index) {
-            if (index.hasOwnProperty(key)) {
-                docIndex.add({id: key, title: index[key].title, content: index[key].content});
+        for (var key in data) {
+            if (data.hasOwnProperty(key)) {
+                docIndex.add({id: key, title: data[key].title, content: data[key].content, type: data[key].type, url: data[key].url});
             }
         }
         // Set up filters after data is loaded
@@ -105,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Determine which indices to search based on search mode
         var allResults = [];
 
-        var searchOpts = { merge: true };
+        var searchOpts = { merge: true, enrich: true };
         if (searchMode !== 'all') {
             searchOpts['index'] = searchMode;
         }
@@ -138,28 +137,27 @@ document.addEventListener('DOMContentLoaded', function() {
         var displayedResults = allResults.slice(0, maxResults);
 
         // Display results
-        displayedResults.forEach(function(doc) {
+        displayedResults.forEach(function(result) {
             var div = document.createElement('div');
             div.className = 'search-result-item';
             var link = document.createElement('a');
-            var result = doc.id;
-            link.href = index[result].url;
+            link.href = result.doc.url;
 
             // Add a badge for content type
             var badge = document.createElement('span');
             badge.className = 'badge';
-            badge.textContent = index[result].type || 'post';
+            badge.textContent = result.doc.type || 'post';
             div.appendChild(badge);
 
             // Add the title
             var titleElem = document.createElement('span');
             titleElem.className = 'result-title';
-            titleElem.textContent = index[result].title;
+            titleElem.textContent = result.doc.title;
             link.appendChild(titleElem);
 
             // Add a snippet of content if available
-            if (index[result].content) {
-                var contentSnippet = getSnippet(index[result].content, query, 100);
+            if (result.doc.content) {
+                var contentSnippet = getSnippet(result.doc.content, query, 100);
                 if (contentSnippet) {
                     var snippetElem = document.createElement('div');
                     snippetElem.className = 'result-snippet';
