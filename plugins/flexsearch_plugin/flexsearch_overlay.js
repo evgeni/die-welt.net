@@ -52,23 +52,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Fetch the search index data
-    fetch('/search_index.json')
-    .then(response => response.json())
-    .then(data => {
-        // Load data into indices
-        for (var key in data) {
-            if (data.hasOwnProperty(key)) {
-                docIndex.add({id: key, title: data[key].title, content: data[key].content, tags: data[key].tags, type: data[key].type, url: data[key].url});
-            }
-        }
-        // Set up filters after data is loaded
-        setupSearchFilters();
-    })
-    .catch(error => {
-        console.error('Error loading search index:', error);
-    });
-
     // Set up search button click event
     if (searchButton) {
         searchButton.addEventListener('click', function() {
@@ -84,6 +67,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 performSearch();
             }
         });
+
+        searchInput.addEventListener('focus', function(event) {
+            loadDocIndex();
+        }, {once: true});
     }
 
     // Set up escape key to close overlay
@@ -92,6 +79,25 @@ document.addEventListener('DOMContentLoaded', function() {
             closeSearch();
         }
     });
+
+    function loadDocIndex() {
+      // Fetch the search index data
+      fetch('/search_index.json')
+      .then(response => response.json())
+      .then(data => {
+        // Load data into indices
+        for (var key in data) {
+            if (data.hasOwnProperty(key)) {
+                docIndex.add({id: key, title: data[key].title, content: data[key].content, tags: data[key].tags, type: data[key].type, url: data[key].url});
+            }
+        }
+        // Set up filters after data is loaded
+        setupSearchFilters();
+      })
+      .catch(error => {
+        console.error('Error loading search index:', error);
+      });
+    }
 
     // Function to perform search
     function performSearch() {
