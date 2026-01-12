@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Determine which indices to search based on search mode
         var allResults = [];
 
-        var searchOpts = { merge: true, enrich: true };
+        var searchOpts = { merge: true, enrich: true, highlight: { template: '<strong class="search-highlight">$1</strong>', boundary: 200 } };
         if (searchMode !== 'all') {
             searchOpts['index'] = searchMode;
         }
@@ -161,18 +161,15 @@ document.addEventListener('DOMContentLoaded', function() {
             // Add the title
             var titleElem = document.createElement('span');
             titleElem.className = 'result-title';
-            titleElem.textContent = result.doc.title;
+            titleElem.innerHTML = result.highlight.title ? result.highlight.title : result.doc.title;
             link.appendChild(titleElem);
 
             // Add a snippet of content if available
             if (result.doc.content) {
-                var contentSnippet = getSnippet(result.doc.content, query, 100);
-                if (contentSnippet) {
-                    var snippetElem = document.createElement('div');
-                    snippetElem.className = 'result-snippet';
-                    snippetElem.innerHTML = contentSnippet;
-                    link.appendChild(snippetElem);
-                }
+                var snippetElem = document.createElement('div');
+                snippetElem.className = 'result-snippet';
+                snippetElem.innerHTML = result.highlight.content ? result.highlight.content : result.doc.content.substring(0, 100) + '...';;
+                link.appendChild(snippetElem);
             }
 
             div.appendChild(link);
@@ -189,92 +186,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Show the overlay
         searchOverlay.style.display = 'flex';
-    }
-
-    // Helper function to get content snippet with highlighted search term
-    function getSnippet(content, query, maxLength) {
-        if (!content) return '';
-
-        // Find the position of the query in the content (case insensitive)
-        var lowerContent = content.toLowerCase();
-        var lowerQuery = query.toLowerCase();
-        var position = lowerContent.indexOf(lowerQuery);
-
-        if (position === -1) {
-            // If exact match not found, look for any word from the query
-            var queryWords = lowerQuery.split(' ').filter(w => w.length > 2);
-            for (var i = 0; i < queryWords.length; i++) {
-                position = lowerContent.indexOf(queryWords[i]);
-                if (position !== -1) break;
-            }
-        }
-
-        if (position === -1) {
-            // If still not found, just take the beginning of the content
-            return content.substring(0, maxLength) + '...';
-        }
-
-        // Calculate snippet start position to center the found term
-        var start = Math.max(0, position - Math.floor(maxLength / 2));
-        var end = Math.min(content.length, start + maxLength);
-
-        // Adjust start if we're near the end to always show maxLength characters
-        if (end === content.length) {
-            start = Math.max(0, end - maxLength);
-        }
-
-        // Get snippet and add ellipsis if needed
-        var snippet = (start > 0 ? '...' : '') +
-                      content.substring(start, end) +
-                      (end < content.length ? '...' : '');
-
-        // Highlight the search term (simple approach)
-        return highlightSearchTerm(snippet, query);
-    }
-
-    // Function to highlight search terms in a snippet
-    function highlightSearchTerm(snippet, query) {
-        var lowerSnippet = snippet.toLowerCase();
-        var lowerQuery = query.toLowerCase();
-        var result = snippet;
-        var terms = lowerQuery.split(' ').filter(t => t.length > 2);
-
-        // Add the full query as a term to highlight
-        if (terms.indexOf(lowerQuery) === -1 && lowerQuery.length > 2) {
-            terms.push(lowerQuery);
-        }
-
-        // Sort terms by length (descending) to highlight longer matches first
-        terms.sort(function(a, b) {
-            return b.length - a.length;
-        });
-
-        // Replace each term with a highlighted version
-        for (var i = 0; i < terms.length; i++) {
-            var term = terms[i];
-            var startIndex = 0;
-            var position;
-
-            while ((position = lowerSnippet.indexOf(term, startIndex)) !== -1) {
-                var actualTerm = snippet.substring(position, position + term.length);
-                var highlighted = '<strong class="search-highlight">' + actualTerm + '</strong>';
-
-                // Replace the term with its highlighted version
-                result = result.substring(0, position) + highlighted + result.substring(position + term.length);
-
-                // Update the working copies to account for the added HTML
-                var lengthDiff = highlighted.length - actualTerm.length;
-                lowerSnippet = lowerSnippet.substring(0, position) + term + lowerSnippet.substring(position + term.length);
-                startIndex = position + term.length;
-
-                // Update the result length
-                snippet = result;
-                lowerSnippet = snippet.toLowerCase();
-                break; // Only highlight the first occurrence of each term
-            }
-        }
-
-        return result;
     }
 
     // Function to set up search filters
