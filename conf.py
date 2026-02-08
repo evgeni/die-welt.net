@@ -138,6 +138,7 @@ NAVIGATION_LINKS = {
         ("https://chaos.social/@zhenech", "Evgeni Golov (Zhenech) on Mastodon", "fa-mastodon"),
         ("https://github.com/evgeni", "Evgeni Golov (Zhenech) on GitHub", "fa-github"),
         ("/about/", "About", "fa-info"),
+        ("/talks/", "Talks", "fa-comments-o"),
         ("/archive.html", "Archives", "fa-archive"),
         ("/category/", "Tags", "fa-tags"),
         ("/rss.xml", "RSS feed", "fa-rss"),
