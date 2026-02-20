@@ -24,7 +24,7 @@ The current (other) machines at home are (not all really in use):
 - self-built homeserver - sai (さい), means dice, which in German is "Würfel", which is the same as cube, and the machine used to have an almost cubic case
 - Raspberry Pi 4 - aita (開いた), means open, it's running OpenWRT
 - Sun Netra T1 - nisshoku (日食), means solar eclipse
-- Apple iBook G4 13 - ringo (林檎), means apple
+- Apple iBook G4 12 - ringo (林檎), means apple
 
 Then, I happen to rent a few servers:
 
