@@ -45,6 +45,7 @@ and I really didn't want to remember how to write PHP to complete this task.
 Luckily, [I know Python](https://xkcd.com/208/).
 
 The general idea is:
+
 * As we're using plaintext authentication (`auth_mechanisms = plain login`),
   the plaintext password is available during login.
 * After Dovecot's `imap-login` has verified the password against the old (insecure) hash in the database,
