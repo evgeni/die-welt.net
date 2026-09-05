@@ -1,0 +1,11 @@
+# Set what content types you want to index
+FLEXSEARCH_INDEX_POSTS = True  # Index posts (default: True)
+FLEXSEARCH_INDEX_PAGES = True  # Index pages (default: False)
+FLEXSEARCH_INDEX_DRAFTS = False  # Index draft content (default: False)
+
+# Which code snippet you want: extend, overlay, custom
+#
+# When extend, the search results are added to a div with the id "search_results".
+# When overlay, an overlay is created with the results.
+# When custom, you have to add the code yourself to BODY_END.
+FLEXSEARCH_SNIPPET = 'extend'

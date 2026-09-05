@@ -1206,19 +1206,21 @@ FEED_TEASERS = False
 # it appears on the navigation bar:
 #
 SEARCH_FORM = """
-<!-- DuckDuckGo custom search -->
-<form method="get" id="search" action="https://duckduckgo.com/"
- class="navbar-form pull-right navbar-right">
-<input type="hidden" name="sites" value="%s">
-<input type="hidden" name="k8" value="#444444">
-<input type="hidden" name="k9" value="#D51920">
-<input type="hidden" name="kt" value="h">
-<input type="text" name="q" maxlength="255"
- placeholder="Search&hellip;" class="span2" style="margin-top: 4px; color: #000">
-<input type="submit" value="DuckDuckGo Search" style="visibility: hidden; width: 0px">
-</form>
-<!-- End of custom search -->
-""" % SITE_URL
+<div class="navbar-form pull-right navbar-right" style="margin-top: 15px; color: #000;">
+<input type="text" id="search_input" placeholder="Search...">
+<button id="search_button" style="background-color: rgba(92,92,92,0.8); color: #fff;">Search</button>
+
+<div id="search_overlay">
+    <div id="search_content">
+        <div id="search_header">
+            <h3>Search Results</h3>
+            <button class="close-button" onclick="closeSearch()">×</button>
+        </div>
+        <div id="search_results"></div>
+    </div>
+</div>
+</div>
+"""
 #
 # If you prefer a Google search form, here's an example that should just work:
 # SEARCH_FORM = """
@@ -1393,3 +1395,5 @@ GLOBAL_CONTEXT = {}
 # GLOBAL_CONTEXT as parameter when the template is about to be
 # rendered
 GLOBAL_CONTEXT_FILLER = []
+
+FLEXSEARCH_SNIPPET = 'overlay'
